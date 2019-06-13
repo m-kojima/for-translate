@@ -1,0 +1,1301 @@
+[ Music ]
+>> Good afternoon, ladies andgentlemen.
+Please welcome Vice President ofSoftware Sebastien Marineau-Mes.
+[ Applause ]
+>> Good afternoon, everyone, andwelcome to WWDC.
+Did we love the morning keynote?
+[ Applause ]
+There you go.
+[ Applause ]
+Now this year is one of ourbiggest for developers and we'rereally excited to show you whatwe've been working on and seewhat you think.
+This morning's keynote was justa taste of what's happening thisyear.
+There is so much more that wewant to share, and thisafternoon we're going to focuson the areas that matter most toyou as developers.
+Are you ready to hear more?
+[ Applause ]
+There we go.
+Now we've taken a huge step interms of developer experiencethis year with the new SwiftUIframework as well as greatinteractive tools in Xcode.
+And we've really seen each ofour platforms get even deeper atwhat they do best.
+We have powerful new procapabilities for Mac, and newDark Mode and rich updates --sorry, independence for watchOS.
+On iOS, a new Dark Mode andgreat app updates.
+And finally, on iPadOS, apowerful operating system thatnow stands on its own.
+Sorry, the monitors aren'tworking down here.
+[ Laughter ]
+There we go.
+One of those is working, so Iwill go over to the left.
+Now these platforms represent adiverse range of devices andbuilding great support for themis easy, thanks to a choice ofmany tools and APIs likeAutoLayout, Size Classes andSwiftUI.
+So no more letterbox.
+Your users get the bestexperience when your app workswell on a wide range of devicesizes.
+And starting next spring, itwill be an app store requirementto deliver UI that adapts todifferent screen sizes.
+Now tvOS is offering cool newcapabilities --
+[ Laughter ]
+[ Applause ]
+There we go.
+[ Applause ]
+Now tvOS is offering cool newcapabilities for developers thisyear, including multi-usersupport for third-party apps,new UI elements and options,SwiftUI and of course supportfor Xbox and PlayStation gamecontrollers.
+[ Applause ]
+Now this morning we announced anincredible new hardware platformwith the new Mac Pro.
+Do we love it?
+[ Applause ]
+It is incredible, and it willreally unlock amazing new kindsof apps.
+And we also built technologiesthat span all of our platforms,and we'll have a look at a fewof these areas today, includingaccessibility, privacy, machinelearning, Siri, augmentedreality and finally Metal.
+Now we want to focus on thesethree big areas this afternoon,and we're going to start withdeveloper productivity.
+Now everyone in this room knowsthat great tools candramatically improve yourproductivity.
+Great tools give you more timeto be creative and they let youbuild better apps.
+And the foundation of thatexperience is the programminglanguage.
+Over the last five years, Swifthas matured and is built intoevery Apple platform.
+And Swift gives us thefoundation for SwiftUI.
+And Xcode is so much more than acode debugger -- sorry, codeeditor and debugger.
+It includes everything that youneed to build an app, includingsupport for continuousintegration and testing.
+And it gives you tools that letyou explore new technologiessuch as machine learning andaugmented reality.
+And finally, built on the strongfoundation of our platforms, theSwiftUI framework willrevolutionize how you build userinterfaces.
+And together, these threeelements deliver a whole newlevel of productivity and theywill fundamentally transform howall of you build apps.
+Now, are you ready to dive rightinto SwiftUI?
+[ Applause ]
+Let's have Josh come up and tellus more.
+Josh?
+[ Applause ]
+>> Thanks, Sebastien.
+Okay, so SwiftUI, as you sawthis morning, is a brand-newuser interface framework builtfrom the ground up in Swift forSwift.
+We designed it to let you writeless code and have the code thatyou do write be better code,while letting you use more ofthat code across all Appleplatforms.
+Now first of all, there's somuch functionality built intoeach individual line that youwrite that you're just going towrite way less code.
+So let's take the app forchoosing macOS release namesthat we looked at this morning,but without the animatedtransitions.
+If you've written an app withUIKit before, you know the typesof pieces that you need in orderto build this interface.
+It's not a lot of views, butthere are many individualdetails that you need to getright.
+With SwiftUI, it is way lesscode.
+Fewer than 20 lines focused onjust three key things.
+First, a few lines to define thestructure and layout of yourviews.
+Then some image and text viewsto display your content.
+And finally, parameters andmodifiers to adjust how it alllooks.
+Now let' stake a look a littlebit more closely at just a fewof these lines.
+The scrolling list itself isbarely any code at all.
+You just declare the list andthen describe the model objectsto be used in each row.
+There's no setup, there's noconfiguration and there's nocallbacks.
+Now the image at the top is justas simple.
+You display an image, clip it toa circle and add a shadow.
+And it's not just less code.
+It's better code.
+We designed the API to make theobvious approach be the rightapproach.
+The right way to create thislabel is exactly the one line ofcode that you would think towrite.
+It supports dynamic type, DarkMode and more.
+In fact, even the stringinterpolation used here is fullylocalizable.
+This simplicity eliminatesentire categories of errors.
+Looking at our list again, itsrows update automatically if themodel changes, ensuring thatyour UI is always up to date andnever displaying out-of-datedata.
+And it's easy to read too.
+The code for this image with acorner radius of three saysexactly that.
+Reading SwiftUI is like havingsomeone explain that interfaceto you.
+And SwiftUi's code is availableeverywhere, helping you reusemore of your code across allApple platforms.
+Now you've long been able toshare your model and low-leveldrawing and compositing code,but higher-level UI code hasremained mostlyplatform-specific.
+With SwiftUI, we're raising thatbar, enabling you to share farmore.
+Now of course you're still goingto want to tailor yourinterfaces for each individualplatform to ensure that your appfeels great everywhere that youdeploy it.
+But with SwiftUI's common set ofAPI patterns, you can learnthose tools once and then applythem everywhere, getting you anative interface on eachplatform you deploy to.
+SwiftUI is designed with astrong set of four coreprinciples.
+First, a declarative syntaxshifts UI programming away fromhow to update the screen andinstead lets you just focus onwhat you want to display.
+For example, let's say that youwant to build a label with aheadline font and a gray color.
+Describing how to get that is amulti-step process with manysteps having to happen in aspecific order.
+But describing what you wantrequires no translation.
+Text that says Done with a fontfor a headline that's coloredgray.
+SwiftUI lets you say exactlythat with a great newdeclarative syntax.
+And it's the minimum codenecessary to describe exactlyyour idea.
+And iteration becomessignificantly faster as well.
+If you later need to change thatlabel to become a button, that'sa one-line change.
+[ Applause ]
+I know, it's pretty great.
+[ Applause ]
+All right, so our secondprinciple is that we shouldprovide automatic functionalitywhenever it's possible.
+This eliminates the need for ahuge amount of code that youused to have to write by hand.
+Our app for naming macOSreleases is pretty simple, yetit does include a huge amount ofautomatic functionality.
+We get default handling ofspacing and safe area insets.
+Localizability and layoutadjustments for right-to-leftlanguages.
+Dynamic type, Dark Mode and somuch more, all from that oneminimal description.
+It's an incredible amount ofautomatic functionality for asmall amount of code, but thereis one more thing that is justso important that it reallydeserves special attention.
+Our modern interfaces areinteractive and they'reanimated.
+And with SwiftUI, that sameinterface declaration is alsoautomatically fully animatable.
+Animations can be enabled forthe entire hierarchy with justone line of code.
+There's no bookkeeping, there'sno preparation and there's neverany cleanup.
+If you've used Keynote MagicMove animations before, SwiftUIanimations are that easy andeven more powerful.
+And for views that are added andremoved, you can specify howthey transition in and out withjust one more line of code.
+While animations are inprogress, your app remains fullyinteractive and responsive andready to handle user input atany time.
+And if the user ever interruptsone of those animations or ifyou need to move to a newlocation, SwiftUI handles all ofthat automatically too.
+Now our third principle is thatcompositional APIs are easier tolearn and let you iterate a lotfaster.
+We've looked at how we candeclare an individual view likethis text label.
+But declaring more complex viewsis just as easy.
+You just compose togethermultiple smaller pieces.
+Containers like horizontal andvertical stacks let you easilybuild powerful layouts by justcombining together multiplesimple pieces.
+And SwiftUI applies compositionto view properties as well,using a standard modifiersyntax.
+A common set of modifiers can beapplied to any view, like colorapplied here to make this textgray.
+This compositional approach letsyou learn a small set of viewsand modifiers and then combinethem together to createprogressively more powerfulinterfaces.
+And our final principle is thatyour interface should always bein a consistent state.
+Your UI is a reflection of yourapp's data, so the two shouldalways be in synch at all times.
+With traditional APIs, this canbe error-prone.
+But with SwiftUI, your interfaceupdates automatically any timethe data changes.
+Now there are two common placesthat your data might likely comefrom.
+Now the first are your modelobjects.
+And you can use your existingmodel objects directly by simplyconforming them to a newbindable object protocol.
+Its only requirement is that youspecify when the data in yourmodel changes.
+Now the second place istemporary UI state, like whetherthe view is currently in editingmode.
+These are declared using asimple state wrapper applied toany property on your view.
+We're all used to every propertyon every view being mutable, butonce you start using SwiftUI,you're going to be shocked torealize how little mutable stateyour app actually needs.
+Now whenever your model or statechanges, that UI is going toupdate automatically.
+And because it's all Swift code,you get this behavior whilestill being able to use yourmodel objects directly withinthat interface declaration.
+You can even transform andformat values in line with noadditional indirection needed.
+For example, this stringinterpolation can be used toformat a date, resulting infully localized formatted text.
+All of this means that withSwift UI, you're going to writeless code and get a moreconsistent UI.
+Those are the four coreprinciples of SwiftUI.
+A powerful declarative syntaxenabling a huge amount ofautomatic functionality with acompositional API that ensuresyour interface is always in aconsistent state.
+And a great new frameworkdeserves incredible tools.
+And we've created a wholebrand-new workflow within Xcodedesigned from the ground up forSwiftUI.
+You get the power andflexibility of code combinedwith the ease of use and rapiditeration of a UI tool.
+You always have access to bothat all times, so you'll neverhave to choose between themagain.
+And because the tools work onyour actual existing sourcecode, you have a truly livedevelopment experience.
+Now to really understand howamazing this workflow is, youjust need to see it again live.
+And to show it to you now, I'llinvite Kevin up to give you ademo.
+[ Applause ]
+>> Thanks, Josh.
+You guys ready to have some fun?All right, so I'm building ahiking app and I want to add aview to my table view cell thattells me how difficult a trailis.
+So we're going to start in thelibrary.
+We're going to have some text.
+And as I'm dragging, Xcode issuggesting layouts for me.
+Now I just tell Xcode where Iwant it and Xcode figures outthe layout for me.
+And now we can edit theproperties of this view.
+So I'm just going to commandclick in the canvas here and getcustom-tailored inspectors righthere.
+Let's make this text a littlebit smaller.
+Now watch -- watch the codewhile I do this.
+You'll see it writes the codefor me.
+Now, we can do the same thingover here in the source editorby just editing the code.
+And you can see Xcode builds andruns my code and updates thecanvas on the right.
+Now no matter where I'm working,I get access to all of my designtools.
+So I'm just going to commandclick on this V stack, going toopen up the inspectors.
+And again I can just modify theproperties that I want.
+It's just so fast to iterate.
+Now, you might notice that thisview has a couple inputs likethis title and this difficulty.
+So how does Xcode know what datato show in the preview?This has always been one of thechallenges with UI development:what data do we show duringdesign time?And this is why we inventedXcode previews.
+What is a preview?I'll show you.
+So let me scroll down here.
+This snippet of code here -- apreview is just a snippet ofcode in my application thatconfigures it for design time.
+Because it's in my application,I get access to all the code inmy project.
+And because it's in my project,I can check it in and share itwith my team members.
+And it's so easy to trydifferent data.
+Now actually here Half Dome ispretty hard.
+So let's see what it looks likeat hard.
+And that's because it's 16miles, not 6.
+And that's really compilingcode.
+Now because this is SwiftUIcode, I get access to all themodifiers that I would use forthe rest of my UI development.
+So we can see what it looks likein Dark Mode.
+And I also have preview-specificmodifiers as well.
+So by default previews are thesize of a device, but sincewe're working on a table viewcell, let's just focus in onthat content.
+So I'll just make that the sizethat fits.
+Okay, now here is the reallycool thing about previews.
+You can have as many as youwant.
+So let's add a second previewwith completely different data.
+But let's not stop there.
+Let's command click, repeat it acouple of times.
+Let's enumerate over some commondynamic type sizes and thenlet's configure our cell to usethat dynamic type size.
+And there at a glance I can seemy cell with light mode, DarkMode, multiple different dynamictype sizes all at the same time.
+[ Applause ]
+Now when I tap on this cell, Iwant to go to a detailed view.
+So let's switch over to thatfile now and take a look.
+Now I've learned through theyears of hiking that you shouldnever judge a trail by its name.
+So it's really important to methat we can configure our detailview to make that image reallylarge.
+And I've already done that withsome SwiftUI state here.
+So when we tap the banner, wewant to toggle that expansionstate.
+Now I can test that right herein the UI just by clicking thisplay button.
+This takes any preview that Ihave and makes it fullyinteractive.
+So I can just click and test outthose different expansionstates.
+Now we can really polish this upwith an animation.
+It's so easy.
+So I can just wrap my statechange in a whip animationblock, and now I get a beautifuldefault animation.
+[ Applause ]
+And it's just as easy tocustomize that.
+So let's slow it down for somedramatic effect, and now I get abeautiful animation opening itup.
+Now what's so cool about SwiftUIis that every animation iscancellable and reversible,leaving my applicationresponsive the whole time.
+Okay, so we have a table viewcell and we have a detail view.
+So let's put it all together.
+So I'm going to switch over tomy last value here, which has abunch of different trails and alist.
+So what I want to do is Iactually want to see what thislooks like on a real device.
+So with the click of a button --let's click this -- Xcode isgoing to build my project forthe device.
+It's going to install it andit's going to launch my previewright here on the device.
+And you can see it's fullyinteractive right here.
+So first let's use that cellthat we built.
+So I'll just change this text tobe a trail cell.
+Now you can see we're seeing ourtrails show up there.
+And now when I tap on this, Iwant it to go to our detail viewthat we built.
+This is so easy with SwiftUI.
+It's just going to wrap this ina navigation button, and thattells us to go to our detailedview.
+And now you can see the chevronshows up.
+So let's check out Snow Creekand let's move in on thatpicture.
+And okay, snowy and difficult.
+That does not sound like a funtrail.
+So what I'm going to do withjust one line of SwiftUI code isadd swipe to delete.
+And now we can say, "We don'twant to do that trail.
+"And now lastly, let's see whatit looks like in Dark Mode.
+Without any work, it's going toput my preview in Dark Mode andyou can see it looks beautiful.
+[ Applause ]
+We can tap on our valley floor,zoom in.
+And that looks like a great wayto end the week.
+So we just built an app withnavigation, dynamic type size,light mode, Dark Mode, multipledifferent data and saw on thereal device all without everbuilding and running.
+Now that's fun.
+All right, Josh, back to you.
+[ Applause ]
+>> Thanks, Kevin.
+All right, this is really anincredible new workflow forfully native code.
+What you do in the tool isalways debuggable, diffable,searchable, and understandable.
+And because you can always editthe code directly, you getincredible flexibility in yourworkflow.
+And SwiftUI is deeply integratedin all of our operating systems,so using it results in a fullynative app for whicheverplatforms you target.
+You get the same performance,the same behavior and the samecontrols as any other nativeapp.
+And you can adopt SwiftUI atyour own pace.
+You can use it for anything,from just one view in your appall the way up to the entireapplication.
+It works seamlessly with all ofyour existing UIKit, AppKit andWatchKit code so you don't needto rewrite anything.
+And to get you up to speedquickly, our documentation teamhas developed a brand-new styleof interactive documentation.
+It quickly takes youstep-by-step from creating a newproject all the way up tobuilding a fully interactiveinterface.
+So you'll be up to speed in notime.
+[ Applause ]
+So that's SwiftUI and some ofthe new tools in Xcode.
+Of course, this is a huge yearfor Swift and Xcode, so there'seven more to this story.
+And to tell you more about it,I'll hand things off to Matthew.
+Thanks.
+[ Applause ]
+>> Thank you, Josh.
+Our tools released this yearbring together innovations inSwift and Xcode to deliver someawesome results.
+So let's start with Swift.
+Now in our fifth year, Swift hasmatured and is continuing toleap forward.
+Where our newest and flagshiptechnologies, from machinelearning to augmented realityare possible only because ofSwift and it now being part ofour OS.
+To achieve this, earlier thisspring we introduced ABIstability which reduces the sizeof your apps by using a singleshared Swift runtime.
+[ Applause ]
+And we are following that uptoday with module stabilitywhich ensures compatibility --yes.
+[ Applause ]
+This completes the picture byensuring compatibility for yourbinaries with the current andfuture versions of the Swiftcompiler.
+And these come alongside anumber of other languagefeatures, tools editions andperformance and code sizeimprovements, all which furtherextend the potential Swiftbrings to your projects.
+So Swift is already the languagefor your apps and now more thanever for common code to shareacross all Apple platforms.
+In fact, sharing is the reasonwe created Swift Packages whichare the best way to develop andshare your own code and reusecode from others.
+And today we have two bigannouncements.
+GitHub will be adding supportfor Swift packages to the GitHubPackage Registry.
+[ Applause ]
+Which is perfect because Xcodenow seamlessly supports Swiftpackages for apps on iOS, iPadOSand all of our platforms.
+[ Applause ]
+Swift packages are top-levelitems in your workspaces, alwaysvisible, always accessible, anddeeply integrated.
+Packages from the community andthose packages you create getinstant access to all of Xcode'swork flows for source control,debugging, testing, the works.
+So Swift packages built intoXcode, it's sharing code the wayyou've always wanted.
+Now that's just the start of ourXcode release this year, whichis focused on maximizing yourproductivity.
+And we have a number ofimprovements today to share withyou as we take Xcode up to 11.
+So let's get started with one ofour biggest changes which is theXcode Workspace.
+We are giving you full editorialcontrol.
+You can now create and manageeditors however you like.
+Whatever your preferred styleand layout is, you can simplyadd and remove editors wheneverand wherever you see fit.
+[ Applause ]
+And even better, your workspacescan now focus too.
+So you can take any editor andmaximize it, and then whenyou're done, just put it backand it will go right back towhere you started.
+[ Applause ]
+So whether you're working on thesmallest of laptops or with thelargest of displays, yourworkspace now works for you.
+Now the related content in oureditors, the smart selectionslike counterparts, are alsogetting a huge boost.
+There are new options likepreviews, canvas, live views andmore.
+You can use the related contentin any editor in your workspace.
+And you'll like this one best ofall.
+When there is no content, theyautomatically disappear so youno longer need to manager theirvisibility.
+[ Applause ]
+Now once you get your workspaceset up, it's all about theediting, and I'd like to showyou a quick demonstration ofsome of the new source editingfeatures we have for you thisyear.
+To help you configure eacheditor the way you like, there'sa new Options menu in the upperright.
+You can see here I can enablethe assistants or any of therelated content.
+I could turn on code coverage orsource control authors.
+I'm going to turn on our newestfeature, Mini map.
+So the mini map gives you astructural overview of your fileto help you navigate.
+You can see documentations,method and functions.
+It makes it really easy to moveabout the file.
+If you'd like to leave yourselfsome other landmarks, you canuse the mark syntax to addlabels and horizontal dividersthat show up in your source andin the mini map.
+[ Applause ]
+Now if I hover over the minimap, you'll see the symboliclandmarks for the file.
+Here's a pro tip: hold down thecommand key and you'll see allof the landmarks for the file tomake it really easy to navigateto exactly where you want to go.
+[ Applause ]
+And the mini map will show youissues, test failures, evenin-file find results.
+And we've made it fullyaccessible.
+You'll find our source editornow pops and your code is morevivid as we've deepened oursyntax coloring.
+You'll also see that we'veincreased our documentationsupport here with italics, boldand code voice in thedocumentation.
+You'll also see that when youadd documentation, itautomatically adds in missingparameters that you may haveadded after you typed yourdocumentation.
+[ Applause ]
+And what's even better is tohelp you keep your documentationand code in synch.
+You'll find Edit All and Scopenow changes both, all at thesame time.
+[ Applause ]
+Now we also wanted to add someadditional help to help you keeptrack of your changes.
+If I'd like to review all of thechanges for this file, I canopen up the new Source ControlHistory Inspector which shows meall the changes that have beenmade to this file, and I canquickly jump to any commit.
+And because it's in theinspector, this now works forany file type in your project.
+To help you review localchanges, we've also improved thechange bar.
+When I hover over the changebar, it shows me the localchanges.
+But I can now have it show methe code before the change thatI made to get a quick snippet.
+[ Applause ]
+And of course it's live, so as Istart typing, it will update tokeep me up-to-date.
+So those are just some of themany source editing featuresyou'll find in Xcode 11.
+[ Applause ]
+Okay, so testing is another keydevelopment workflow.
+And Xcode already has greatsupport for writing tests, whichof course you all already knowbecause you're writing lots ofthem, right?>> Yep.
+>> Yeah.
+>> Excellent.
+That's what we like to hear.
+Now what you may not know isthat Xcode can do even more withyour tests by using fantastictools like runtime issues,sanitizers, localizationsimulation.
+And we add more of these everyyear.
+With so many options, what'sbeen missing is a way to combinethem all in one place to be usedin parallel.
+And for that we are adding testplans.
+Now the power of test planscomes from running your tests inmany configurations.
+With a few simple selections,you can instantly test for yourglobal audience.
+And this configuration is alsoperfect for capturingscreenshots for the App Store orcollecting details for yourlocalizers.
+Yeah, it's okay to applaud forthat.
+This is a big deal.
+[ Applause ]
+You can then see your app fromevery angle by adding in otherdiagnostics, tools andparameters.
+And your coverage increases evenfurther when you run your testplans against many devices andOS combinations to get a fullycomprehensive view of how yourapp is doing.
+Now for testing at this scale,test plans work perfectly withXcode Server which can take fulladvantage of the new Mac Pro andwith Xcode's new paralleltesting on simulators anddevices.
+The result with test plans isyou now have one command thatdoes all of the testing for yourapps.
+So this is a major advancement.
+[ Applause ]
+Now often when testing anddebugging, it's necessary toreplicate user scenarios.
+And our new Device Conditionsanswers the call.
+You can now set variedconditions for networkthroughput and thermal states onyour devices and see how yourapps respond.
+Now rest assured these areactually just simulations.
+We're not actually going to makeyour devices get super-hot here.
+You can enable the conditions inXcode's Devices window.
+And the devices will displaybanners when the conditions areactive.
+You can tap the banner todisable the conditions and Xcodewill automatically terminate theconditions when you disconnectthe devices.
+Now for all the testing you'regoing to be doing, we've alsoimproved our result bundleswhich are now standalone.
+Whether you create them in Xcodeor from the command line, youcan share them via email, attachthem to bugs and then justdouble-click on them to openthem back in Xcode to review allof the details.
+[ Applause ]
+Now to help you improve yourapps even further, we areintroducing two new feedbacktools.
+First, app performance metricsfor iOS and iPadOS App Storeapps.
+When users opt into sharinganalytics, you'll receivedanonymized metrics for batterylife, launch time, memory useand more.
+These metrics are aggregated anddisplayed in the organizeralongside the crash and energylogs, and are a great way tomonitor and improve theperformance of your app witheach build.
+These aggregated metrics, westarted collecting them in thespring with iOS 12.
+2.
+So many of your apps willalready have data to review.
+Now another great source offeedback is directly from yourusers, and Test Flight will nowlet users share what they think.
+Test Flight apps automaticallyenable user feedback.
+When a user takes a screenshotin your app, they will have anew option to share it as betafeedback, optionally adding intheir comments.
+[ Applause ]
+You can review all the feedbackon App Store Connect anddownload all the details foryour bug tracking systems.
+So all these features today arejust a small taste of our Xcoderelease, which brings togetherinnovations in Swift, the SDKand across all of our tools.
+All this to help you do yourbest work faster than ever.
+And that is Xcode 11.
+[ Applause ]
+>> And now I'd like to inviteSebastien back to tell us moreabout Apple's platforms.
+Sebastien?
+[ Applause ]
+>> Thank you, Matthew.
+Wasn't that amazing?Really, really great features tohelp all of you build betterapps.
+So now let's switch to ourplatforms.
+And of course our platformsthemselves are tailored toprovide great experiences andthey really reflect the uniqueway in which each of them isused.
+So some of what we're doing thisyear is unique to each of them,and what we're going to do nowis dive right in to macOS andtell you what we're doing there.
+macOS Catalina is a greatrelease with a rich set ofcompelling new features such asscreen time and the new Musicapp.
+And the Mac takes another greatstep forward with amazingproductivity features such asSidecar.
+We're going to love Sidecar,right?
+[ Applause ]
+All right.
+Well, with an active installedbase of over 100 million users,the Mac is a vibrant platformwith a rich app ecosystem.
+And the Mac ecosystem is full ofpowerful native apps that youhave created using our AppKitframework.
+And a great example of this isPixelmator Pro.
+Now AppKit is the powerfulframework that enables the fullcapabilities of the Mac.
+But we also recognize that thereare a number of apps availablefor iPad that would be great torun on the Mac, but you have notalways had time to use AppKit tobring that to the Mac.
+And so this year we're adding anadditional way to create nativeMac apps with the technologythat allows you to take aniPadOS app and bring it to theMac with minimal effort.
+We --Can you go back two slides?Sorry.
+One more.
+ All right.
+This is a huge opportunity forthe Mac to tap into the world'slargest app ecosystem.
+There are over a million iPadapps out there and we think manyof them would be really great onthe Mac as well.
+Now to achieve this, we'veported more than 40 frameworksand libraries from iOS to theMac.
+And if you're an existing iOSdeveloper that doesn't have aMac app yet, you're going tolove having the same APIsavailable on both platforms.
+In fact, we've made availablealmost the entire iOS API setwith only a small number ofexceptions for unique mobilefeatures.
+Now we achieved this by adaptingUI Kit as a native framework.
+That enables iPad apps to run onthe Mac and feel just as fastand fluid as other apps on theplatform.
+And by integrating UI Kitdirectly into macOS, many of thefundamentals are automatic.
+So many Mac desktop andwindowing features are addedwithout any work on your part,and we adapt platform-uniqueelements like touch controls tokeyboard and mouse input, savingyou a ton of work and giving youa huge head start in yourdevelopment.
+Now we've been working on thistechnology for a number of yearsand we're using it for our ownapps, which has allowed us toprove out and refine thetechnology before we make itavailable to you in macOSCatalina this year.
+If you have an iPadOS app,targeting the Mac is super easy.
+There are basically three steps.
+First, click the checkbox inXcode -- here we go.
+[ Laughter ]
+That easy.
+In Xcode's Project Editor, andturn on Mac support for yourproject.
+There you go.
+As easy as that.
+And here's the magic.
+That single project and targetbuilds apps for all threeplatforms.
+And when you make a change toyour source, all three appsupdate automatically.
+The second step is to ensurethat your app is great on theiPad.
+Better iPad apps make better Macapps as well.
+So the work that you put in toadopting the newest technologiesand optimizing for larger iPadscreens translates wonderfullyto the Mac.
+Just following best practicessuch as supporting externalkeyboards will also result inricher Mac experiences.
+The third step is to takeadvantage of specific Maccapabilities.
+And this is where you makecustomizations that take fulladvantage of typicalMac-specific user interfaceelements like full menus andtoolbars.
+And if applicable, sidebars andtheir special materials.
+Now to show you how easy thisis, I'd like to invite Matthewback onstage for a demo.
+Matthew?
+[ Applause ]
+>> Thank you, Sebastien.
+Here we have our travelapplication running in the iPadSimulator.
+It's a list view of locations.
+When I select a location, theglobe will rotate.
+And we have a logging area whereI can start keeping track of mytrips in a journal.
+Let's follow Sebastien's threesteps and bring this app to theMac.
+Step one, check the box.
+I'll quit the simulator and herein the target editor I'll checkthe box for Mac support toenable it.
+That's it.
+I can now build and run myapplication for the Mac.
+By checking the box, we addedthe Mac as a destination.
+So just like I can pick betweendevices and simulators for myapp, I can now choose the Mac.
+And here's the Mac app.
+List View on the left, selectthe location and log in.
+[ Applause ]
+I know, pretty powerfulcheckbox.
+All right, let's move on to steptwo, make a great iPad app.
+I've not implemented any actionsfrom my List View, things likeAdding to Favorites or to Share.
+When I implement those for theiPad, they'll show up as acontext menu on the Mac.
+It's a double win.
+So I'll quit the Mac app andchange to my sidebar controllerhere, and I'll just add a tableview delegate method that setsup those menus for each item.
+Okay.
+ Let's move on to stepthree.
+I'd like the sidebar on my Macapp to be vibrant.
+Now this change doesn't happenautomatically because it'ssomething you should review tomake sure it's appropriate.
+When you do find it's what you'dlike, it's a simple one-linechange to set the backgroundstyle to sidebar.
+Okay, for our final change, I'dlike to add a menu bar to ourapplication.
+So here in the storyboard I'llbring up the library and I'llsearch for a menu.
+I'll grab a main menu and I'lldrag it out into my storyboardand we'll open up the file menu.
+I'd like to add a menu commandin here for the login action.
+So we'll call this Login.
+We'll give it a key equivalentof Command-L.
+And I just now need to connectthe menu item up to the actionthat I'm already using forLogin.
+Okay? That's it.
+Let's build and run our changes.
+I'm going to go up and hideXcode for the moment so we cansee our application.
+Okay, so now we have the vibrantsidebar.
+When I select an item, I canbring up a context menu and uphere in the File menu I now havethe Login action.
+So just like that, three easysteps.
+[ Applause ]
+Three easy steps to bring ourapp to the Mac and make a greatuser experience for all ourusers.
+Back to you, Sebastien.
+[ Applause ]
+>> Thank you, Matthew.
+That was really amazing.
+Doesn't this make you want to goand try it out?Yes.
+ All right, in fact, overthe last few weeks we invited anumber of developers to takethis for a spin.
+And the progress that they havemade in a few short weeks istruly impressive.
+Here's a sample of the iPad appsthat they already have runningon the Mac.
+Now once you've built a Mac app,the best way to distribute it toyour users is through the MacApp Store.
+It features the biggest catalogof Mac Apps.
+It's available in 155 countriesthroughout the world and the MacApp Store allows you to reachevery single Mac user.
+Now we also built Gatekeeper togive users flexibility andchoice on how they get theirapps while helping protect themfrom malicious software.
+And in macOS Catalina,Gatekeeper will validate theapps that you run from theinternet both at first launchand periodically thereafter toconfirm that they're free ofknown malware.
+This is accomplished byrequiring developers to use thenotarization service that weannounced last year for both newand updated apps.
+So now you and your users cansafely get apps from both theMac App Store and the internet.
+Notarization has already seenbroad adoption.
+It's simple and fast with over98% of submissions completingwithin 15 minutes.
+Now speaking of security, we'recontinuing to invest in thefoundations of macOS and I'dlike to focus on three areas.
+First, a new technology calledDriver Kit which allows you tomove your kernel extensions outof the kernel and into userspace.
+And by running these drivers andextensions as user processes, weimprove the stability of macOSfor all of our users.
+We identified the most commonuse cases that have requiredkernel extensions in the past,and now we have a user spacealternative for over 75% of themin macOS Catalina.
+We encourage you to adopt DriverKit as future versions of macOSwill no longer run these typesof kernel extensions.
+Next, we're improving thestability of macOS by making thesystem volume read-only.
+Here's how it works.
+Today there's a single volumethat includes user data, appsand the operating system.
+And to further isolate macOSfrom changes, the Mac will nowbe divided into two logicalvolumes.
+One for the operating systemfiles which will be read-only,and the other for user data andapps.
+[ Applause ]
+There you go.
+[ Applause ]
+This will further protect theoperating system from changes,increase stability and set us upto deliver future securitybenefits.
+Now some of you may have madeassumptions in your app or yourinstaller, and you'll want tocheck that it works seamlesslyon macOS Catalina.
+Finally, enhancements to app anddata protection.
+We have spent the last few yearsadding additional dataprotection categories so thatusers are in control of whichapps can access important fileslike your photos or sensitivesensors like your camera andmicrophone on your Mac.
+In macOS Catalina, we'recontinuing this work by ensuringthat apps seek permission beforecapturing input events, sothings like key presses orscreen recordings.
+And we're also going to protectuser data on your Mac, so appswill now have to seek permissionbefore accessing the files thatusers keep on their desktop,downloads, documents, iClouddrive and external drives.
+Yeah.
+[ Applause ]
+We are really excited about allthe enhancements that we'rebringing in macOS Catalina.
+Now another platform that's gotsome really big changes thisyear is watchOS.
+And to tell you more, I'd liketo invite Lori up on stage.
+Lori?
+[ Applause ]
+>> Thanks, Sebastien.
+[ Applause ]
+This morning we introduced abunch of cool new features inwatchOS 6, including new healthapps like noise and cycletracking, activity trends,audiobooks and more.
+But the real story for watchOS 6is that it's now possible todeclare independence from thephone and build fullywatch-focused experiences.
+[ Applause ]
+Thanks to cellular connectivity,customers are increasinglyleaving their phones behind andenjoying the freedom using justtheir Apple Watch to stayconnected.
+From running errands to runningworkouts, from listening tomusic to chatting with friends,we want all users to enjoy greatApple Watch experiences withoutlimitations.
+And independent watch apps makethat possible.
+We've taken a good look at thechallenges of developing forApple Watch and worked hard notonly to bring you new APIs thatmake it possible to supportindependent experiences, butalso to completely revamp theexperience of being an AppleWatch developer.
+What if I told you it waspossible to create a watch appthat's only a watch app?If you've got an idea for agreat watch-only experience,Xcode now makes it simple tocreate a watch app that's just awatch app.
+So you can pursue your ideawithout also having to build aniOS app.
+And if you already have an iOSapp, you can still build yourapp to be completely independentof its companion thanks to acouple key changes we made inwatchOS 6 to support watch-onlyapps, including making AppleWatch a standalone push target.
+You now have the option ofsending notifications directlyto the watch so you can updateboth your users and your appsdata without relying on thephone to mediate.
+[ Applause ]
+We're also supporting Cloud Kitsubscriptions and complicationpushes to help you keep your appup-to-date.
+And since asking users to signin on iPhone is not an optionwhen you don't have an iPhoneapp, in watchOS 6 we're givingyou text fields so you can offeraccount creation and sign-inoptions directly on Apple Watch.
+If you want to make accountcreation really easy, you caneven add an Assign with Applebutton to your app to let yourusers set up an account and signin with the Apple ID theyalready have.
+No new passwords or text entryrequired.
+With watchOS 6 we're alsoaddressing a common watch-onlyuse case by bringing streamingaudio to watchOS.
+We introduced background audioplayback in watchOS 5 for localfiles.
+And now in watchOS 6, we'vebrought three ways to streamaudio directly to Apple Watch bymaking Network,framework,NSURLsessionStreamTask and evenmore of AVFoundation availableto you.
+We also recognize that there areuse cases beyond audio playback,workouts and navigation whereyou need to keep your apprunning order to complete atask.
+For example, a meditationsession.
+In watchOS 6, we're introducinga new extended runtime API thatgives more apps a way to stayrunning even after the userlowers their wrist.
+This enables new app experiencesin self-care, mindfulness,physical therapy, smart alarmsand health monitoring.
+That's a lot of new APIs andcapabilities.
+If only you had more options forcreating a compelling userinterface, right?We know you've been asking for amore advanced UI framework onthe watch for years.
+And in watchOS 6 we finally haveone with SwiftUI.
+[ Applause ]
+You've already seen SwiftUI oniOS.
+That same declarative languagefor defining beautiful userinterfaces is available forwatchOS as well, expandingwhat's possible on the platform.
+From lists with swipe to delete,reordering and carousel filing,to direct access, the digitalcrown, it's easier than ever tocreate a compelling watchexperience.
+Let me show you how to startmaking use of some of the newindependent app features withSwiftUI.
+Okay, so I've got my travel apprunning here in the Simulatorand I've already startedupdating it using SwiftUI, soit's starting to look great.
+But I still have some work to dobeyond layout because my Sign Inbutton currently just asks usersto sign in on iPhone.
+And my users have told me thatis not what they want.
+They want to be able to doeverything right on their wrist.
+So I'm going to quit thesimulator and go over to myproject file.
+And I'll move to my travel watchextension target and declareindependence from phone bychecking the Supports RunningWithout iOS App Installationbox.
+Next I'm going to go to the SignIn view that I've alreadystarted.
+I'll resume my previews.
+Great.
+ And you can see I have aSign In button here and twopreviews.
+The top one is for English whichis the language that I speak andthe bottom one I'm starting toexperiment with localizing myapp into Arabic which is aright-to-left language.
+So the first thing I'm going todo is add a field for myUsername button.
+And I'm going to bind this to my-- oops.
+To my username state so that thefield updates as the valuechanges.
+Notice I've set the placeholdertext to username so I give theuser a chance to figure out whatto do with this field.
+And I've also set the contenttype to username so thatpassword and username autofillworks when using continuitykeyboard.
+Next I'm going to add a passwordfield, and for this I want touse a secure field so thatpeople can't spy on me when I'mtyping my password.
+And again, I'm going to bindthis to my password state.
+I've got a password placeholdertext and again I'm using thecontent type of Password forautofill purposes.
+So that looks great in bothEnglish and Arabic.
+And for Arabic it's pulling thestrings right out of mylocalizable strings file.
+This is not placeholder content.
+Okay.
+ Above this, what I want todo is add a Sign In With Applebutton because I think that'show users are really going towant to sign in.
+So now I put that right at thetop and then add a separator soit's clear that users have anoption of signing in with theirApple ID or creating a customerusername and password for myapp.
+That looks great.
+So the last step is to go overto my hosting controller andchange my destination for mypresentation button to the SignIn view that I just createdinstead of the Sign In on iPhoneview.
+So I got that going and now Iwant to turn on Live Preview, soall my buttons becomeinteractive.
+And then when I click on my SignIn button, I get my form.
+Sign In With Apple, or sign inwith a username and password.
+That looks great.
+And that is creating a sign-inform on the Apple Watch withSwiftUI.
+[ Applause ]
+Okay.
+ So you've got the tools tobuild a great independent AppleWatch experience.
+How are you going to get yourapp in front of customers withthe least friction possible?The App Store and Apple Watchwill be highlighting greatindependent apps through curatedcollections and editorialselections at the top level ofthe App Store.
+We're emphasizing independentapps here so users can get theinstant gratification of beingable to download and start usingyour awesome apps right away,whether they have the phone withthem or not.
+And when you dive intoindividual product pages, you'llsee that this isn't just a pareddown experience.
+Users will see full featured appdescriptions, screenshots,reviews and more.
+They can search for apps withdictation or scribble.
+And they'll be able to downloadyour apps directly to theirwrists, thanks to app and assetthinning which make it possibleto deliver a small bundle withonly the architecture and assetsthat makes sense for the currentwatch.
+If you have both an iOS and awatchOS app, this will make youriOS app smaller too, as we're nolonger downloading the watchbundle to the phone and thenshuttling it over.
+This is truly a whole new erafor Apple Watch apps to be morefunctional, more beautiful andmore independent than ever.
+We think both you and yourcustomers are going to lovethis.
+And now to talk about theplatform that we just declaredindependence from, I'd like towelcome Cindy to the stage.
+[ Applause ]
+>> Thank you, Lori.
+iOS 13 is a big release.
+You saw this morning that wehave a ton of new features andenhancements like a redesignedshare sheet, a Quick Typekeyboard and a brand-new CarPlayexperience.
+In addition to all of that, wetook a good long look at our UIand gave iOS 13 a brand newlook.
+This new look includes DarkMode, cards, contextual actionsand symbols.
+Let's dive into the incrediblycool new Dark Mode.
+Dark mode keeps the brightnessdown and gets Chrome out of theway so you can focus on justcontent.
+The entire system has beenreally thoughtfully updated andrefined to look amazing.
+Your users are definitely goingto want this.
+And to help you bring these samerefinements to your apps, we'vecreated some new APIs designedspecifically with Dark Mode inmind.
+But first it's semantic colors.
+There are new colors forbackgrounds, fills and text.
+And in Dark Mode, they havemultiple variants to give yourapp a visual hierarchy.
+Now what does that mean?Well, when your app isfull-screen, its background ispure black.
+To ensure sufficient contrast,UI presented above it takes on abrighter color palette.
+When multitasking on iPad, theslide-over app and side-by-sideapps also render in theselighter layer colors.
+There is a lot of nuance to thisdesign, but you'll get itautomatically with semanticcolors.
+And for when you need a pop,there's a bright palette ofsystem colors that all havevariants for the increasedcontrast accessibility mode aswell variants for Dark Mode.
+There's also a brand-new set ofmaterials and vibrant contentfilters with varying levels oftransparency so you can createUI that looks great over anycontent.
+And just like semantic colors,these materials support bothlight and dark variants.
+And they will automaticallyupdate based on changes to theUI Kit trait collection.
+Adopting semantic colors andadaptive materials will help youprovide a unified look thatautomatically adapts to yourenvironment.
+Another component of iOS 13'snew look is cards.
+Since the original SDK, thedefault presentation style oniPhone has covered the fullscreen.
+We're changing that default to amuch more fluid cardpresentation.
+Cards provide a visual stack soyou can see at a glance thatyou're in a presentation.
+And even better, they'redismissible with just a singledownward swipe.
+[ Applause ]
+Yeah.
+ Swiping.
+We've also updated the Peek andPop experience.
+It's now quicker and easier toaccess contextual actionsthroughout the system.
+And they're backed by abrand-new API designed to workacross all devices.
+So not only are they better thanever on iPhone, but they lookgreat on iPad as well.
+And when you bring your iPad appto macOS, they'll look greatthere to.
+[ Applause ]
+Yeah.
+ While we were goingthrough the system, making allthose thoughtful refinements, westarted thinking about symbols.
+Most apps use symbols.
+They are a really useful way toconvey information.
+And symbols are very often usedwith text.
+But text has some greatproperties that in iOS 12 oursymbols just didn't have.
+So as you can see here, the textis scaling nicely as the dynamictype size increases, but thesymbols stayed the same.
+Ideally, we'd want the symbolsto scale along with the text.
+So we created SF Symbols.
+SF Symbols have all theexpressiveness and behavior of afont but packaged up as a UIimage so they're really easy touse in your apps.
+iOS 13 includes an absolutelymassive catalog of over 1,500 SFSymbols for you to use.
+And they're easily searchableright within Xcode and usingstandalone SF Symbols app onyour Mac.
+[ Applause ]
+Symbols.
+ 
+[Laughs]
+ So now you cansee the symbols scale along withthe text for better legibilityand a more consistent layout atlarger sizes.
+And because they behave justlike a font, they're availablein all of these weights as well.
+[ Applause ]
+All of this just scratches thesurface of what's available iniOS 13.
+There's a new share sheet API tolet apps have recipientsuggestions.
+A new compositional layout APIto make collection views easierto work with than ever.
+And a screenshot enhancement soapps can provide full page viewsof long content.
+And so much more.
+And in addition to all of that,we really wanted to bring iOSforward this year.
+So we gave it its own operatingsystem complete with majorenhancements to multitasking, anew PencilKit framework and awhole suite of productivitygestures.
+Let's start with multitasking.
+At iPadOS, your app can be openin multiple spaces at the sametime, as well as in theslide-over stack, and displaydifferent content in each space.
+To enable this, we'reintroducing a new UI windowscene API.
+Each window scene represents asingle instance of your app'sUI.
+Prior to iPadOS, your appdelegate was responsible forboth its process and UIlifecycle.
+With window scene, we'resplitting out the UI portion ofthat into a new scene delegateobject so it can be managedindependently.
+And since they're completelyindependent, your app can nowmanage multiple at the sametime.
+Your users can even use drag anddrop to allow individual itemsfrom your apps such as a singlewindow or message to be openedin a brand-new window scene.
+With this new capability, it'sreally important that your userscan resume whatever they weredoing in any scene at any time.
+To make this easy, we've built anew state restoration systembased on NSUserActivity.
+You're probably already familiarwith this versatile API.
+It's used for handoff, search,indexing, Siri, and now forwindow scene state restoration.
+One of the things that reallysets -- you can clap, it's fine.
+[ Applause ]
+One of the things that reallysets iPads apart is ApplePencil.
+We're introducing PencilKitwhich allows you to easily addsmooth low-latency drawing toyour apps.
+This is the same engine used inApple apps like Notes, Markupand Screenshots.
+So you get all of those samefeatures and tools right in yourapps.
+You can even use the canvas andpalette functionality separatelyand just pick and choose whichpieces make sense for your usecase.
+Finally, let's talk aboutproductivity gestures.
+We've made text selection mucheasier.
+You can now just drag yourfinger along text to select it.
+Text views and web views areautomatically updated with thisnew selection gesture.
+And there are new three-fingergestures for undo and redo.
+Swipe three fingers left forundo and right for redo.
+These new gestures use theexisting NSUndoManager so youdon't have to do anything at allto adopt.
+If you'd like easy textselection outside of text or webviews, or if your app alreadyuses three-finger gestures andyou have a conflict, you can usethe UITexInteraction API to fixup those issues.
+And for scroll views, you cannow drag the scroll indicator tojump directly to a location inthe scroll view.
+To enable this behavior, justturn on Show Scroll Indicators.
+For this one it's reallyimportant that your scrolling isperformant as we might have toload all of the cells in a frameat the same time.
+We think our users are going tolove the powerful new thingsiPadOS gives them, and we cannotwait to see what you do with it.
+So I'd like to welcome Sebastienback to the stage.
+[ Applause ]
+>> Thank you, Cindy.
+Now as you've seen, each of ourplatforms has incredible newfeatures that refine theexperience that each offers andgives them great newcapabilities.
+And across all of our platformswe build a range of technologiesthat are designed to give yourapps a huge head start so thatyou can build the latesttechnologies right into yourapp.
+There are a few of these thatwe'd like to focus on thisafternoon and they cover apretty wide range ofcapabilities from how we openour platforms and apps to allusers to how we combine thevirtual and real-world withaugmented reality.
+And so we start withaccessibility, and to do thatI'd like to welcome Eric Seymouron stage.
+Eric?
+[ Applause ]
+>> Thank you, Sebastien.
+So we all know that technologyplays a powerful role inpeople's lives.
+But this is especially true forpeople with disabilities.
+Technology can be instrumentalin fostering independence,employment and empowerment.
+At Apple, we're guided by a fewkey principles for accessibilityand it begins with accessibilitybeing built in.
+People should be able to use ourproducts out of the box, andthat includes people of allabilities.
+Accessibility should becomprehensive.
+People should have access to thewhole platform, every corner ofthe OS, every corner of yourapps.
+And perhaps most important, wewant to surprise and delight allusers regardless of ability.
+And so this is more than justabout fixing accessibility bugs.
+This is about using yourfeatures with accessibility andstriving for an experiencethat's great, that's just asinspired as your originaldesign.
+When we think aboutaccessibility, we're reallytalking about a broad continuumof abilities.
+Hearing, vision, physical,learning.
+And within each of these areas,we're focused on differentconditions.
+So for example, for vision, weof course have Voiceover, ourscreen reader for people whocan't see the screen.
+But we also have over a dozenvision-related features fromzoom to large text.
+And when we take this approachand we apply it to that broadcontinuum of abilities, we'retalking about dozens ofaccessibility features.
+And it really underscores thenotion that accessibility is foreveryone.
+Probably most of you use atleast one accessibility feature.
+And if you don't already,there's a good chance you willeventually.
+This year we're introducingseveral new accessibilityfeatures and enhancements, andtoday I'm going to talk abouttwo, starting withdiscoverability.
+In the spirit of accessibilitybeing for everyone, we wanted tomake it easier to find.
+And so to that end we've addedaccessibility to iOS QuickStart, making the out-of-boxexperience even more accessible.
+Also we've moved accessibilityto the top level of settings.
+[ Applause ]
+And we've reorganized it to makethings easier to find.
+We think it's going to go a longway to help people discover anduse these great features.
+Now let's talk about voicecontrol, right?We saw this this morning duringthe keynote.
+Voice control is this full voiceexperience from macOS, iOS andiPadOS and we think it's goingto be really helpful for peoplewith physical challenges.
+Voice control providescomprehensive platform access.
+You can speak to items by name.
+You can refer to items bynumber.
+You can even speak to regions ofthe screen using a grid.
+Voice control has got great textediting.
+So of course I can dictate textbut I can also make selectionsand corrections using only myvoice.
+And it also has awareness.
+So effectively even when I'mdictating text, it hearscommands and it doesn't make memanage that distinction.
+I can just talk to it.
+And using the true depth camera,if I look away, it knows that itcan ignore me.
+Voice control's got great spokengestures so of course I can dosimple things like taps andswipes.
+But I can also pre-record morecomplex gestures that I mightwant to use in an app or a game,like this rotate gesture.
+And of course voice controlspeech recognition runs fully ondevice.
+And so now I'd like to show youvoice control in action.
+[ Applause ]
+And for this demo I'm going tobe talking to my iPhone.
+Open messages.
+Hey Chris, let's grab dinnertonight.
+I'm thinking pizza.
+Pizza emoji.
+Change tonight to this weekend.
+Tap send.
+Undo that.
+Tap send.
+[ Laughter ]
+Undo that.
+Tap send.
+[ Applause ]
+Open Maps.
+Tap search field.
+San Pedro Square.
+Show numbers.
+Five.
+ Show grid continuously.
+15.
+ Zoom at one.
+Repeat four times.
+[ Applause ]
+Swipe up at 27.
+Hide grid.
+Tap share.
+Tap Chris Adams.
+Lots of options around here,period.
+See you later.
+Peace emoji.
+Ah, look at that.
+Undo that.
+Peace emoji.
+Tap send.
+[ Laughter ]
+Undo that.
+Tap send.
+[ Applause ]
+Go home.
+ Go to sleep.
+Okay.
+ So that's voice control.
+Now --
+[ Applause ]
+Now we can also use voicecontrol as developers to testthe accessibility of our apps.
+And so let's do that now withthe travel app that you sawearlier.
+Wake up.
+ Open Travel.
+Tap San Francisco.
+Tap San Francisco.
+Show names.
+All right, here's the problem.
+So I'm trying to tap on SanFrancisco, this element, but itdoesn't have a goodaccessibility label yet and it'sa really common problem.
+It means I can't speak to thiselement with voice control, andeven worse, if I couldn't seethe screen and Voiceover werereading this to me, I'd becompletely out of luck, stoppedin my tracks.
+I would not be able to use thisapp.
+So fortunately these things arepretty easy to fix.
+And so let's talk about what youcan do to make your apps moreaccessible.
+The good news is, mostaccessibility features justwork.
+But some of them, indeed themost transformative featureslike Voice Control and SwitchControl and Voiceover, they needyour support.
+And so here's what you can do.
+First, do what we just did.
+Just try it.
+Use your apps with accessibilityfeatures.
+You might actually be surprisedat what already works.
+But more importantly, you'regoing to gain valuable insightinto how some users actuallyexperience your app.
+And you're probably going towant to make some changes.
+Next, use the tools.
+Xcode's got great built-inaccessibility support fordevelopers.
+You can edit accessibilityproperties right in the Xcodeinspector.
+And with new EnvironmentOverrides, you can previewvisual accessibilityaccommodations during yourdevelopment lifecycle right inyour app.
+It's really cool.
+Finally, implement theAccessibility API.
+It's the best way to ensure anaccessible experience.
+It's the essential way.
+Doing this well is like puttingout a welcome mat to your appfor users of all abilities.
+It's how Voiceover and SwitchControl and the rest talk toyour app to offer an adaptedexperience.
+The Accessibility APIs work onall platform, and while they'reeasy to implement, they're superpowerful.
+So even the most sophisticatedapps and experiences can be madefully accessible.
+And of course, SwiftUI has greataccessibility support builtright in.
+And so that's our accessibilityupdate today.
+Now another thing we care deeplyabout at Apple is privacy.
+And so to tell you more aboutthat, I'd like to hand thingsover to Katie.
+Thanks very much.
+[ Applause ]
+>> Thanks, Eric.
+Privacy is a topic that isn'tgoing away.
+And it's something that everyoneneeds to pay attention to.
+It's something you have todesign in from the beginning andit shapes how your productworks.
+When you're designing a newfeature, here are a few stepsthat you can take to design forprivacy.
+Process on the user's device.
+Wherever you can keep user dataon-device, do it.
+And this helps you to collect aslittle data as you can.
+If you don't have the data, itcan't be abused or stolen.
+Ask first.
+Ask permission from your userfor the data and how you plan touse it.
+And if you do collect data, userandom identifiers.
+And scope them down from anaccount to a device, to asession where possible.
+And encrypt to keep your users'data secure.
+Applying these principles inyour design process will helpyou build great features andgreat privacy.
+I want to talk about two areaswhere we've made it easier foryou to take these steps.
+First, location.
+Where you go can reveal a lotabout your life.
+Where you live, where you work,what doctor's office you mightgo to, or how often you'rehitting the gym versus maybe thebar.
+Because of this, some users arehesitant to share location withyou and your apps.
+So they might miss out on someof your key features.
+So this year, we're adding a newoption: Allow Once.
+This provides location accessfor just that session and willask the user again next time.
+But let's say your app is evenbetter with Always AllowLocation permission.
+Here's how this will now work.
+First the user needs to selectWhile In Use.
+Then you request location whileyour app is in the background.
+Then the user will be presentedwith an alert, letting them knowthat you're requesting locationin the background.
+If they change to Always Allow,you'll have background locationaccess moving forward.
+Finally, we're giving users moretransparency into how theirlocation is being accessed.
+For all apps with backgroundlocation permission, from timeto time we'll show them whereyour app accessed theirlocation.
+[ Applause ]
+With these changes topermissions, users will feelmore comfortable in how they'resharing location with you.
+Now, let's talk about login.
+We've all seen or maybeimplemented buttons like these.
+And they can be reallyconvenient, but they can come atthe cost of your user's privacy.
+They also might share moreinformation about your company'sbusiness than you really want tobe disclosing.
+So we want to offer a betteroption.
+And it's called Sign In WithApple.
+[ Applause ]
+It offers fast, easy sign-inwithout all the tracking.
+This isn't just about privacyfor our users, but also for yourcompany.
+It's not our business to knowhow users engage with your app,so Apple simply won't trackthat.
+[ Applause ]
+It's easy to add a Sign In WithApple button to your app with asimple API.
+Users can set up an account andsign into your app with a tapand a quick Face ID.
+So why is this great for all ofyou?First off, more trust and lessfriction equals more engagedusers.
+Sign In With Apple can shortenthe distance between a userconsidering your application andreally embracing it.
+Second, verify email addresses.
+Apple has already done the workof verifying email addresses foryou.
+[ Applause ]
+And we're removing the incentivefor users to share made-up emailaddresses by offering a privateemail relay service.
+So even if a user chooses tohide their email address whensetting up an account, youremail will arrive in theirverified account, their verifiedinbox.
+And then there's security.
+With Sign Into Apple, you don'tneed to deal with storingpasswords or password resetissues.
+And every single account isprotected with two-factorauthentication.
+[ Applause ]
+This can really improve yoursecurity.
+We've also integrated someinteresting innovations aroundanti-fraud.
+We all know that along with somereal users, sometimes you getsome not so real users.
+Nobody wants bots or farmedaccounts.
+And we work hard to filter themout of our systems.
+And we want to help you do thesame.
+So we built what we call a realuser indicator.
+It can tell you if an incomingaccount is a real user or if youmight want to do some additionalverification.
+So how does this work?First off, the whole system isbuilt from the ground up tomaintain user privacy.
+It uses on-device intelligenceto determine if the originatingdevice is behaving in a normalway.
+The device generates a valuewithout sharing any specificswith Apple.
+This is combined with selectaccount information and thenboiled down into a single valuethat's shared with your app ataccount setup time.
+Then depending on the value thatyou receive, you can beconfident that your new user isa real user or get a signal thatyou might want to take a secondlook.
+And all of this comes with greatcross-platform support.
+It's available on iOS, iPadOS,macOS, watchOS, tvOS and it evenworks on the web.
+So it can work on Android andWindows devices.
+[ Applause ]
+So there you go.
+A super-fast and easy way toengage new users, two-factorauthentication and anti-fraudbuilt in.
+You can implement it virtuallyanywhere, and most importantly,it respects everyone's privacy.
+So this is a solution both youand your users can trust.
+We've already had a number ofdevelopers working with us andwe're excited to see many moreof you adopt.
+So that's Sign In With Apple.
+[ Applause ]
+As I mentioned earlier, a greatway to preserve user privacy isto work with the users' dataon-device.
+And we've built some greattechnologies for doing justthat.
+To tell you more about machinelearning, I'd like to hand itover to Bill.
+[ Applause ]
+>> Thank you, Katie.
+[ Applause ]
+Machine learning is a keytechnology for so many of theexperiences in your apps.
+And at Apple, we use on-devicemachine learning to powerfeatures from stunning cameraand photos capabilities to ARKit and more.
+And we can do this because ofour cutting-edge silicon.
+With powerful CPUs, GPUs anddedicated ML processors like theNeural Engine, we can deliverincredible real-timeexperiences.
+The Neural Engine is optimizedto accelerate convolutionalneural networks withmulti-precision support and aSmart Compute system.
+What does that mean?It means it's an absolute beast.
+In fact, the Neural Engine iscapable of up to 5 trillionoperations per second.
+Best of all, we've built ourmachine learning APIs on top ofthis so that your apps can takefull advantage of this blazingperformance.
+And we have some great updates,starting with our out-of-the-boxAPIs like Vision, NaturalLanguage, and Speech.
+Today these APIs deliver richfeatures such as face detection,object tracking and named entityrecognition.
+And this year, we're adding evenmore.
+Let's have a look at a few ofthese, starting with imagesaliency which gives you aheatmap for an image,highlighting important objectsand where users are likely tofocus their attention.
+We use this today in photos tohelp intelligently crop imagesas part of the curationexperience.
+We're also releasing textrecognition where you can searchtext from images like posters,signs and documents.
+[ Applause ]
+And take advantage of thedocument camera capability weuse in Notes.
+For Natural Language, you canmake use of word embeddingswhich help to identify words orsentences with similar meanings.
+We use this today for search inphotos so that if you search foran unknown term like musician,we can suggest alternatives likeentertainer or singer.
+And this year, our Speech API isnow on-device and works oniPhone, iPad and Mac withsupport for 10 languages.
+[ Applause ]
+And with features like SpeechSaliency, you can understand thepronunciation, pitch and thecadence of speech.
+Now for those of you who want togo deeper with machine learning,you can make use of Core ML, ouron-device technology designed torun machine learning models withhigh performance and privacy.
+Today Core ML has great supportfor many machine learningmodels, from neural networks toboosted trees and more.
+But as you know, the field ofmachine learning is constantlyevolving.
+And so this year we set out tosupport the most advanced neuralnetworks by adding more layertypes than ever before.
+In fact, Core ML now supportsover 100 model layer types.
+This enables you to run some ofthe most cutting-edge machinelearning models on Appledevices.
+Models like ELMO or WaveNet orsome very recently publishedones like BERT, bringingbreakthrough natural languageprocessing to your apps.
+Now running models like these inyour apps is only part of thestory.
+There are times when you maywant to update the models inyour apps on-device based onuser data.
+We do this today for featureslike Face ID where a user'sappearance may be evolving overtime.
+They change their hair, wear ahat.
+Or for features like our SiriWatch Face where the set ofrecommendations is constantlyevolving to deliver apersonalized experience for eachuser.
+To achieve these experiences, weuse on-device personalization.
+And this year we're bringingthat capability to Core ML.
+This means you can update theCore ML models in your app withdata from individual users.
+This creates --
+[ Applause ]
+This creates an updated andpersonalized model for the user.
+With model personalization, yourapps can now update models inthe background withoutcompromising user privacy.
+Core ML delivers the mostadvanced platform for machinelearning models, and buildingCore ML models has never beeneasier with Create ML, ourframework designed to help allof you build models with just afew lines of code.
+And this year we're takingCreate ML even further.
+It's now a macOS app that letsyou build models with zero coderight from your Mac.
+[ Applause ]
+You can choose from manydifferent model templates to fityour data.
+You can build multiple modelswith different datasets anddefine the parameters for eachof them.
+You get real-time feedback onmodel training.
+And Create ML supports transferlearning for tasks like imageclassification or text analysis.
+This speeds up training sinceyou need very little data andcan leverage Apple's optimizedand heavily pre-trained models.
+And you get to experiment andpreview the models.
+So for example, you can getpredictions for images by usingyour iPhone's camera withcontinuity on your Mac.
+Or you can use the microphone onyour Mac to test your soundclassification model.
+So that's a ton of new stuff andwe're super excited to see whatyou can do with all theseawesome new machine learningcapabilities.
+In fact, we invited a fewdevelopers to try out all thenew stuff and we've seen someamazing results.
+One in particular was so cool wedecided we had to share it withyou.
+So please welcome Ben Harrowayfrom Lumen Digital to give you apreview of his new appNoisyBook.
+[ Applause ]
+>> Thanks, Bill.
+Hi, everyone, I'm Ben from LumenDigital and I've been working ona brand-new app, NoisyBook.
+Let me tell you a story.
+Once upon a time, on a beautifulmeadow lived a boy called Jackand his cow Daisy.
+Daisy.
+[ Cow mooing ]
+A mysterious man gave them somemagic beans which grew into agiant beanstalk, high into theclouds.
+[ Mystical music ]
+Okay, I think everybody knowsthis story.
+Let's try something reallydifferent.
+Suddenly an exploding chickenand his friend the golden tiger
+[growling]
+ jumped into theirhelicopter 
+[whirring]
+ and flewinto the forest.
+[ Crickets and bird sounds ]
+And of course, guess what?They all lived happily everafter.
+[ Music ]
+>> Yay.
+>> Can you make animal noisesyou heard in the story?>> Okay, we've had some fun.
+Now NoisyBook wants us to repeatsome of the animal noises thatwe heard during the story.
+I think we heard a cow in thisstory, so let's try this.
+Moo.
+ There he is.
+I really cannot believe I'mstanding here making animalnoises in front of all of thesepeople.
+Mad.
+ But how amazing, the apphas used a sound classificationmodel to actually recognize thatnoise and acknowledge it.
+You likely also noticedNoisyBook was able to work withboth traditional stories andstories straight from our ownimaginations.
+It's super powerful.
+And thanks to the new featuresof speech, sound and Core ML iniOS 13 and Create ML, this isall happening entirelyon-device.
+It's all happening in real timeand it's running through anatural language model that I'vetrained on over 90,000 lines oftext.
+And thanks to these features,I've been able to take an ideathat I've struggled with foraround two years and reallyimplement some of these magicalnew features in just a couple ofdays.
+I'm super proud of it and I dohope that you'll remember tocheck out NoisyBook when itlands on the App Store laterthis year.
+Thank you.
+[ Applause ]
+>> Thanks, Ben.
+That was really cool.
+I know my kids are going to loveit.
+Now one of the biggest uses ofmachine learning at Apple isSiri.
+Siri is by far the world's mostpopular intelligent assistantwith over 500 million monthlyactive devices, making over 15billion requests.
+These are staggering numbers.
+And Siri works across all ofApple's devices.
+With Siri, your users caninteract with your apps in newways.
+On the go, with Air Pods,hands-free from across the room,or even while in the car.
+And thousands of apps are nowintegrated with Siri throughSiri Shortcuts.
+We built Siri Shortcuts to allowyou to expose the capabilitiesyou already have in your appswith very little work and in adiscoverable way for your users.
+You can make your shortcutsdiscoverable using the Add toSiri button, educating yourusers on how they can use yourapp with voice.
+That matters because voicefunctionality can otherwise bereally hard to discover.
+And we've simplified setup sothat the user no longer needs torecord a phrase.
+You suggest a phrase and theyadd it with a tap.
+[ Applause ]
+And the biggest request we hadthis year was to supportparameters in Shortcuts.
+So we've made Shortcutsconversational which allowsusers to interact with your appthrough questions in Siri.
+So for example, if I'm choosingwhat to cook, I could run aShortcut with Pana, my recipesapp, and see a list of all myfavorites.
+When I choose from the list, ittakes me to the recipe andstarts playing.
+And this year the Shortcuts appis built into iOS and iPadOS,which means that every user willhave an opportunity to try itout.
+And the app is now the home forshortcuts from your apps too.
+And by popular request, we'readding support for automation.
+[ Applause ]
+Which allows users to setspecific triggers for when torun any shortcut.
+And there's plenty of options tochoose from.
+You can trigger a shortcut basedon time of day, when you start aworkout on your Apple Watch,when you connect to CarPlay andmany more.
+And the editor now enables fullconfiguration of your app'sactions, including the abilityto pass information in or out ofyour action through parameters.
+With this, your app's actionscan be combined with actionsfrom other apps in multi-stepshortcuts.
+Let's say you need to get dinnerfor the family.
+The kids are hungry, you need itfast.
+You could have a shortcut thatuses the Caviar app that letsyou choose a restaurant, choosea meal, place the order and thentext the whole family withwhat's for dinner and when itwill arrive.
+That's combining the power ofyour apps with Siri Shortcuts tomake everyday tasks really easy.
+And of course --
+[ Applause ]
+And of course Shortcuts workacross iPhone, iPad, Apple Watchand HomePod too.
+And that's our update for Siri.
+[ Applause ]
+Now I'd like to invite Jeff totell you about the latestadvances in augmented reality.
+Thank you.
+[ Applause ]
+>> Thanks, Bill.
+I am thrilled to be here todayto talk about augmented reality.
+AR helps you visualize thingsthat are difficult, expensive orimpossible to do otherwise.
+And since introducing AR Kit,we've seen amazing growth inapplications.
+One may think of AR as only forentertainment, but we've seengreat applications in education,enterprise, commerce and more.
+Commerce is a particularlyimpressive use case with HomeDepot, Target and Wayfair allhaving tens of thousands ofproducts available to preview inAR.
+AR Kit hosts the USDZ fileformat and Quick Look together,make the world's first massmarket augmented realitycommerce solution.
+In fact, Wayfair is seeing morethan a threefold increase inpurchasing when folks view theirproducts in augmented reality.
+And we love that this is a realbusiness use case.
+This is a great real businessuse case for augmented realityin commerce.
+We'd like to continue thismomentum by announcing thatApple Pay will be integrateddirectly with AR Quick Look thisfall.
+This makes it easier forconsumers to try on and buyitems like these glasses,directly from augmented reality.
+AR Kit for iOS and iPadOS arethe world's largest augmentedreality platform with hundredsof millions of enabled devices.
+And we've heard from manydevelopers, they love to takeadvantage of this greatopportunity but may not be surewhere to start.
+Or 3D can be a little bitintimidating if you've neverused it before.
+Well, we've been listening andwe're really excited to announcethree technologies that make itmuch easier to develop augmentedreality applications.
+AR Kit, RealityKit and RealityComposer together provide theframeworks and tools you need toquickly and easily developaugmented reality applicationsand experiences.
+Starting with Reality Composer,you can create compelling ARexperiences even if you've neverworked with 3D before.
+It provides an intuitive, whatyou see is what you getinterface that integratesseamlessly with Xcode.
+And to show you RealityComposer, I'd like to invite oneof my colleagues, Shrudi, up tothe stage.
+[ Applause ]
+>> Thank you, Jeff.
+Happy to be here.
+I have this great travel appwhich shows some activitiesoffered on the main island ofHawaii.
+If the user opts for helicoptertours, the app shows the path ofthe helicopter.
+How about we use AR to provideusers a better sense of theactual tour?I can do that by adding a buttonto the existing app to launch myAR experience.
+Let's see how to do that.
+First, we create a button usingSwiftUI.
+Followed by adding that buttonto my existing view.
+Then I open an empty projectfile in Reality Composer andintegrate it to my Xcode projectby simply dragging and droppingit in Xcode.
+To load my AR scene from thisReality Composer project file, Iimport RealityKit and thencreate a new view for AR.
+Oops.
+ Sorry.
+Create a new view for AR usingSwiftUI.
+And that's all the code you needto add an AR experience to yourexisting app.
+Moving on to the fun part ofcreating my AR scene withReality Composer.
+I open my empty Reality projectand start by loading a customUSTZ of the Hawaii model.
+Sweet.
+ Next I'd like to mark thebeginning of my helicopter tour.
+For that I can use RealityComposer's built-in contentlibrary which offers hundreds ofprofessional-grade 3D content todevelopers.
+I'll use a simple sphere.
+I can change the content's look,by applying a different materialto it.
+As you can see, placing contentin 3D is pretty simple andintuitive with Reality Composer.
+Let's see what else we can dohere.
+How about adding a cool fadingeffect to the scene when thescene starts.
+I can do that by opening theBehaviors panel and creating acustom behavior which getstriggered when the scene starts.
+I first add an action to hideall the content in the scene.
+Then the scene starts, and thenadd another action to make allthe content appear after acertain duration.
+How about we preview it righthere?Awesome.
+ Developing AR on Mac isconvenient, but it poses thechallenge of guessing thecontent scale and look whenplaced in real world.
+That's why we created RealityComposer for macOS as well asiPadOS and iOS to remove theguesswork out of development.
+So I'll hand this off to Jeff tosee what we have so far on aniPad.
+>> Thanks very much, Shrudi.
+So this is Reality Composer forthe iPad.
+It has the same great featuresthat you see in the RealityComposer for the Mac.
+And we can take the seen thatShrudi handed off and finish itout with our final artwork.
+So we've had someone create withAdobe Arrow our final file orour final artwork, and we'll putit into the scene.
+So I'm going to take the proxyart that Shrudi had.
+I'm going to replace that withour new artwork.
+Let me check to see if that'sthe right thing.
+Fantastic.
+That is our final helicopter.
+And I also want to bring in theanimation that goes with that.
+That's super easy.
+If you remember, she createdthat behavior, so we're going tolook at that behavior and allwe're going to do is add anadditional action.
+So we look for USDZ animationwhich is bringing in theanimation that went with thefile.
+Fantastic.
+Looks good.
+Let's preview that.
+Great.
+ So hide our Behaviorstab.
+That looks like what we want.
+Perfect.
+ Let's preview this inAR, but you can do it with theiPad.
+Wow.
+ Let's try that again.
+Fantastic.
+That's exactly what I wanted itto look like.
+And we can also play that.
+Perfect.
+ We have the animationof the helicopter touring theisland.
+That will look great in ourtravel application.
+So that's Reality Composer forthe iPad.
+And you're going to love how youcan have the same great ease ofuse and seamless experiencebetween macOS, iPadOS and iOSwith Reality Composer.
+[ Applause ]
+Now RealityKit.
+RealityKit is a modernhigh-performance 3D enginedesigned from the ground up foraugmented reality rendering andsimulation.
+And because it's delivered as aframework, it's very easy forall of you to take your 2D appsand extend them into 3D.
+RealityKit uses modernvisibly-based rendering andmaterials.
+It is a data-driven renderingsystem and a fullymulti-threaded renderer that'shighly optimized for Apple'sGPUs.
+And also, really importantly,we've integrated AR Kit sceneunderstanding into RealityKit.
+Which means as AR Kit leans moreabout the environment, itsynchronizes this to yourvirtual scene automatically.
+We saw RealityKit in action thismorning.
+Let's take a closer look.
+Let's see what's really goingon.
+The reality you see is based onthings like image-basedlighting, motion blur and cameraeffects like depth of field andcamera noise that really blurthe line between what is realityand what is virtual.
+And you get these features withRealityKit automatically.
+You access RealityKit through anew framework which is a nativeSwift API.
+It takes many advantages of thekey features of Swift to allowyou to write clear, compactcode.
+Concepts Log and Rally aredirectly integrated.
+For example, it's easy to loadyour AR assets and directlyattach them to anchors.
+Protocol extensions provide easyaccess to entity property whichallow you to quickly accesscomponents such as lights orshadows in this case and reducethe need for runtime checks.
+This also means that you're ableto work with entities in astrongly-typed manner.
+Here we're applying an angularforce to an entity thatparticipates in physics.
+And that's all the code you needfor this scene.
+Last but definitely not leasttoday is a new version of ouraugmented reality framework ARKit 3.
+We've taken the most capable ARplatform in the world and madeit even more powerful with newin-depth reverse features.
+Since introducing AR Kit, we'vehad many developers ask to beable to use the front and backcameras simultaneously.
+Well, in AR Kit 3 you can.
+So you can -- that's right, bothcameras at the same time.
+[ Applause ]
+This allows you to use facetracking to drive your augmentedreality experiences directly.
+And as Craig talked about thismorning, properly occludingpeople in an AR scene is anextremely tough problem.
+You see it every time someonewalks in front of a virtualobject.
+To solve this, we've built anadvanced machine-learningalgorithm that figures out whichpixels are a person, the depthof that person in the scene anduses its information to allow usto properly render the scene inthe virtual objects.
+With people occlusion, entirelynew experiences like MinecraftEarth Demo you saw this morningare possible.
+[ Applause ]
+Absolutely amazing.
+And finally, we built a systemthat allows humans to interactwith virtual content.
+AR Kit 3 is able to capture aperson's motion in real timewith just the single RGB camerain an iPad or iPhone.
+We again use a machine learnedalgorithm to track the person,building a 2D stick figure andtake that figure and then infera 3D motion from them or lift itinto 3D.
+Both the 2D skeleton and the 3Dskeleton are available todevelopers.
+The 3D has over 90 articulatedjoints and provides the sameease of use as Face Kit.
+So those are our newtechnologies.
+AR Kit 3, RealityKit, andReality Composer are tools andframeworks that make it easy foranyone, anyone, to build amazingAR experiences.
+And we'd like to do somethingfun today, so we have a fun newapplication at the conference.
+You may have seen it,SwiftStrike.
+We're making a tabletop versionof this as a developer sampleavailable today.
+It uses RealityKit, AR Kit 3 andReality Composer and provides agreat starting point for yourapplications.
+[ Music ]
+Lots of fun.
+[ Applause ]
+Thank you.
+[ Applause ]
+And of course Metal powers a lotof what we do in AR on ourdevices.
+And to tell you more aboutwhat's new in Metal, I'd like towelcome Jeremy to the stage.
+[ Applause ]
+>> Thank you, Jeff.
+So Metal is Apple's modernhigh-performance GPU programmingAPI for graphics and compute.
+It's also incredibly easy touse, both for beginners andexperts alike.
+And it brings stunningperformance increases,supporting up to 100 times moredraw calls than OpenGL andenabling a whole new generationof advanced graphicsperformance.
+This is because Metal gives yourapp direct control over the GPUsthat are at the core of Apple'sproducts.
+And those GPUs now power over1.
+4 billion Metal-capable systemfrom iPhones to iPads to theall-new Mac Pro.
+In fact, all of Apple'splatforms now run on Metal.
+From our smooth user interfaceto the latest 3D rendering inRealityKit, to our advancedcamera processing pipeline,we're using Metal everywhere.
+And you can too.
+To help you do just that, thisyear we focused on three keyareas.
+We've made Metal even easier touse.
+We've enabled all-new levels ofhigh-performance GPU compute.
+And we've enhanced Metal for ourmost demanding pro appdevelopers and customers.
+First, with Metal's incrediblyapproachable API and GPU shadinglanguage, you can get startedwith our powerful suite ofdeveloper tools for GPUdebugging, profiling andperformance optimizing.
+And we've made those tools evenbetter.
+We have added full Metal supportto the iOS Simulator in Xcode.
+[ Applause ]
+We're glad you're excited aboutit.
+We're really excited about ittoo.
+You can now use Metal directlyin the simulator and youautomatically get majorperformance improvements whenusing UI Kits, Maps and all ofthose system frameworks built onMetal.
+And this is because the iOSSimulator is now using thenative Metal support built rightinto your Mac.
+We've also added an all-newMetal memory debugger.
+You can now identify exactly howmuch memory your app is usingfor Metal textures, buffers andheats and you can optimize yourgames and apps to use every lastbyte for even more advancedgraphics.
+Now over the past few years,Metal has grown to support theadvanced features of dozens ofGPUs, each with their ownhardware from every major GPUvendor and across all of ourplatforms and OS releases.
+And as a developer youpreviously had to manage all ofthis complexity of thesedifferent hardware feature setsyourself.
+Well this year we've made itmuch simpler with just threeMetal GPU families.
+A Metal common GPU family,identifying the vast majority ofMetal features that you can useacross all of our platforms.
+A second family for the advancedunique features of our AppleDesign GPUs and our iOS, iPadOSand tvOS products.
+And a third family for thepowerful GPUs on our Macsystems.
+And it makes it that much easierto bring your apps from iOS tomacOS or the other way around.
+Now, in addition to enablingimmersive games and advancedgraphics, Metal also gives yourapp the ability to harness theGPU for compute.
+So what is GPU compute?Well, GPUs were originallydesigned to process largenumbers of pixels requiring theexecution of complexmathematical computations in amassively parallel fashion.
+And it turns out we can applythat computational horsepower toa wide variety of tasks besidestraditional graphics.
+So Metal provides all of thebuilding blocks that you needfor general purpose computationon the GPU.
+A familiar C++ based GPUprogramming language, computecommand encoding, API andruntime, a full-feature compilerand debugger and a rich libraryof shaders and kernels calledthe Metal performance shaders.
+This MPS library provides youvaluable compute functions allpre-optimized for all of thoseGPUs and all of those Applesystems and it's all fullyintegrated right into your Metalcode.
+And on our Apple Design GPUs,Metal also provides advancedcompute features like tileshading, enabling you to combineyour compute shaders and yourfragment processing into onesimple, highly-efficient renderpass.
+And this year we're alsointroducing Metal indirectcompute command encoding.
+It allows you to build your GPUcompute commands right on theGPU itself, unlocking all-newalgorithms for computeefficiency and freeing the CPUfor other activities in yourapp.
+And with the Radeon Pro Vega II,the new Mac Pro is a GPU computemonster, capable of up to 56teraflops of GPU compute allmade available to you via Metal.
+Now that's a heck of a lot offlops.
+I mean, look at them all.
+They barely fit on the screen.
+[ Applause ]
+That's a lot.
+[ Applause ]
+So what can you do with all ofthose flops of GPU compute?Well, with Metal you can usethem for advanced computeprocessing.
+For your videos, you can improvethe quality of your photos.
+You can train your ML models andyou can use them to accelerateinteractive ray tracing.
+So we have further improvedMetal support for ray tracingthis year, now enabling dynamicscenes by moving the boundingvolume hierarchy constructionfrom the CPU to the GPU, andadded all-new optimized MPSde-noising filters to furtherimprove image quality.
+Now ray tracing, it uses the GPUto computationally model thephysical properties of lightsand surfaces and reflections andit can be so complex, peopleactually earn PhD's in thistopic.
+So to show you how you can useMetal and GPU Compute for raytracing, we decided to puttogether a pretty simpleexample.
+And I'd now like to invite Ravto the stage to give you a quickdemonstration.
+Rav?
+[ Applause ]
+>> Thank you, Jeremy.
+So we built a prototype hybridray tracing engine to see whatwe could do with Metal Computeon the powerful new Mac Pro.
+Now this toy city that we builtlooks simple, but we're usingMetal to process over 1 billionrays per second at 4Kresolution.
+Let me walk you through whatwe're doing here.
+So we start by using Metal drawcommands to render the geometryand material information thatwe're going to use later, andthen switch to using MetalCompute and the MPS ray triangleintersection APIs to do all theheavy lifting.
+This includes calculatingambient light at every surfacepoint, as you can see in thisimage.
+But also to simulate lightbouncing between objects in ourscene at increasing ray depth togenerate shadows, reflectionsand even reflections withinthose reflections.
+And then we end by using theoptimized MPS or optimizecompute kernels in the new MPSde-noiser to produce this reallyhigh-quality image.
+So traditional CPU rendererswould take over a minute togenerate a frame like this.
+With Metal, we've been able toreduce this to under 30milliseconds, which is astaggering 1,000 times faster.
+So pro app developers -- thankyou.
+We think it's pretty great too.
+[ Applause ]
+So pro app developers can nowuse Metal Compute to build newinteractive tools to visualizethese physically accuratelighting effects like thesedramatic shadows that are castby the buildings and also bythat fire escape.
+Or if we pan over here to thisroof, the realistic way thatgreen light bounces onto thisneighboring building.
+That just looks great.
+Thank you.
+[ Applause ]
+Another great effect that we cansimulate or model is accuratereflections, as you can see inthe windshields of this bus.
+In fact, you can see the shadowsmoving in that windshield or inthose reflections as I changethe position of the sun.
+So that looks great, butanimating objects in a ray tracescene can be verycomputationally expensivebecause we have to update thebounding volume hierarchy that'sassociated with the geometry.
+Fortunately, with Metal Computeand the MPS APIs, we're able tomove all of this work onto theGPUs and achieve this greatanimation.
+And there go our trains.
+So that was just an example ofwhat's possible when you useMetal Compute for acceleratedray tracing on the new Mac Pro.
+It's a beast.
+Thank you.
+Back to you, Jeremy.
+[ Applause ]
+>> Thank you, Rav.
+So that's what we did in just ashort bit of time.
+But high-performance ray tracingcan be even more powerful in thehands of our most expertthird-party developers.
+Which is why we are so excitedthat OTOY has announced they'reusing Metal Compute to buildOctaneX, an all-new version ofOctane Renderer, theirinteractive path tracing engineoptimized for Metal and theApple platforms.
+And we are incredibly thrilledto be working with Maxon who'sbringing their powerfulGPU-accelerated rendererRedshift to the Mac with anall-new version optimized forMetal and the new Mac Pro.
+So with advanced Metal ComputeAPIs and incredibly powerfulhardware, we've built Metal topower the most advancedprofessional content creationtools.
+And we've been working reallyclosely with the leading appdevelopers who have allannounced that the upcomingversions of these professionalcontent creation tools and appswill be fully optimized forMetal and the Apple platforms.
+For instance, Serif has justannounced an all-new version ofAffinity Photo for Mac usingMetal's graphics and ComputeAPIs to hypercharge theiradvanced photo processing enginein achieving stunningperformance increases.
+More than 10 times betterperformance and jaw-droppingincreases of 50 times betterperformance using Metal withmultiple GPUs on the new MacPro.
+So to enable these kinds of proapps and this kind ofperformance, we work reallyclosely with our GPU hardwareand software partner teams toadd all-new features to Metal.
+To support the new AMD InfinityFabric link in the new Mac Pro,we added the Metal Peer GroupAPI.
+So what does this do?Well, previously sharingworkloads across multiple GPUswould require moving largeamounts of data in a round tripacross the PCI bus.
+But with the Metal Peer GroupAPI, apps can use multiple GPUsmuch more efficiently, directlysharing data across the InfinityFabric link and without takingthat long and scenic routethrough system memory.
+Now finally, you've seen how youcan use Metal Compute and thenew Mac Pro to process a wholelot more pixels.
+But we also want you to produceeven more beautiful pixels.
+So we've introduced the gorgeousnew Pro Display XDR with all-newHDR software support in macOS.
+You can now use the AVFoundation APIs to decode HDRvideos or you can render nativeHDR content directly with Metal.
+You can manage the HDR displaytone mapping yourself or you canlet the window system and ouradvanced display system softwarehandle it all for you.
+And with these same APIs, youcan also access a far greaterrange of brightness levels onmany of our existing Macdisplays as well.
+So that's our Metal update fortoday.
+It's even easier to use Metalacross all of our platforms withMetal in the iOS Simulator andsimplified GPU families.
+We have all-new features andpowerful hardware to unleashall-new levels of GPU computeperformance.
+And we built Metal to be thebest GPU programming API todrive modern professionalcontent creation tools and apps.
+So thank you very much.
+I'll hand it back to Sebastiennow.
+Thank you.
+[ Applause ]
+>> Thank you, Jeremy.
+Don't you love Metal?Don't you love the power ofMetal?Really, really amazing.
+Now what you've seen thisafternoon is a huge amount ofnew technology that's new forall of you as developers.
+And what we've shown coveringdeveloper tools, the Appleplatforms and core technologiesis just some of the highlights.
+We actually have so much more toshow you this week.
+And so ahead of us are 109different sessions.
+And it turns out that thatwasn't enough to covereverything.
+So this year we added anadditional 27 video-onlysessions.
+And when you want to dive evendeeper, you could sit down withsome of the over 1,000 Appleengineers that are here at WWDCin 229 different lab sessionsthroughout the week.
+So get out there and prepare tohave your minds blown.
+It's going to be a great week.
+Thank you.
+[ Applause ]
