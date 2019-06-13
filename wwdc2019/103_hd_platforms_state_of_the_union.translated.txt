@@ -1,0 +1,3903 @@
+[ Music ]
+ [音楽]
+
+>> Good afternoon, ladies andgentlemen.
+ >>こんにちは、皆さん、こんにちは。
+
+Please welcome Vice President ofSoftware Sebastien Marineau-Mes.
+ Software Sebastien Marineau-Mesの副社長を迎えてください。
+
+[ Applause ]
+ 【拍手】
+
+>> Good afternoon, everyone, andwelcome to WWDC.
+ >>こんにちは、皆さん、そしてWWDCへようこそ。
+
+Did we love the morning keynote?
+朝の基調講演が大好きでしたか。
+
+[ Applause ]
+ 【拍手】
+
+There you go.
+そこに行きます。
+
+[ Applause ]
+ 【拍手】
+
+Now this year is one of ourbiggest for developers and we'rereally excited to show you whatwe've been working on and seewhat you think.
+現在、今年は開発者にとって最大のビッグイベントの1つとなっています。私たちはこれまで取り組んできたことを皆さんにお見せできることをとてもうれしく思います。
+
+This morning's keynote was justa taste of what's happening thisyear.
+今朝の基調講演は、この年に起こっていることのちょうど味でした。
+
+There is so much more that wewant to share, and thisafternoon we're going to focuson the areas that matter most toyou as developers.
+共有したいことがまだまだたくさんありますが、今日の午後は開発者としてのほとんどの問題に焦点を当てる予定です。
+
+Are you ready to hear more?
+もっと聞く準備ができていますか？
+
+[ Applause ]
+ 【拍手】
+
+There we go.
+そこに行きます。
+
+Now we've taken a huge step interms of developer experiencethis year with the new SwiftUIframework as well as greatinteractive tools in Xcode.
+今度は、Xcodeの新しいSwiftUIframeworkおよび優れた対話型ツールを使用して、今年の開発者経験の大きな一歩を踏み出しました。
+
+And we've really seen each ofour platforms get even deeper atwhat they do best.
+そして、私たちは、それぞれのプラットフォームが、最善を尽くしてさらに深くなるのを実際に見てきました。
+
+We have powerful new procapabilities for Mac, and newDark Mode and rich updates --sorry, independence for watchOS.
+私たちは、Mac用の強力な新機能、およびnewDark Modeと豊富なアップデートを備えています - すっかり、watchOSのための独立性。
+
+On iOS, a new Dark Mode andgreat app updates.
+ iOSでは、新しいダークモードandgreatアプリがアップデートされます。
+
+And finally, on iPadOS, apowerful operating system thatnow stands on its own.
+そして最後に、iPadOSでは、強力なオペレーティングシステムthatnowが自立しています。
+
+Sorry, the monitors aren'tworking down here.
+すみません、モニターはここにありません。
+
+[ Laughter ]
+ [ 笑い ]
+
+There we go.
+そこに行きます。
+
+One of those is working, so Iwill go over to the left.
+そのうちの1つが動作しているので、左に行きます。
+
+Now these platforms represent adiverse range of devices andbuilding great support for themis easy, thanks to a choice ofmany tools and APIs likeAutoLayout, Size Classes andSwiftUI.
+現在、これらのプラットフォームは、AutoLayout、Size Classes、およびSwiftUIのような多数のツールとAPIの選択のおかげで、多様なデバイスを表し、themisのための優れたサポートを容易に構築します。
+
+So no more letterbox.
+これ以上レターボックスはありません。
+
+Your users get the bestexperience when your app workswell on a wide range of devicesizes.
+アプリが広範囲のデバイスサイズでうまく機能するとき、ユーザーは最善の経験を積むことができます。
+
+And starting next spring, itwill be an app store requirementto deliver UI that adapts todifferent screen sizes.
+そして来春からは、さまざまな画面サイズに適応するUIを提供することがApp Storeの要件になります。
+
+Now tvOS is offering cool newcapabilities --
+今tvOSはクールな新機能を提供しています - 
+
+[ Laughter ]
+ [ 笑い ]
+
+[ Applause ]
+ 【拍手】
+
+There we go.
+そこに行きます。
+
+[ Applause ]
+ 【拍手】
+
+Now tvOS is offering cool newcapabilities for developers thisyear, including multi-usersupport for third-party apps,new UI elements and options,SwiftUI and of course supportfor Xbox and PlayStation gamecontrollers.
+今やtvOSは、サードパーティ製のアプリケーションのマルチユーザーサポート、新しいUI要素とオプション、SwiftUI、そしてもちろんXboxとPlayStationのゲームコントローラーのサポートを含む、今年の開発者のための素晴らしい新機能を提供しています。
+
+[ Applause ]
+ 【拍手】
+
+Now this morning we announced anincredible new hardware platformwith the new Mac Pro.
+今朝、私たちは新しいMac Proを搭載した驚くべき新しいハードウェアプラットフォームを発表しました。
+
+Do we love it?
+好きですか？
+
+[ Applause ]
+ 【拍手】
+
+It is incredible, and it willreally unlock amazing new kindsof apps.
+それは信じられないことです、そしてそれは本当に驚くべき新しい種類のアプリをアンロックするでしょう。
+
+And we also built technologiesthat span all of our platforms,and we'll have a look at a fewof these areas today, includingaccessibility, privacy, machinelearning, Siri, augmentedreality and finally Metal.
+そして私達はまた私達のすべてのプラットフォームにまたがる技術を構築しました、そして私達はアクセシビリティ、プライバシー、machinelearning、Siri、拡張現実そして最後にMetalを含む今日これらの分野のいくつかを見てみるでしょう。
+
+Now we want to focus on thesethree big areas this afternoon,and we're going to start withdeveloper productivity.
+さて、今日の午後、これら3つの大きな分野に集中したいと思います。開発者の生産性から始めましょう。
+
+Now everyone in this room knowsthat great tools candramatically improve yourproductivity.
+今すぐこの部屋の誰もが素晴らしいツールがあなたの生産性を根本的に向上させることを知っています。
+
+Great tools give you more timeto be creative and they let youbuild better apps.
+優れたツールを使用すると、クリエイティブになるための時間が長くなり、優れたアプリケーションを作成できます。
+
+And the foundation of thatexperience is the programminglanguage.
+そしてthatexperienceの基礎はプログラミング言語です。
+
+Over the last five years, Swifthas matured and is built intoevery Apple platform.
+過去5年間で、Swiftは成熟し、すべてのAppleプラットフォームに組み込まれました。
+
+And Swift gives us thefoundation for SwiftUI.
+そしてSwiftはSwiftUIの基礎を示してくれます。
+
+And Xcode is so much more than acode debugger -- sorry, codeeditor and debugger.
+そしてXcodeはコードデバッガ以上のものです - 申し訳ありませんが、codeeditorそしてdebugger。
+
+It includes everything that youneed to build an app, includingsupport for continuousintegration and testing.
+これには、継続的な統合とテストのサポートを含め、アプリを構築するために必要なものがすべて含まれています。
+
+And it gives you tools that letyou explore new technologiessuch as machine learning andaugmented reality.
+そしてそれはあなたに機械学習と拡張現実感として新しい技術を探求するツールをあなたに与える。
+
+And finally, built on the strongfoundation of our platforms, theSwiftUI framework willrevolutionize how you build userinterfaces.
+そして最後に、私たちのプラットフォームの強力な基盤の上に構築された、SwiftUIフレームワークはあなたがどのようにユーザーインターフェイスを構築するかを進化させるでしょう。
+
+And together, these threeelements deliver a whole newlevel of productivity and theywill fundamentally transform howall of you build apps.
+そして、これら3つの要素が一体となってまったく新しいレベルの生産性を実現し、それらが根本的にあなたのアプリケーション構築方法を一変させます。
+
+Now, are you ready to dive rightinto SwiftUI?
+これで、SwiftUIに飛び込む準備はできましたか？
+
+[ Applause ]
+ 【拍手】
+
+Let's have Josh come up and tellus more.
+ Joshを立ち上げて、もっと教えましょう。
+
+Josh?
+ジョシュ？
+
+[ Applause ]
+ 【拍手】
+
+>> Thanks, Sebastien.
+ >>ありがとう、Sebastien。
+
+Okay, so SwiftUI, as you sawthis morning, is a brand-newuser interface framework builtfrom the ground up in Swift forSwift.
+さて、今朝見たようにSwiftUIはSwift forSwiftでゼロから構築されたまったく新しいユーザーインターフェースフレームワークです。
+
+We designed it to let you writeless code and have the code thatyou do write be better code,while letting you use more ofthat code across all Appleplatforms.
+私たちは、すべてのAppleplatformでもっと多くのコードを使用できるようにしながら、あなたが書くことのできないコードを作成し、作成したコードがより良いコードになるように設計しました。
+
+Now first of all, there's somuch functionality built intoeach individual line that youwrite that you're just going towrite way less code.
+まず第一に、それぞれの行に組み込まれた非常に多くの機能があります。
+
+So let's take the app forchoosing macOS release namesthat we looked at this morning,but without the animatedtransitions.
+それでは、今朝見たMacOSのリリース名を選択するためのアプリを使用しましょう。ただし、アニメーションの移行はありません。
+
+If you've written an app withUIKit before, you know the typesof pieces that you need in orderto build this interface.
+以前にUIKitを使用してアプリを作成したことがある場合は、このインターフェイスを構築するために必要なピースの種類がわかります。
+
+It's not a lot of views, butthere are many individualdetails that you need to getright.
+それは多くの見解ではありません、しかし、あなたがすぐに必要とする多くの個々の詳細があります。
+
+With SwiftUI, it is way lesscode.
+ SwiftUIでは、それははるかに少ないコードです。
+
+Fewer than 20 lines focused onjust three key things.
+ 20行に満たないのは、まさに3つの重要なことです。
+
+First, a few lines to define thestructure and layout of yourviews.
+まず、ビューの構造とレイアウトを定義するための数行です。
+
+Then some image and text viewsto display your content.
+それからあなたの内容を表示するためにいくつかの画像とテキストビュー。
+
+And finally, parameters andmodifiers to adjust how it alllooks.
+そして最後に、それがどのように見えるかを調整するためのパラメータと修飾子。
+
+Now let' stake a look a littlebit more closely at just a fewof these lines.
+それでは、これらの行のうちのほんの数行で、もう少し詳しく見てみましょう。
+
+The scrolling list itself isbarely any code at all.
+スクロールリスト自体は、ほとんどすべてのコードです。
+
+You just declare the list andthen describe the model objectsto be used in each row.
+あなたは単にリストを宣言してから各行で使われるモデルオブジェクトを記述します。
+
+There's no setup, there's noconfiguration and there's nocallbacks.
+設定はなく、設定もなく、コールバックもありません。
+
+Now the image at the top is justas simple.
+今すぐ上部の画像はとても単純です。
+
+You display an image, clip it toa circle and add a shadow.
+画像を表示し、それを円に切り取り、影を付けます。
+
+And it's not just less code.
+そしてそれは単なるコードではありません。
+
+It's better code.
+それはより良いコードです。
+
+We designed the API to make theobvious approach be the rightapproach.
+明白なアプローチが正しいアプローチになるようにAPIを設計しました。
+
+The right way to create thislabel is exactly the one line ofcode that you would think towrite.
+このラベルを作成する正しい方法はまさにあなたがtowriteと思うだろう1行のコードです。
+
+It supports dynamic type, DarkMode and more.
+動的型、DarkModeなどをサポートしています。
+
+In fact, even the stringinterpolation used here is fullylocalizable.
+実際、ここで使用されている文字列補間でも完全にローカライズ可能です。
+
+This simplicity eliminatesentire categories of errors.
+この単純さは、全てのカテゴリーのエラーを排除する。
+
+Looking at our list again, itsrows update automatically if themodel changes, ensuring thatyour UI is always up to date andnever displaying out-of-datedata.
+私たちのリストをもう一度見ると、モデルが変更されるとその行は自動的に更新され、常に最新のUIが使用され、古くなったデータが表示されるようになります。
+
+And it's easy to read too.
+そしてそれも読みやすいです。
+
+The code for this image with acorner radius of three saysexactly that.
+ 3のコーナー半径を持つこの画像のためのコードはそれを正確に言う。
+
+Reading SwiftUI is like havingsomeone explain that interfaceto you.
+ SwiftUIを読むことは、誰かがあなたにそのインターフェースを説明するようなものです。
+
+And SwiftUi's code is availableeverywhere, helping you reusemore of your code across allApple platforms.
+そしてSwiftUiのコードはどこでも利用できるので、allAppleプラットフォーム全体であなたのコードをもっと再利用することができます。
+
+Now you've long been able toshare your model and low-leveldrawing and compositing code,but higher-level UI code hasremained mostlyplatform-specific.
+これで、モデルと低レベルの描画コードおよび合成コードを共有できるようになりましたが、より高いレベルのUIコードはほとんどプラットフォーム固有のままです。
+
+With SwiftUI, we're raising thatbar, enabling you to share farmore.
+ SwiftUIでは、その水準を引き上げており、これまで以上に情報を共有できます。
+
+Now of course you're still goingto want to tailor yourinterfaces for each individualplatform to ensure that your appfeels great everywhere that youdeploy it.
+当然のことながら、デプロイするすべての場所であなたのアプリケーションが優れたものになるように、個々のプラットフォームに合わせてインターフェイスを調整したいと思います。
+
+But with SwiftUI's common set ofAPI patterns, you can learnthose tools once and then applythem everywhere, getting you anative interface on eachplatform you deploy to.
+しかし、SwiftUIの共通のAPIパターンセットを使用すれば、一度ツールを習得してからどこにでもそれらを適用することができ、デプロイする各プラットフォーム上の見かけ上のインターフェースになります。
+
+SwiftUI is designed with astrong set of four coreprinciples.
+ SwiftUIは、4つの主要原則を持つ強力なセットで設計されています。
+
+First, a declarative syntaxshifts UI programming away fromhow to update the screen andinstead lets you just focus onwhat you want to display.
+まず、宣言型構文では、UIプログラミングを画面の更新方法から変更し、代わりに表示したいものに集中することができます。
+
+For example, let's say that youwant to build a label with aheadline font and a gray color.
+たとえば、フォアラインフォントとグレー色でラベルを作成したいとしましょう。
+
+Describing how to get that is amulti-step process with manysteps having to happen in aspecific order.
+それをどうやって実現するかを記述することは、マニステップが特定の順序で起こらなければならないマルチステッププロセスです。
+
+But describing what you wantrequires no translation.
+しかし、あなたが欲しいものを記述することは翻訳を必要としません。
+
+Text that says Done with a fontfor a headline that's coloredgray.
+色付きの見出しのフォントでDoneと書かれているテキスト。
+
+SwiftUI lets you say exactlythat with a great newdeclarative syntax.
+ SwiftUIを使用すると、新しい宣言型構文を使用して正確にそのことを伝えることができます。
+
+And it's the minimum codenecessary to describe exactlyyour idea.
+そしてそれはあなたの考えを正確に記述するために必要な最低限のコードです。
+
+And iteration becomessignificantly faster as well.
+また、繰り返しも大幅に速くなりました。
+
+If you later need to change thatlabel to become a button, that'sa one-line change.
+後でそのラベルを変更してボタンにする必要がある場合、それは1行の変更です。
+
+[ Applause ]
+ 【拍手】
+
+I know, it's pretty great.
+私は知っています、それはかなり素晴らしいです。
+
+[ Applause ]
+ 【拍手】
+
+All right, so our secondprinciple is that we shouldprovide automatic functionalitywhenever it's possible.
+大丈夫です、それで私たちの第二の原則は、可能なときはいつでも自動機能を提供するべきだということです。
+
+This eliminates the need for ahuge amount of code that youused to have to write by hand.
+これにより、手作業で記述しなければならなかった膨大な量のコードが不要になります。
+
+Our app for naming macOSreleases is pretty simple, yetit does include a huge amount ofautomatic functionality.
+ macOSreleasesを命名するための私たちのアプリは非常に単純です、それでもまだそれは膨大な量の自動機能を含んでいます。
+
+We get default handling ofspacing and safe area insets.
+デフォルトのスペース処理とセーフエリアインセットが処理されます。
+
+Localizability and layoutadjustments for right-to-leftlanguages.
+右から左への言語のローカライズ性とレイアウトの調整。
+
+Dynamic type, Dark Mode and somuch more, all from that oneminimal description.
+ダイナミック型、ダークモードなど、もっと細かいことはすべて、この最小限の説明から。
+
+It's an incredible amount ofautomatic functionality for asmall amount of code, but thereis one more thing that is justso important that it reallydeserves special attention.
+それは、少量のコードにとって信じられないほどの量の自動機能ですが、特別な注意を払うにはもう1つ重要なことがあります。
+
+Our modern interfaces areinteractive and they'reanimated.
+私たちの現代のインターフェースは相互作用的であり、それらは活気づけられています。
+
+And with SwiftUI, that sameinterface declaration is alsoautomatically fully animatable.
+そしてSwiftUIでは、その同じインターフェース宣言も自動的に完全にアニメート可能です。
+
+Animations can be enabled forthe entire hierarchy with justone line of code.
+アニメーションは1行のコードで階層全体で有効にできます。
+
+There's no bookkeeping, there'sno preparation and there's neverany cleanup.
+簿記はありません。準備はできていません。
+
+If you've used Keynote MagicMove animations before, SwiftUIanimations are that easy andeven more powerful.
+ Keynote MagicMoveアニメーションを以前に使用したことがある場合は、SwiftUIanimationsの方が簡単で強力です。
+
+And for views that are added andremoved, you can specify howthey transition in and out withjust one more line of code.
+また、追加および削除されたビューについては、もう1行のコードでどのように遷移するのかを指定できます。
+
+While animations are inprogress, your app remains fullyinteractive and responsive andready to handle user input atany time.
+アニメーションが進行している間、あなたのアプリは完全に対話的で敏感なままで、いつでもユーザー入力を処理することができます。
+
+And if the user ever interruptsone of those animations or ifyou need to move to a newlocation, SwiftUI handles all ofthat automatically too.
+また、ユーザーがこれらのアニメーションを中断した場合や、新しい場所に移動する必要がある場合も、SwiftUIが自動的にそのすべてを処理します。
+
+Now our third principle is thatcompositional APIs are easier tolearn and let you iterate a lotfaster.
+今、私たちの3番目の原則は、合成APIはより簡単に許容され、あなたがより速くより速く反復させることができるということです。
+
+We've looked at how we candeclare an individual view likethis text label.
+このテキストラベルのように、個々のビューをどのように宣言できるかを見てきました。
+
+But declaring more complex viewsis just as easy.
+しかし、より複雑なビューを宣言することも同じように簡単です。
+
+You just compose togethermultiple smaller pieces.
+あなたはただ一緒に複数の小さい部分を構成します。
+
+Containers like horizontal andvertical stacks let you easilybuild powerful layouts by justcombining together multiplesimple pieces.
+水平および垂直スタックのようなコンテナを使用すると、複数の単純な要素を組み合わせるだけで、強力なレイアウトを簡単に構築できます。
+
+And SwiftUI applies compositionto view properties as well,using a standard modifiersyntax.
+そしてSwiftUIは、標準のmodifiersyntaxを使って、compositionto viewプロパティも適用します。
+
+A common set of modifiers can beapplied to any view, like colorapplied here to make this textgray.
+このテキストをグレーにするためにここでまとめて使うように、一般的な修飾子のセットをどのビューにも適用できます。
+
+This compositional approach letsyou learn a small set of viewsand modifiers and then combinethem together to createprogressively more powerfulinterfaces.
+この合成アプローチでは、少数のビューと修飾子を学び、次に組み合わせて、より強力なインターフェースを作成できます。
+
+And our final principle is thatyour interface should always bein a consistent state.
+そして私たちの最後の原則は、あなたのインターフェースは常に一貫した状態にあるべきだということです。
+
+Your UI is a reflection of yourapp's data, so the two shouldalways be in synch at all times.
+あなたのUIはyourappのデータを反映しているので、2つは常に同期しているべきです。
+
+With traditional APIs, this canbe error-prone.
+従来のAPIでは、これは間違いを起こしやすいものです。
+
+But with SwiftUI, your interfaceupdates automatically any timethe data changes.
+しかしSwiftUIでは、データが変更されるたびにあなたのインターフェースは自動的に更新されます。
+
+Now there are two common placesthat your data might likely comefrom.
+今すぐあなたのデータが由来する可能性がある2つの一般的な場所があります。
+
+Now the first are your modelobjects.
+今最初のあなたのmodelobjectsです。
+
+And you can use your existingmodel objects directly by simplyconforming them to a newbindable object protocol.
+そして、既存のモデルオブジェクトを新しいバインド可能なオブジェクトプロトコルに単純に準拠させることで直接使用できます。
+
+Its only requirement is that youspecify when the data in yourmodel changes.
+唯一の要件は、モデル内のデータが変更されたときに指定することです。
+
+Now the second place istemporary UI state, like whetherthe view is currently in editingmode.
+現在2番目の場所は、ビューが現在編集モードになっている場合と同様に、一時的なUIの状態です。
+
+These are declared using asimple state wrapper applied toany property on your view.
+これらはあなたのビューのすべてのプロパティに適用されるシンプルな状態ラッパーを使って宣言されます。
+
+We're all used to every propertyon every view being mutable, butonce you start using SwiftUI,you're going to be shocked torealize how little mutable stateyour app actually needs.
+私たちはみんなビューのすべてのプロパティに慣れてきていますが、SwiftUIを使い始めると、変更可能なstateyourアプリケーションが実際にはどれほど必要でないかを実感するのにショックを受けるでしょう。
+
+Now whenever your model or statechanges, that UI is going toupdate automatically.
+モデルや状態が変わるたびに、そのUIは自動的に更新されます。
+
+And because it's all Swift code,you get this behavior whilestill being able to use yourmodel objects directly withinthat interface declaration.
+そしてそれは全てSwiftコードなので、あなたはこの振る舞いを得ますが、それでもなおあなたのモデルオブジェクトをそのインターフェース宣言の中で直接使うことはできません。
+
+You can even transform andformat values in line with noadditional indirection needed.
+追加の間接参照が不要であれば、値を変換してフォーマットすることもできます。
+
+For example, this stringinterpolation can be used toformat a date, resulting infully localized formatted text.
+たとえば、この文字列補間は日付の書式設定に使用でき、その結果ローカライズされた書式付きテキストになります。
+
+All of this means that withSwift UI, you're going to writeless code and get a moreconsistent UI.
+これらすべてのことは、Swift UIを使用すると、コードを書く必要がなくなり、より一貫性のあるUIが得られることを意味します。
+
+Those are the four coreprinciples of SwiftUI.
+これがSwiftUIの4つの基本原則です。
+
+A powerful declarative syntaxenabling a huge amount ofautomatic functionality with acompositional API that ensuresyour interface is always in aconsistent state.
+あなたのインターフェースが常に矛盾した状態にあることを保証するcompositional APIで膨大な量の自動機能を可能にする強力な宣言的シンタックス。
+
+And a great new frameworkdeserves incredible tools.
+そして素晴らしい新しいフレームワークは信じられないほどのツールに値します。
+
+And we've created a wholebrand-new workflow within Xcodedesigned from the ground up forSwiftUI.
+そしてXcode内で全く新しいワークフローを作成しました。SwiftUI用にゼロから設計されています。
+
+You get the power andflexibility of code combinedwith the ease of use and rapiditeration of a UI tool.
+あなたはコードのパワーと柔軟性をUIツールの使いやすさと迅速な繰り返しと組み合わせて得ます。
+
+You always have access to bothat all times, so you'll neverhave to choose between themagain.
+あなたはいつもいつでもbothatにアクセスすることができます、それであなたはそれらの間で選ぶことを決してしないでしょう。
+
+And because the tools work onyour actual existing sourcecode, you have a truly livedevelopment experience.
+そして、これらのツールは実際の既存のソースコード上で機能するため、本当に開発中の経験があります。
+
+Now to really understand howamazing this workflow is, youjust need to see it again live.
+このワークフローがどのように機能しているかを実際に理解するためには、もう一度それを実行する必要があります。
+
+And to show it to you now, I'llinvite Kevin up to give you ademo.
+そして今すぐあなたにそれを見せるために、私はあなたにademoを与えるためにケビンを招きます。
+
+[ Applause ]
+ 【拍手】
+
+>> Thanks, Josh.
+ >>ありがとう、ジョシュ。
+
+You guys ready to have some fun?All right, so I'm building ahiking app and I want to add aview to my table view cell thattells me how difficult a trailis.
+大丈夫ですので、私はakingアプリケーションを構築しています。テーブルビューのセルにビューを追加したいと思います。
+
+So we're going to start in thelibrary.
+それでは、ライブラリから始めましょう。
+
+We're going to have some text.
+テキストをいくつか用意します。
+
+And as I'm dragging, Xcode issuggesting layouts for me.
+そしてドラッグしているうちに、Xcodeは私にぴったりのレイアウトを提案しています。
+
+Now I just tell Xcode where Iwant it and Xcode figures outthe layout for me.
+それでは、Xcodeにそれを望んでいる場所を指定するだけで、Xcodeはそのレイアウトを把握してくれます。
+
+And now we can edit theproperties of this view.
+そして今、このビューのプロパティを編集できます。
+
+So I'm just going to commandclick in the canvas here and getcustom-tailored inspectors righthere.
+それで、ここでキャンバスをcommandclickしてカスタムメイドのインスペクタを手に入れようと思います。
+
+Let's make this text a littlebit smaller.
+このテキストを少し小さくしましょう。
+
+Now watch -- watch the codewhile I do this.
+今すぐ見てください - 私がこれをしている間にコードを見てください。
+
+You'll see it writes the codefor me.
+あなたはそれが私のためのコードを書いているのを見るでしょう。
+
+Now, we can do the same thingover here in the source editorby just editing the code.
+これで、コードを編集するだけで、ここでもソースエディタで同じことができます。
+
+And you can see Xcode builds andruns my code and updates thecanvas on the right.
+そして、Xcodeが私のコードを構築して実行し、右側のキャンバスを更新するのを見ることができます。
+
+Now no matter where I'm working,I get access to all of my designtools.
+今どこで働いていても、私のすべてのdesigntoolsにアクセスできます。
+
+So I'm just going to commandclick on this V stack, going toopen up the inspectors.
+それで、私はこのVスタックをcommandclickして、インスペクタを上げます。
+
+And again I can just modify theproperties that I want.
+また、必要なプロパティを変更することもできます。
+
+It's just so fast to iterate.
+繰り返すのはとても速いです。
+
+Now, you might notice that thisview has a couple inputs likethis title and this difficulty.
+さて、あなたはこの見解がこのタイトルとこの難しさをいくつか入力していることに気づくかもしれません。
+
+So how does Xcode know what datato show in the preview?This has always been one of thechallenges with UI development:what data do we show duringdesign time?And this is why we inventedXcode previews.
+では、Xcodeはどのデータがプレビューに表示されるのかをどのようにして認識するのでしょうか？これは常にUI開発における課題の1つでした：設計時にどのようなデータを表示しますか？そしてこれがXcodeプレビューを発明した理由です。
+
+What is a preview?I'll show you.
+プレビューとは何ですか？
+
+So let me scroll down here.
+それではここで下にスクロールさせてください。
+
+This snippet of code here -- apreview is just a snippet ofcode in my application thatconfigures it for design time.
+このコードスニペットはここにあります -  apreviewはデザインタイムのためにそれを構成する私のアプリケーションの単なるコードのスニペットです。
+
+Because it's in my application,I get access to all the code inmy project.
+それは私のアプリケーションにあるので、私はすべてのコード内部プロジェクトにアクセスできます。
+
+And because it's in my project,I can check it in and share itwith my team members.
+それは私のプロジェクトにあるので、チェックインしてチームメンバーと共有することができます。
+
+And it's so easy to trydifferent data.
+そして、異なるデータを試すのはとても簡単です。
+
+Now actually here Half Dome ispretty hard.
+今ここで実際にここでハーフドームはかなり難しいです。
+
+So let's see what it looks likeat hard.
+それではそれが一見難しいように見えるか見てみましょう。
+
+And that's because it's 16miles, not 6.
+それは6マイルではなく16マイルだからです。
+
+And that's really compilingcode.
+そしてそれは本当にコンパイルコードです。
+
+Now because this is SwiftUIcode, I get access to all themodifiers that I would use forthe rest of my UI development.
+これがSwiftUIcodeなので、私は残りのUI開発に使用するすべての修飾子にアクセスできます。
+
+So we can see what it looks likein Dark Mode.
+だから我々はそれがダークモードでどのように見えるかを見ることができます。
+
+And I also have preview-specificmodifiers as well.
+また、プレビュー固有の修飾子もあります。
+
+So by default previews are thesize of a device, but sincewe're working on a table viewcell, let's just focus in onthat content.
+そのため、デフォルトではプレビューはデバイスのサイズになりますが、テーブルビューセルに取り組んでいるので、そのコンテンツに焦点を合わせてみましょう。
+
+So I'll just make that the sizethat fits.
+だから私はちょうどsizethatが収まるようにするつもりです。
+
+Okay, now here is the reallycool thing about previews.
+さて、今ここでプレビューについて本当にクールなことです。
+
+You can have as many as youwant.
+あなたは望むだけの数を持つことができます。
+
+So let's add a second previewwith completely different data.
+それでは、まったく別のデータで2番目のプレビューを追加しましょう。
+
+But let's not stop there.
+しかし、それだけではありません。
+
+Let's command click, repeat it acouple of times.
+クリックを命じて、それを数回繰り返しましょう。
+
+Let's enumerate over some commondynamic type sizes and thenlet's configure our cell to usethat dynamic type size.
+いくつかの一般的な動的型サイズについて列挙して、その動的型サイズを使用するようにセルを構成しましょう。
+
+And there at a glance I can seemy cell with light mode, DarkMode, multiple different dynamictype sizes all at the same time.
+一見したところでは、ライトモード、DarkMode、複数の異なるダイナミックタイプサイズのセルをすべて同時に表示できます。
+
+[ Applause ]
+ 【拍手】
+
+Now when I tap on this cell, Iwant to go to a detailed view.
+このセルをタップすると、詳細ビ​​ューに移動します。
+
+So let's switch over to thatfile now and take a look.
+それでは、今そのファイルに切り替えて見てみましょう。
+
+Now I've learned through theyears of hiking that you shouldnever judge a trail by its name.
+今、私は何度もハイキングをしてきたので、トレイルをその名前で判断するべきであることはいつでも知っています。
+
+So it's really important to methat we can configure our detailview to make that image reallylarge.
+ですから、その画像を本当に大きくするためにdetailviewを設定することができるということを満たすことは本当に重要です。
+
+And I've already done that withsome SwiftUI state here.
+そして、私はすでにここでいくつかのSwiftUI状態でそれをしました。
+
+So when we tap the banner, wewant to toggle that expansionstate.
+そのため、バナーをタップすると、その展開状態を切り替える必要がありました。
+
+Now I can test that right herein the UI just by clicking thisplay button.
+これで、この再生ボタンをクリックするだけで、ここでそのUIをテストできます。
+
+This takes any preview that Ihave and makes it fullyinteractive.
+これはIhaveのプレビューをすべて取り、完全にインタラクティブにします。
+
+So I can just click and test outthose different expansionstates.
+だから私はただクリックして、さまざまな拡張状態をテストすることができます。
+
+Now we can really polish this upwith an animation.
+これで、アニメーションを使ってこれを本当に磨くことができます。
+
+It's so easy.
+それはとても簡単です。
+
+So I can just wrap my statechange in a whip animationblock, and now I get a beautifuldefault animation.
+だから私はちょうど私のstatechangeをwhipアニメーションブロックでラップすることができ、そして今や私は美しいデフォルトのアニメーションを得る。
+
+[ Applause ]
+ 【拍手】
+
+And it's just as easy tocustomize that.
+そしてそれをカスタマイズするのも同じくらい簡単です。
+
+So let's slow it down for somedramatic effect, and now I get abeautiful animation opening itup.
+それでは、いくつかの効果を得るために速度を落としてみましょう。そして今、私はそれを開く素晴らしいアニメーションを手に入れます。
+
+Now what's so cool about SwiftUIis that every animation iscancellable and reversible,leaving my applicationresponsive the whole time.
+ SwiftUIのすごいところは、すべてのアニメーションがキャンセル可能でリバーシブルなので、私のアプリケーションはずっと反応しているということです。
+
+Okay, so we have a table viewcell and we have a detail view.
+わかりました、テーブルビューセルがあり、詳細ビューがあります。
+
+So let's put it all together.
+それでは、まとめてみましょう。
+
+So I'm going to switch over tomy last value here, which has abunch of different trails and alist.
+それで、私はここで最後の値を切り替えることにします。
+
+So what I want to do is Iactually want to see what thislooks like on a real device.
+だから私がやりたいことは、実際にこれが実際のデバイスでどのように見えるかを見たいということです。
+
+So with the click of a button --let's click this -- Xcode isgoing to build my project forthe device.
+ボタンをクリックするだけで（これをクリックして）、Xcodeは私のプロジェクトをデバイス用に構築しようとしています。
+
+It's going to install it andit's going to launch my previewright here on the device.
+それはそれをインストールしようとしていますそしてそれはここでデバイス上で私のpreviewrightを起動させることになるでしょう。
+
+And you can see it's fullyinteractive right here.
+そして、あなたはそれがここで完全に相互作用的であるのを見ることができます。
+
+So first let's use that cellthat we built.
+それでは最初に、我々が構築したセルを使用しましょう。
+
+So I'll just change this text tobe a trail cell.
+だから私はただこのテキストをトレイルセルに変更します。
+
+Now you can see we're seeing ourtrails show up there.
+これで、私たちがそこにアウターレールが現れるのを見ることができます。
+
+And now when I tap on this, Iwant it to go to our detail viewthat we built.
+そして今、私がこれをタップすると、私たちが作った詳細ビューに行きたがっています。
+
+This is so easy with SwiftUI.
+これはSwiftUIではとても簡単です。
+
+It's just going to wrap this ina navigation button, and thattells us to go to our detailedview.
+ナビゲーションボタンにラップするだけで、詳細ビューに進むことができます。
+
+And now you can see the chevronshows up.
+そして今、あなたはシェブロンショーを見ることができます。
+
+So let's check out Snow Creekand let's move in on thatpicture.
+それでは、Snow Creekをチェックして、その写真に移りましょう。
+
+And okay, snowy and difficult.
+そして、大丈夫、雪の中、そして難しい。
+
+That does not sound like a funtrail.
+それは、フントレールのようには聞こえません。
+
+So what I'm going to do withjust one line of SwiftUI code isadd swipe to delete.
+だから私はSwiftUIコードisadd swipeを削除するために1行を調整するつもりです。
+
+And now we can say, "We don'twant to do that trail.
+そして今、私たちは言うことができます。
+
+"And now lastly, let's see whatit looks like in Dark Mode.
+ 「そして最後に、ダークモードの様子を見てみましょう。
+
+Without any work, it's going toput my preview in Dark Mode andyou can see it looks beautiful.
+何もしなければ、プレビューはダークモードで出力され、きれいに見えます。
+
+[ Applause ]
+ 【拍手】
+
+We can tap on our valley floor,zoom in.
+私たちは谷間の床をタップしてズームインできます。
+
+And that looks like a great wayto end the week.
+そしてそれは週を終わらせるための素晴らしい方法のように見えます。
+
+So we just built an app withnavigation, dynamic type size,light mode, Dark Mode, multipledifferent data and saw on thereal device all without everbuilding and running.
+そのため、ナビゲーション、ダイナミックタイプサイズ、ライトモード、ダークモード、複数の異なるデータを使用してアプリを作成し、構築して実行することなく、すべてのデバイスで確認しました。
+
+Now that's fun.
+今それは楽しいです。
+
+All right, Josh, back to you.
+ジョシュさん、よろしくお願いします。
+
+[ Applause ]
+ 【拍手】
+
+>> Thanks, Kevin.
+ >>ありがとう、ケビン。
+
+All right, this is really anincredible new workflow forfully native code.
+大丈夫、これは本当に信じられないほど新しいワークフローで、強制的にネイティブコードです。
+
+What you do in the tool isalways debuggable, diffable,searchable, and understandable.
+ツールであなたがすることは常にデバッグ可能、拡散可能、検索可能、そして理解可能です。
+
+And because you can always editthe code directly, you getincredible flexibility in yourworkflow.
+そして、あなたはいつでも直接コードを編集することができるので、あなたはあなたのワークフローにおける優秀な柔軟性をあなたに与えます。
+
+And SwiftUI is deeply integratedin all of our operating systems,so using it results in a fullynative app for whicheverplatforms you target.
+そしてSwiftUIは私たちのすべてのオペレーティングシステムに深く統合されているので、それを使うことであなたがターゲットとしているプラ​​ットフォームのための完全に有効なアプリになります。
+
+You get the same performance,the same behavior and the samecontrols as any other nativeapp.
+他のネイティブアプリケーションと同じパフォーマンス、同じ動作、同じコントロールが得られます。
+
+And you can adopt SwiftUI atyour own pace.
+そして、あなたはSwiftUIをあなた自身のペースで採用することができます。
+
+You can use it for anything,from just one view in your appall the way up to the entireapplication.
+あなたのappallのただ一つのビューから全体のアプリケーションまで、あなたは何にでもそれを使うことができます。
+
+It works seamlessly with all ofyour existing UIKit, AppKit andWatchKit code so you don't needto rewrite anything.
+既存のすべてのUIKit、AppKit、およびWatchKitコードとシームレスに連携するため、何も書き直す必要はありません。
+
+And to get you up to speedquickly, our documentation teamhas developed a brand-new styleof interactive documentation.
+そして、あなたが迅速に行動を起こすために、私たちのドキュメンテーションチームは、まったく新しいスタイルのインタラクティブドキュメンテーションを開発しました。
+
+It quickly takes youstep-by-step from creating a newproject all the way up tobuilding a fully interactiveinterface.
+新しいプロジェクトを作成してから完全にインタラクティブなインターフェイスを構築するまでのステップバイステップですぐに手順を実行できます。
+
+So you'll be up to speed in notime.
+だからあなたは速報でスピードを上げることになるでしょう。
+
+[ Applause ]
+ 【拍手】
+
+So that's SwiftUI and some ofthe new tools in Xcode.
+これがSwiftUIとXcodeの新しいツールの一部です。
+
+Of course, this is a huge yearfor Swift and Xcode, so there'seven more to this story.
+もちろん、これはSwiftとXcodeにとって大きな年であり、この話にはさらに7つの意味があります。
+
+And to tell you more about it,I'll hand things off to Matthew.
+そしてそれについてあなたにもっと話すために、私は物事をマシューに手渡すつもりです。
+
+Thanks.
+ありがとう。
+
+[ Applause ]
+ 【拍手】
+
+>> Thank you, Josh.
+ >>ありがとう、ジョシュ。
+
+Our tools released this yearbring together innovations inSwift and Xcode to deliver someawesome results.
+私たちのツールは今年驚くべき結果をもたらすためにSwiftとXcodeのイノベーションをまとめてリリースしました。
+
+So let's start with Swift.
+それではSwiftから始めましょう。
+
+Now in our fifth year, Swift hasmatured and is continuing toleap forward.
+今、私たちの5年目に、Swiftは急成長し、そして今後も寛容になり続けています。
+
+Where our newest and flagshiptechnologies, from machinelearning to augmented realityare possible only because ofSwift and it now being part ofour OS.
+機械学習から拡張現実まで、私たちの最新かつ重要なテクノロジが可能なのは、Swiftのおかげでのみ可能であり、それが今や私たちのOSの一部になっているからです。
+
+To achieve this, earlier thisspring we introduced ABIstability which reduces the sizeof your apps by using a singleshared Swift runtime.
+これを達成するために、これまでの早い時期に、単一共有のSwiftランタイムを使用することでアプリのサイズを縮小するABIstabilityを導入しました。
+
+[ Applause ]
+ 【拍手】
+
+And we are following that uptoday with module stabilitywhich ensures compatibility --yes.
+そして私達は互換性を確実にするモジュールの安定性を追求しています--yes。
+
+[ Applause ]
+ 【拍手】
+
+This completes the picture byensuring compatibility for yourbinaries with the current andfuture versions of the Swiftcompiler.
+これにより、Swiftcompilerの現在および将来のバージョンとのバイナリの互換性が保証されます。
+
+And these come alongside anumber of other languagefeatures, tools editions andperformance and code sizeimprovements, all which furtherextend the potential Swiftbrings to your projects.
+そしてこれらは、他の言語機能、ツールのエディション、そしてパフォーマンスやコードサイズの改善など、あなたのプロジェクトの潜在的なSwiftbringsを拡張するものと一緒になっています。
+
+So Swift is already the languagefor your apps and now more thanever for common code to shareacross all Apple platforms.
+そのため、Swiftはすでにあなたのアプリの言語であり、今や共通のコードがすべてのAppleプラットフォームで共有されるようになっています。
+
+In fact, sharing is the reasonwe created Swift Packages whichare the best way to develop andshare your own code and reusecode from others.
+実際、共有はSwift Packagesがあなた自身のコードを開発し共有し、他人から再利用するための最良の方法を作成した理由です。
+
+And today we have two bigannouncements.
+そして今日、2つの大きなお知らせがあります。
+
+GitHub will be adding supportfor Swift packages to the GitHubPackage Registry.
+ GitHubはSwitパッケージのサポートをGitHubPackage Registryに追加する予定です。
+
+[ Applause ]
+ 【拍手】
+
+Which is perfect because Xcodenow seamlessly supports Swiftpackages for apps on iOS, iPadOSand all of our platforms.
+ XcodenowはiOS、iPadOS、およびすべてのプラットフォーム上のアプリケーション用のSwiftpackagesをシームレスにサポートしているので、これは完璧です。
+
+[ Applause ]
+ 【拍手】
+
+Swift packages are top-levelitems in your workspaces, alwaysvisible, always accessible, anddeeply integrated.
+ Swiftパッケージはあなたのワークスペースのトップレベルのアイテムで、常に見え、常にアクセス可能で、そして深く統合されています。
+
+Packages from the community andthose packages you create getinstant access to all of Xcode'swork flows for source control,debugging, testing, the works.
+コミュニティからのパッケージとあなたが作成したこれらのパッケージは、ソース管理、デバッグ、テスト、作業のためのXcodeのすべての作業フローへのアクセスを確実にします。
+
+So Swift packages built intoXcode, it's sharing code the wayyou've always wanted.
+ SwiftパッケージはXcodeに組み込まれているので、コードを共有しています。
+
+Now that's just the start of ourXcode release this year, whichis focused on maximizing yourproductivity.
+これが今年のXcodeリリースのほんの始まりに過ぎません。これはあなたの生産性を最大化することに焦点を合わせています。
+
+And we have a number ofimprovements today to share withyou as we take Xcode up to 11.
+そして、Xcodeを最大11まで引き上げると、今日あなたと共有するための改善がいくつかあります。
+
+So let's get started with one ofour biggest changes which is theXcode Workspace.
+それでは、最大の変更点の1つであるXcode Workspaceから始めましょう。
+
+We are giving you full editorialcontrol.
+私たちはあなたに完全な編集コントロールを与えています。
+
+You can now create and manageeditors however you like.
+これで、好きなようにエディタを作成し管理することができます。
+
+Whatever your preferred styleand layout is, you can simplyadd and remove editors wheneverand wherever you see fit.
+好みのスタイルやレイアウトが何であれ、編集者を追加したり削除したりすることができます。
+
+[ Applause ]
+ 【拍手】
+
+And even better, your workspacescan now focus too.
+さらに良いことに、あなたのワークスペースは今も集中しています。
+
+So you can take any editor andmaximize it, and then whenyou're done, just put it backand it will go right back towhere you started.
+それで、あなたはどんなエディタでもそれを最大化することができます、そして、あなたがそれを終えたら、ただそれを元に戻すだけでそれはあなたが始めたところに戻ってきます。
+
+[ Applause ]
+ 【拍手】
+
+So whether you're working on thesmallest of laptops or with thelargest of displays, yourworkspace now works for you.
+それで、あなたが最小のラップトップで作業しているか最大のディスプレイで作業しているかにかかわらず、あなたのワークスペースはあなたのために今働く。
+
+Now the related content in oureditors, the smart selectionslike counterparts, are alsogetting a huge boost.
+現在、uoureditorsの関連コンテンツ、カウンターパートのようなスマートセレクションも、大きな後押しを得ています。
+
+There are new options likepreviews, canvas, live views andmore.
+プレビュー、キャンバス、ライブビューなどの新しいオプションがあります。
+
+You can use the related contentin any editor in your workspace.
+ワークスペースの任意のエディタで関連コンテンツを使用できます。
+
+And you'll like this one best ofall.
+そして、あなたはこれが一番好きです。
+
+When there is no content, theyautomatically disappear so youno longer need to manager theirvisibility.
+コンテンツがない場合、それらは自動的に消えますので、もはや彼らの可視性を管理する必要はありません。
+
+[ Applause ]
+ 【拍手】
+
+Now once you get your workspaceset up, it's all about theediting, and I'd like to showyou a quick demonstration ofsome of the new source editingfeatures we have for you thisyear.
+ワークスペースを設定したら、編集がすべて終了しました。今年度の新しいソース編集機能のいくつかについて簡単に説明します。
+
+To help you configure eacheditor the way you like, there'sa new Options menu in the upperright.
+あなたがあなたの好きなようにeacheditorを設定するのを助けるために、右上に新しいOptionsメニューがあります。
+
+You can see here I can enablethe assistants or any of therelated content.
+あなたはここで私がアシスタントまたは関連のあるコンテンツを有効にできることがわかります。
+
+I could turn on code coverage orsource control authors.
+私はコードカバレッジを有効にするか、ソース管理者をソースにすることができました。
+
+I'm going to turn on our newestfeature, Mini map.
+私たちの最新のミニマップをオンにします。
+
+So the mini map gives you astructural overview of your fileto help you navigate.
+だからミニマップはあなたがナビゲートするのを助けるためにあなたにあなたのファイルの構造的な概観を与える。
+
+You can see documentations,method and functions.
+あなたはドキュメンテーション、方法と機能を見ることができます。
+
+It makes it really easy to moveabout the file.
+ファイルを簡単に移動できます。
+
+If you'd like to leave yourselfsome other landmarks, you canuse the mark syntax to addlabels and horizontal dividersthat show up in your source andin the mini map.
+他のランドマークを残しておきたい場合は、マーク構文を使用して、ソースおよびミニマップに表示されるラベルと水平方向の区切り線を追加できます。
+
+[ Applause ]
+ 【拍手】
+
+Now if I hover over the minimap, you'll see the symboliclandmarks for the file.
+ミニマップにカーソルを合わせると、ファイルのシンボルマークが表示されます。
+
+Here's a pro tip: hold down thecommand key and you'll see allof the landmarks for the file tomake it really easy to navigateto exactly where you want to go.
+これがプロのヒントです。コマンドキーを押したままにすると、ファイルのすべてのランドマークが表示され、目的の場所に簡単に移動できます。
+
+[ Applause ]
+ 【拍手】
+
+And the mini map will show youissues, test failures, evenin-file find results.
+そしてミニマップはyouissues、テスト失敗、ファイル内検索結果さえも表示します。
+
+And we've made it fullyaccessible.
+そして私達はそれを完全にアクセス可能にしました。
+
+You'll find our source editornow pops and your code is morevivid as we've deepened oursyntax coloring.
+私たちのシンタックスカラーリングを深めたので、あなたは私たちのソースeditornowポップが見つかり、あなたのコードはより鮮明になります。
+
+You'll also see that we'veincreased our documentationsupport here with italics, boldand code voice in thedocumentation.
+また、ここではイタリック体、太字、およびドキュメント内のコードボイスを使用して、ドキュメントのサポートが強化されています。
+
+You'll also see that when youadd documentation, itautomatically adds in missingparameters that you may haveadded after you typed yourdocumentation.
+また、文書を追加すると、入力した後に追加した可能性のある不足しているパラメータが自動的に追加されます。
+
+[ Applause ]
+ 【拍手】
+
+And what's even better is tohelp you keep your documentationand code in synch.
+そして、さらに良いのは、あなたのドキュメントとコードを同期させるのを助けることです。
+
+You'll find Edit All and Scopenow changes both, all at thesame time.
+ [すべて編集]と[Scopenow]の両方が変更されていることがわかります。
+
+[ Applause ]
+ 【拍手】
+
+Now we also wanted to add someadditional help to help you keeptrack of your changes.
+今、私たちはまたあなたがあなたの変更を追跡するのを助けるためにいくつかの追加の助けを加えたいと思いました。
+
+If I'd like to review all of thechanges for this file, I canopen up the new Source ControlHistory Inspector which shows meall the changes that have beenmade to this file, and I canquickly jump to any commit.
+このファイルのすべての変更を確認したい場合は、このファイルに加えられたすべての変更を示す新しいSource ControlHistoryインスペクタを開くことができます。そして、すぐに任意のコミットにジャンプすることができます。
+
+And because it's in theinspector, this now works forany file type in your project.
+そしてそれはインスペクタの中にあるので、これは今あなたのプロジェクトの中の任意のファイルタイプに対して動作します。
+
+To help you review localchanges, we've also improved thechange bar.
+あなたがローカルチェンジを見直すのを助けるために、我々は同じくチェンジバーを改良しました。
+
+When I hover over the changebar, it shows me the localchanges.
+私がチェンジバーの上に置くと、それは私にローカルチェンジを表示します。
+
+But I can now have it show methe code before the change thatI made to get a quick snippet.
+しかし、私は今、私が簡単なスニペットを手に入れるために行った変更の前に、それをコードに表示させることができます。
+
+[ Applause ]
+ 【拍手】
+
+And of course it's live, so as Istart typing, it will update tokeep me up-to-date.
+そしてもちろんそれはライブです、それでIstartタイピングとして、それは私を最新の状態に保つために更新されます。
+
+So those are just some of themany source editing featuresyou'll find in Xcode 11.
+そのため、これらはXcode 11にあるいくつかのソース編集機能のほんの一部です。
+
+[ Applause ]
+ 【拍手】
+
+Okay, so testing is another keydevelopment workflow.
+それでは、テストは別の重要な開発ワークフローです。
+
+And Xcode already has greatsupport for writing tests, whichof course you all already knowbecause you're writing lots ofthem, right?>> Yep.
+そしてXcodeはすでにテストを書くための素晴らしいサポートを持っています、もちろんあなたがすでにたくさんのものを書いているのであなたはすでに知っています、そうですか？>>うん。
+
+>> Yeah.
+ >>うん。
+
+>> Excellent.
+ >>優秀です。
+
+That's what we like to hear.
+それが私たちが聞きたいことです。
+
+Now what you may not know isthat Xcode can do even more withyour tests by using fantastictools like runtime issues,sanitizers, localizationsimulation.
+今、あなたが知らないかもしれないことは、Xcodeがランタイム問題、消毒剤、局在化シミュレーションのような素晴らしいツールを使うことによってあなたのテストでさらにもっと多くのことができるということです。
+
+And we add more of these everyyear.
+そして、私たちはこれらの毎年をもっと追加します。
+
+With so many options, what'sbeen missing is a way to combinethem all in one place to be usedin parallel.
+非常に多くの選択肢があるので、欠けているのは、並行して使用するためにすべてを1か所にまとめる方法です。
+
+And for that we are adding testplans.
+そのためにテストプランを追加しています。
+
+Now the power of test planscomes from running your tests inmany configurations.
+テスト計画の威力は、さまざまな構成でテストを実行することによってもたらされます。
+
+With a few simple selections,you can instantly test for yourglobal audience.
+いくつかの簡単な選択で、あなたは即座にあなたのグローバルオーディエンスをテストすることができます。
+
+And this configuration is alsoperfect for capturingscreenshots for the App Store orcollecting details for yourlocalizers.
+また、この設定はApp Storeのスクリーンショットをキャプチャしたり、ローカライザーの詳細を収集するのにも最適です。
+
+Yeah, it's okay to applaud forthat.
+ええ、それはそれを称賛するために大丈夫です。
+
+This is a big deal.
+これは大したことです。
+
+[ Applause ]
+ 【拍手】
+
+You can then see your app fromevery angle by adding in otherdiagnostics, tools andparameters.
+その後、他の診断、ツール、およびパラメータを追加することで、あらゆる角度からアプリを見ることができます。
+
+And your coverage increases evenfurther when you run your testplans against many devices andOS combinations to get a fullycomprehensive view of how yourapp is doing.
+そして、あなたがあなたのテスト計画を多くのデバイスとOSの組み合わせに対して実行すると、yourappがどのようにしているかについての完全に包括的な見解を得ることができれば、カバレッジはさらに広がります。
+
+Now for testing at this scale,test plans work perfectly withXcode Server which can take fulladvantage of the new Mac Pro andwith Xcode's new paralleltesting on simulators anddevices.
+この規模でのテストのために、テストプランは新しいMac Proの利点を最大限に引き出すことができるXcode Serverと、シミュレータとデバイスに関するXcodeの新しい並列テストとで完璧に機能します。
+
+The result with test plans isyou now have one command thatdoes all of the testing for yourapps.
+テスト計画の結果は、yourappsのすべてのテストを実行する1つのコマンドがあります。
+
+So this is a major advancement.
+だからこれは大きな進歩です。
+
+[ Applause ]
+ 【拍手】
+
+Now often when testing anddebugging, it's necessary toreplicate user scenarios.
+テストやデバッグの際には、ユーザーシナリオを再現する必要があります。
+
+And our new Device Conditionsanswers the call.
+そして、私たちの新しいDevice Conditionsが電話を受けます。
+
+You can now set variedconditions for networkthroughput and thermal states onyour devices and see how yourapps respond.
+これで、デバイスのネットワークスループットと温度状態にさまざまな条件を設定し、yourappsがどのように反応するかを確認できます。
+
+Now rest assured these areactually just simulations.
+さて、これらの領域は実際には単なるシミュレーションであることを確認してください。
+
+We're not actually going to makeyour devices get super-hot here.
+私たちは実際にあなたの機器をここで過熱させるつもりはありません。
+
+You can enable the conditions inXcode's Devices window.
+ Xcodeの「デバイス」ウィンドウで条件を有効にできます。
+
+And the devices will displaybanners when the conditions areactive.
+そして条件が活発であるときデバイスはバナーを表示します。
+
+You can tap the banner todisable the conditions and Xcodewill automatically terminate theconditions when you disconnectthe devices.
+あなたは条件を無効にするためにバナーをタップすることができますし、デバイスを切断するとXcodeは自動的に条件を終了させます。
+
+Now for all the testing you'regoing to be doing, we've alsoimproved our result bundleswhich are now standalone.
+これで、これから実行しようとしているすべてのテストについて、結果バンドルが改善され、スタンドアロンになりました。
+
+Whether you create them in Xcodeor from the command line, youcan share them via email, attachthem to bugs and then justdouble-click on them to openthem back in Xcode to review allof the details.
+あなたがそれらをコマンドラインからXcodeorで作成するかどうかにかかわらず、あなたはそれらを電子メールで共有し、それらをバグに添付し、次にそれらをダブルクリックしてXcodeに戻ってすべての詳細を見ることができます。
+
+[ Applause ]
+ 【拍手】
+
+Now to help you improve yourapps even further, we areintroducing two new feedbacktools.
+ yourappsをさらに向上させるために、2つの新しいfeedbacktoolsを導入しています。
+
+First, app performance metricsfor iOS and iPadOS App Storeapps.
+まず、iOSおよびiPadOS App Storeappsのアプリパフォーマンスメトリクスです。
+
+When users opt into sharinganalytics, you'll receivedanonymized metrics for batterylife, launch time, memory useand more.
+ユーザーが分析の共有を選択すると、バッテリーライフ、起動時間、メモリ使用量などの匿名化された指標が表示されます。
+
+These metrics are aggregated anddisplayed in the organizeralongside the crash and energylogs, and are a great way tomonitor and improve theperformance of your app witheach build.
+これらのメトリクスは、クラッシュやエネルギーログと並んで整理されて表示されます。これらは、ビルドごとにアプリのパフォーマンスを監視および改善するための優れた方法です。
+
+These aggregated metrics, westarted collecting them in thespring with iOS 12.
+これらの集約された測定基準は、iOS 12と一緒にそれらを収集し始めました。
+
+2.
+ 2。
+
+So many of your apps willalready have data to review.
+だからあなたのアプリの多くはすでにレビューするデータを持っています。
+
+Now another great source offeedback is directly from yourusers, and Test Flight will nowlet users share what they think.
+フィードバックのもう一つの大きな源はあなたのユーザーから直接であり、そしてTest Flightは彼らの考えを共有するようになりました。
+
+Test Flight apps automaticallyenable user feedback.
+ Test Flightアプリは自動的にユーザーからのフィードバックを有効にします。
+
+When a user takes a screenshotin your app, they will have anew option to share it as betafeedback, optionally adding intheir comments.
+ユーザーがあなたのアプリでスクリーンショットを撮るとき、彼らはそれをベータフィードバックとして共有するための新しいオプションを持つでしょう。
+
+[ Applause ]
+ 【拍手】
+
+You can review all the feedbackon App Store Connect anddownload all the details foryour bug tracking systems.
+ App Store Connectに関するすべてのフィードバックを確認し、バグ追跡システムに関するすべての詳細をダウンロードできます。
+
+So all these features today arejust a small taste of our Xcoderelease, which brings togetherinnovations in Swift, the SDKand across all of our tools.
+そのため、今日のこれらすべての機能はXcodeリリースのほんのわずかな趣味です。これにより、Swift、SDK、およびすべてのツールに革新がもたらされます。
+
+All this to help you do yourbest work faster than ever.
+あなたがこれまで以上に速くあなたの最善の仕事をするのを助けるためのこれらすべて。
+
+And that is Xcode 11.
+それがXcode 11です。
+
+[ Applause ]
+ 【拍手】
+
+>> And now I'd like to inviteSebastien back to tell us moreabout Apple's platforms.
+ >>そして今、私はAppleのプラットフォームについてもっと私たちに話すために戻ってSebastienを招待したいと思います。
+
+Sebastien?
+セバスチャン？
+
+[ Applause ]
+ 【拍手】
+
+>> Thank you, Matthew.
+ >>ありがとう、マシュー。
+
+Wasn't that amazing?Really, really great features tohelp all of you build betterapps.
+本当に、本当に素晴らしい機能があなたのすべてを助けてくれるのです。
+
+So now let's switch to ourplatforms.
+それでは、私たちのプラットフォームに切り替えましょう。
+
+And of course our platformsthemselves are tailored toprovide great experiences andthey really reflect the uniqueway in which each of them isused.
+そしてもちろん、私たちのプラットフォーム自体は素晴らしい経験を提供するように調整されていて、それらはそれぞれそれらがそれぞれ使用されるユニークな方法を反映しています。
+
+So some of what we're doing thisyear is unique to each of them,and what we're going to do nowis dive right in to macOS andtell you what we're doing there.
+ですから、私たちが今していることのいくつかはそれぞれの人にとってユニークなものであり、これからやろうとしていることはmacOSに飛び込んでいき、そこで行っていることを説明します。
+
+macOS Catalina is a greatrelease with a rich set ofcompelling new features such asscreen time and the new Musicapp.
+ macOS Catalinaは、スクリーンタイムや新しいMusicappなどの強力な新機能を備えた素晴らしいリリースです。
+
+And the Mac takes another greatstep forward with amazingproductivity features such asSidecar.
+そしてMacは、Sidecarのような驚くべき生産性機能でもう一つの大きな進歩を遂げる。
+
+We're going to love Sidecar,right?
+私たちはサイドカーを好きになるでしょうね。
+
+[ Applause ]
+ 【拍手】
+
+All right.
+大丈夫。
+
+Well, with an active installedbase of over 100 million users,the Mac is a vibrant platformwith a rich app ecosystem.
+まあ、1億人以上のユーザーのアクティブなインストールベースで、Macは豊かなアプリエコシステムを備えた活気のあるプラットフォームです。
+
+And the Mac ecosystem is full ofpowerful native apps that youhave created using our AppKitframework.
+そしてMacエコシステムは、あなたが私たちのAppKitframeworkを使って作成した強力なネイティブアプリでいっぱいです。
+
+And a great example of this isPixelmator Pro.
+そしてその好例が、Pixelmator Proです。
+
+Now AppKit is the powerfulframework that enables the fullcapabilities of the Mac.
+今AppKitはMacのフル機能を可能にする強力なフレームワークです。
+
+But we also recognize that thereare a number of apps availablefor iPad that would be great torun on the Mac, but you have notalways had time to use AppKit tobring that to the Mac.
+しかし、私たちはまた、Mac上では非常に優れたiPad用のアプリがたくさんあることを認識していますが、AppKitを使用してそれをMacに提供する時間は十分にありませんでした。
+
+And so this year we're adding anadditional way to create nativeMac apps with the technologythat allows you to take aniPadOS app and bring it to theMac with minimal effort.
+そこで今年は、iPadOSアプリケーションを取り込んで最小限の労力でそれをtheMacにもたらすことができるテクノロジーを使って、nativeMacアプリケーションを作成するための追加の方法を追加します。
+
+We --Can you go back two slides?Sorry.
+私たちは - あなたは2つのスライドに戻ることができますか？
+
+One more.
+もう一つ。
+
+ All right.
+ 大丈夫。
+
+This is a huge opportunity forthe Mac to tap into the world'slargest app ecosystem.
+これは、Macが世界最大のアプリエコシステムを活用する大きなチャンスです。
+
+There are over a million iPadapps out there and we think manyof them would be really great onthe Mac as well.
+そこには百万を超えるiPadappがあり、それらの多くはMacでも本当に素晴らしいものになると私たちは考えています。
+
+Now to achieve this, we'veported more than 40 frameworksand libraries from iOS to theMac.
+これを達成するために、私たちは40以上のフレームワークとライブラリをiOSからtheMacに移植しました。
+
+And if you're an existing iOSdeveloper that doesn't have aMac app yet, you're going tolove having the same APIsavailable on both platforms.
+まだMacアプリを持っていない既存のiOS開発者であれば、両方のプラットフォームで同じAPIを利用できるようにする必要はありません。
+
+In fact, we've made availablealmost the entire iOS API setwith only a small number ofexceptions for unique mobilefeatures.
+実際、私たちはほとんどすべてのiOS APIを独自のモバイル機能のための少数の例外だけで利用可能にしました。
+
+Now we achieved this by adaptingUI Kit as a native framework.
+これで、UI Kitをネイティブフレームワークとして採用することでこれを実現しました。
+
+That enables iPad apps to run onthe Mac and feel just as fastand fluid as other apps on theplatform.
+これにより、iPadアプリをMac上で実行し、プラットフォーム上の他のアプリと同じくらい高速かつ流動的に感じることができます。
+
+And by integrating UI Kitdirectly into macOS, many of thefundamentals are automatic.
+そしてUI Kitを直接macOSに統合することによって、多くの基本的なことは自動的に行われます。
+
+So many Mac desktop andwindowing features are addedwithout any work on your part,and we adapt platform-uniqueelements like touch controls tokeyboard and mouse input, savingyou a ton of work and giving youa huge head start in yourdevelopment.
+非常に多くのMacデスクトップとウィンドウの機能があなたの側で何の仕事もせずに加えられます、そして我々はあなたの開発のあなたの莫大な作業量を節約してあなたに大きな手始めを与えます。
+
+Now we've been working on thistechnology for a number of yearsand we're using it for our ownapps, which has allowed us toprove out and refine thetechnology before we make itavailable to you in macOSCatalina this year.
+今私達は何年もの間この技術に取り組んできましたそして私達はそれを私達の自身のアプリケーションのために使用しています、それは私達が今年macOSCatalinaでそれを利用できるようにする前に私達が技術を証明し改良することを可能にしました。
+
+If you have an iPadOS app,targeting the Mac is super easy.
+あなたがiPadOSアプリを持っているなら、Macをターゲットにすることはとても簡単です。
+
+There are basically three steps.
+基本的に3つのステップがあります。
+
+First, click the checkbox inXcode -- here we go.
+まず、Xcodeのチェックボックスをクリックします - ここに行きます。
+
+[ Laughter ]
+ [ 笑い ]
+
+That easy.
+それは簡単です。
+
+In Xcode's Project Editor, andturn on Mac support for yourproject.
+ Xcodeのプロジェクトエディタで、あなたのプロジェクトに対するMacサポートをオンにしてください。
+
+There you go.
+そこに行きます。
+
+As easy as that.
+それと同じくらい簡単です。
+
+And here's the magic.
+そしてこれが魔法です。
+
+That single project and targetbuilds apps for all threeplatforms.
+その1つのプロジェクトとtargetbuildは3つのプラットフォームすべてのためのアプリケーションを構築します。
+
+And when you make a change toyour source, all three appsupdate automatically.
+そして、あなたがソースを変更すると、3つのアプリケーションすべてが自動的に更新されます。
+
+The second step is to ensurethat your app is great on theiPad.
+ 2番目のステップは、あなたのアプリがtheiPadに最適であることを確認することです。
+
+Better iPad apps make better Macapps as well.
+より良いiPadアプリはより良いMacappも同様に作る。
+
+So the work that you put in toadopting the newest technologiesand optimizing for larger iPadscreens translates wonderfullyto the Mac.
+そのため、最新のテクノロジを採用し、より大きなiPadスクリーン用に最適化するために行った作業は、驚くほどMacに変換されます。
+
+Just following best practicessuch as supporting externalkeyboards will also result inricher Mac experiences.
+外付けキーボードのサポートなど、ベストプラクティスに従うだけでも、Macのエクスペリエンスが向上します。
+
+The third step is to takeadvantage of specific Maccapabilities.
+ 3番目のステップは特定のMaccapabilitiesを利用することです。
+
+And this is where you makecustomizations that take fulladvantage of typicalMac-specific user interfaceelements like full menus andtoolbars.
+そしてこれが、フルメニューやツールバーのような典型的なMac特有のユーザーインターフェース要素を最大限に活用するカスタマイズを行うところです。
+
+And if applicable, sidebars andtheir special materials.
+該当する場合は、サイドバーとその特別な素材。
+
+Now to show you how easy thisis, I'd like to invite Matthewback onstage for a demo.
+これがどれほど簡単であるかを示すために、ステージ上でMatthewbackをデモに招待します。
+
+Matthew?
+マシュー？
+
+[ Applause ]
+【拍手】
+
+>> Thank you, Sebastien.
+>>ありがとう、Sebastien。
+
+Here we have our travelapplication running in the iPadSimulator.
+ここでは、iPadSimulatorで走行アプリケーションを実行しています。
+
+It's a list view of locations.
+場所のリストビューです。
+
+When I select a location, theglobe will rotate.
+場所を選択すると、グローブが回転します。
+
+And we have a logging area whereI can start keeping track of mytrips in a journal.
+そして私たちは日記の中で私の旅程を追跡し始めることができる伐採場所を持っています。
+
+Let's follow Sebastien's threesteps and bring this app to theMac.
+Sebastienの3つのステップに従って、このアプリをtheMacに持っていきましょう。
+
+Step one, check the box.
+ステップ1、ボックスをチェックしてください。
+
+I'll quit the simulator and herein the target editor I'll checkthe box for Mac support toenable it.
+シミュレータを終了し、ここでターゲットエディタを終了します。Macサポートのチェックボックスをオンにします。
+
+That's it.
+それでおしまい。
+
+I can now build and run myapplication for the Mac.
+これで、Mac用のアプリケーションをビルドして実行することができます。
+
+By checking the box, we addedthe Mac as a destination.
+チェックボックスをオンにして、Macをインストール先として追加しました。
+
+So just like I can pick betweendevices and simulators for myapp, I can now choose the Mac.
+だから私は私のアプリケーションのためのデバイスとシミュレータの間で選ぶことができるのと同じように、私は今Macを選ぶことができます。
+
+And here's the Mac app.
+そして、これがMacアプリです。
+
+List View on the left, selectthe location and log in.
+左側のリストビューで、場所を選択してログインします。
+
+[ Applause ]
+【拍手】
+
+I know, pretty powerfulcheckbox.
+私は知っている、かなり強力なチェックボックス。
+
+All right, let's move on to steptwo, make a great iPad app.
+それでは、steptwoに進んで、素晴らしいiPadアプリを作りましょう。
+
+I've not implemented any actionsfrom my List View, things likeAdding to Favorites or to Share.
+私は自分のリストビューから、お気に入りへの追加や共有への追加などのアクションを実装していません。
+
+When I implement those for theiPad, they'll show up as acontext menu on the Mac.
+これらをiPad用に実装すると、それらはMac上のコンテキストメニューとして表示されます。
+
+It's a double win.
+それは二重の勝利です。
+
+So I'll quit the Mac app andchange to my sidebar controllerhere, and I'll just add a tableview delegate method that setsup those menus for each item.
+それで私はMacアプリを終了し、私のサイドバーコントローラに変更し、そして各項目のためにそれらのメニューを設定するtableviewデリゲートメソッドを追加するだけです。
+
+Okay.
+はい。
+
+ Let's move on to stepthree.
+ stepthreeに進みましょう。
+
+I'd like the sidebar on my Macapp to be vibrant.
+私のMacappのサイドバーを活気のあるものにしたい。
+
+Now this change doesn't happenautomatically because it'ssomething you should review tomake sure it's appropriate.
+現在、この変更は自動的には発生しません。適切なものであることを確認するために確認する必要があるものです。
+
+When you do find it's what you'dlike, it's a simple one-linechange to set the backgroundstyle to sidebar.
+気に入ったものが見つかったら、backgroundstyleをsidebarに設定する簡単な1行変更です。
+
+Okay, for our final change, I'dlike to add a menu bar to ourapplication.
+さて、最後の変更として、私はourapplicationにメニューバーを追加したいと思います。
+
+So here in the storyboard I'llbring up the library and I'llsearch for a menu.
+そこでここでストーリーボードで私はライブラリを立ち上げてメニューを探します。
+
+I'll grab a main menu and I'lldrag it out into my storyboardand we'll open up the file menu.
+メインメニューをつかみ、ストーリーボードにドラッグして、ファイルメニューを開きます。
+
+I'd like to add a menu commandin here for the login action.
+ログインアクション用のメニューコマンドをここに追加します。
+
+So we'll call this Login.
+だから我々はこれをLoginと呼びます。
+
+We'll give it a key equivalentof Command-L.
+Command-Lと同じキーを与えます。
+
+And I just now need to connectthe menu item up to the actionthat I'm already using forLogin.
+そして今、私はメニュー項目を私がすでにforLoginを使っているアクションに接続する必要があります。
+
+Okay? That's it.
+はい？ それでおしまい。
+
+Let's build and run our changes.
+変更をビルドして実行しましょう。
+
+I'm going to go up and hideXcode for the moment so we cansee our application.
+私達は私達のアプリケーションを見ることができるようにしばらくの間上りそしてhideXcodeに行くつもりです。
+
+Okay, so now we have the vibrantsidebar.
+さて、今、我々はvibrantsidebarを持っています。
+
+When I select an item, I canbring up a context menu and uphere in the File menu I now havethe Login action.
+アイテムを選択すると、コンテキストメニューが表示され、[ファイル]メニューの[ログイン]アクションが表示されます。
+
+So just like that, three easysteps.
+それで、ちょうどそのように、3つのeasysteps。
+
+[ Applause ]
+【拍手】
+
+Three easy steps to bring ourapp to the Mac and make a greatuser experience for all ourusers.
+ourappをMacに持ち込み、すべてのユーザーにとって素晴らしいユーザーエクスペリエンスを実現するための3つの簡単なステップ。
+
+Back to you, Sebastien.
+あなたに戻って、Sebastien。
+
+[ Applause ]
+【拍手】
+
+>> Thank you, Matthew.
+>>ありがとう、マシュー。
+
+That was really amazing.
+本当にすごかったです。
+
+Doesn't this make you want to goand try it out?Yes.
+これであなたが行きたくなって、試してみることになりませんか？はい。
+
+ All right, in fact, overthe last few weeks we invited anumber of developers to takethis for a spin.
+ 実際のところ、ここ数週間で私たちは何人かの開発者をスピンのために奪うように招待しました。
+
+And the progress that they havemade in a few short weeks istruly impressive.
+そして、彼らが数週間で成し遂げた進歩は、非常に印象的です。
+
+Here's a sample of the iPad appsthat they already have runningon the Mac.
+これは、すでにMac上で実行されているiPadアプリのサンプルです。
+
+Now once you've built a Mac app,the best way to distribute it toyour users is through the MacApp Store.
+Macアプリを作成したら、それをユーザーに配布する最善の方法はMacApp Storeを使用することです。
+
+It features the biggest catalogof Mac Apps.
+それはMacアプリの最大のカタログを備えています。
+
+It's available in 155 countriesthroughout the world and the MacApp Store allows you to reachevery single Mac user.
+それは世界中の155の国で利用可能であり、そしてMacApp Storeはあなたが単一のMacユーザーを獲得することを可能にします。
+
+Now we also built Gatekeeper togive users flexibility andchoice on how they get theirapps while helping protect themfrom malicious software.
+今、私たちはGatekeeperを構築し、悪意のあるソフトウェアからユーザーを保護する一方で、ユーザーに柔軟性を与え、ユーザーがどのようにしてそれらのアプリケーションを取得するかを選択します。
+
+And in macOS Catalina,Gatekeeper will validate theapps that you run from theinternet both at first launchand periodically thereafter toconfirm that they're free ofknown malware.
+そしてmacOS Catalinaでは、Gatekeeperは最初にローンチした後も定期的にインターネットから起動したアプリケーションを検証し、それらが既知のマルウェアではないことを確認します。
+
+This is accomplished byrequiring developers to use thenotarization service that weannounced last year for both newand updated apps.
+これは、開発者に、昨年発表された新しいアプリケーションと更新されたアプリケーションの両方に対して、正規化サービスを使用することを要求することによって達成されます。
+
+So now you and your users cansafely get apps from both theMac App Store and the internet.
+だから今、あなたとあなたのユーザーはtheMac App Storeとインターネットの両方から安全にアプリを入手することができます。
+
+Notarization has already seenbroad adoption.
+公証はすでに広く採用されています。
+
+It's simple and fast with over98% of submissions completingwithin 15 minutes.
+それは15分以内に完了する提出の98％以上で単純で速いです。
+
+Now speaking of security, we'recontinuing to invest in thefoundations of macOS and I'dlike to focus on three areas.
+今セキュリティについて言えば、私たちはmacOSの基礎に投資し続けています、そして私は3つの領域に焦点を合わせたいと思います。
+
+First, a new technology calledDriver Kit which allows you tomove your kernel extensions outof the kernel and into userspace.
+1つ目は、ドライバキットと呼ばれる新しいテクノロジで、カーネルの拡張機能をカーネルからユーザスペースに移動できます。
+
+And by running these drivers andextensions as user processes, weimprove the stability of macOSfor all of our users.
+そしてこれらのドライバとユーザー拡張プロセスを拡張することで、すべてのユーザーにとってmacOSの安定性が向上します。
+
+We identified the most commonuse cases that have requiredkernel extensions in the past,and now we have a user spacealternative for over 75% of themin macOS Catalina.
+我々は過去にカーネル拡張を必要としていた最も一般的なユースケースを特定し、そして今や私達はthemin macOS Catalinaの75％以上のためのユーザースペース代替品を持っています。
+
+We encourage you to adopt DriverKit as future versions of macOSwill no longer run these typesof kernel extensions.
+今後のバージョンのmacOSではDriverKitを採用することをお勧めします。これらの種類のカーネル拡張機能はもう実行されません。
+
+Next, we're improving thestability of macOS by making thesystem volume read-only.
+次に、システムボリュームを読み取り専用にすることで、macOSの安定性を向上させています。
+
+Here's how it works.
+これがどのように機能するかです。
+
+Today there's a single volumethat includes user data, appsand the operating system.
+今日では、ユーザーデータ、アプリケーション、およびオペレーティングシステムを含む単一のボリュームがあります。
+
+And to further isolate macOSfrom changes, the Mac will nowbe divided into two logicalvolumes.
+そしてさらにmacOSを変更から隔離するために、Macは2つの論理ボリュームに分割されます。
+
+One for the operating systemfiles which will be read-only,and the other for user data andapps.
+一方は読み取り専用になるオペレーティングシステムファイル用で、もう一方はユーザーデータとアプリケーション用です。
+
+[ Applause ]
+【拍手】
+
+There you go.
+そこに行きます。
+
+[ Applause ]
+【拍手】
+
+This will further protect theoperating system from changes,increase stability and set us upto deliver future securitybenefits.
+これはオペレーティングシステムを変更からさらに保護し、安定性を高め、将来のセキュリティ上の利点を提供するために私たちをセットアップします。
+
+Now some of you may have madeassumptions in your app or yourinstaller, and you'll want tocheck that it works seamlesslyon macOS Catalina.
+今あなたの何人かはあなたのアプリやあなたのインストーラーで仮定をしたかもしれません、そしてあなたはそれがmacOS Catalinaでシームレスに動作することをチェックしたくなるでしょう。
+
+Finally, enhancements to app anddata protection.
+最後に、アプリとデータ保護の強化。
+
+We have spent the last few yearsadding additional dataprotection categories so thatusers are in control of whichapps can access important fileslike your photos or sensitivesensors like your camera andmicrophone on your Mac.
+ユーザーがあなたの写真やMacのあなたのカメラやマイクのような敏感なセンサーのような重要なファイルにアクセスできるようにユーザーが管理できるように、私たちはここ数年追加のデータ保護カテゴリを追加しました。
+
+In macOS Catalina, we'recontinuing this work by ensuringthat apps seek permission beforecapturing input events, sothings like key presses orscreen recordings.
+macOS Catalinaでは、入力イベント、キープレスやスクリーンレコーディングなどの入力イベントを取り込む前に、アプリが許可を求めるようにして、この作業を続けています。
+
+And we're also going to protectuser data on your Mac, so appswill now have to seek permissionbefore accessing the files thatusers keep on their desktop,downloads, documents, iClouddrive and external drives.
+そして私達はまたあなたのMac上のユーザーデータを保護しようとしているので、ユーザーは自分のデスクトップ、ダウンロード、文書、iClouddriveそして外付けドライブに保存されているファイルにアクセスする前に許可を求めなければならない。
+
+Yeah.
+ええ
+
+[ Applause ]
+【拍手】
+
+We are really excited about allthe enhancements that we'rebringing in macOS Catalina.
+私達は私達がmacOS Catalinaでもたらしている全ての機能強化に本当に興奮しています。
+
+Now another platform that's gotsome really big changes thisyear is watchOS.
+これまでのところ非常に大きな変化を遂げているもう1つのプラットフォームは、watchOSです。
+
+And to tell you more, I'd liketo invite Lori up on stage.
+そして、もっと詳しく言うと、私はLoriをステージに招待したいと思います。
+
+Lori?
+ロリ？
+
+[ Applause ]
+【拍手】
+
+>> Thanks, Sebastien.
+>>ありがとう、Sebastien。
+
+[ Applause ]
+【拍手】
+
+This morning we introduced abunch of cool new features inwatchOS 6, including new healthapps like noise and cycletracking, activity trends,audiobooks and more.
+今朝、私たちはノイズとサイクルトラッキングのような新しいヒールホップ、活動の傾向、オーディオブックなどを含む、wwatchOS 6のクールな新機能をたくさん紹介しました。
+
+But the real story for watchOS 6is that it's now possible todeclare independence from thephone and build fullywatch-focused experiences.
+しかし、watchOS 6の本当の話は、電話からの独立を宣言し、完全にウォッチに焦点を絞ったエクスペリエンスを構築することが可能になったということです。
+
+[ Applause ]
+【拍手】
+
+Thanks to cellular connectivity,customers are increasinglyleaving their phones behind andenjoying the freedom using justtheir Apple Watch to stayconnected.
+携帯電話の接続性のおかげで、顧客は自分たちの電話をますます自由にしているだけでなく、Apple Watchを使って自由に連絡を取り合うようになっています。
+
+From running errands to runningworkouts, from listening tomusic to chatting with friends,we want all users to enjoy greatApple Watch experiences withoutlimitations.
+走っている用事からランニングワークアウトまで、tomusicを聴いてから友達とチャットするまで、私たちはすべてのユーザーが無制限にgreatApple Watchの経験を楽しめるようにしたいです。
+
+And independent watch apps makethat possible.
+そして独立時計アプ​​リは可能である。
+
+We've taken a good look at thechallenges of developing forApple Watch and worked hard notonly to bring you new APIs thatmake it possible to supportindependent experiences, butalso to completely revamp theexperience of being an AppleWatch developer.
+我々はforApple Watchを開発することの挑戦をよく見て、あなた自身が独立した経験をサポートすることを可能にする新しいAPIを持って来ることだけでなく、AppleWatch開発者であることの経験を完全に刷新するために努力しました。
+
+What if I told you it waspossible to create a watch appthat's only a watch app?If you've got an idea for agreat watch-only experience,Xcode now makes it simple tocreate a watch app that's just awatch app.
+腕時計専用アプリではない腕時計用アプリを作成することが不可能だったと言った場合はどうすればよいですか？腕時計専用のすばらしい体験をするためのアイデアがあれば、Xcodeでは、単に腕時計用アプリという簡単な時計アプリを簡単に作成できます。
+
+So you can pursue your ideawithout also having to build aniOS app.
+だからあなたはまたaniOSアプリを構築しなければならないあなたのアイデアを追求することができます。
+
+And if you already have an iOSapp, you can still build yourapp to be completely independentof its companion thanks to acouple key changes we made inwatchOS 6 to support watch-onlyapps, including making AppleWatch a standalone push target.
+また、iOSアプリケーションをすでにお持ちの場合でも、AppleWatchをスタンドアロンのプッシュターゲットにするなど、ウォッチオンリーアプリケーションをサポートするためにinwatchOS 6で行われたいくつかの重要な変更により、yourappをその関連製品から完全に独立して構築できます。
+
+You now have the option ofsending notifications directlyto the watch so you can updateboth your users and your appsdata without relying on thephone to mediate.
+あなたは仲介するために電話に頼ることなくあなたのユーザーとあなたのappdataの両方を更新することができるようにあなたは今時計に直接通知を送るオプションを持っています。
+
+[ Applause ]
+【拍手】
+
+We're also supporting Cloud Kitsubscriptions and complicationpushes to help you keep your appup-to-date.
+また、最新の状態を維持するために、Cloud Kitsubscriptionsと合併症プッシュをサポートしています。
+
+And since asking users to signin on iPhone is not an optionwhen you don't have an iPhoneapp, in watchOS 6 we're givingyou text fields so you can offeraccount creation and sign-inoptions directly on Apple Watch.
+また、iPhoneアプリケーションをお持ちでない場合は、iPhoneへのサインインをユーザーに依頼することはできません。WatchOS6では、テキストフィールドを用意しているので、Apple Watchで直接作成とサインインを行うことができます。
+
+If you want to make accountcreation really easy, you caneven add an Assign with Applebutton to your app to let yourusers set up an account and signin with the Apple ID theyalready have.
+アカウント作成を非常に簡単にしたい場合は、ユーザーにアカウントを設定して、すでに持っているApple IDでサインインできるように、Assign with Applebuttonをアプリに追加することをお勧めします。
+
+No new passwords or text entryrequired.
+新しいパスワードやテキスト入力は必要ありません。
+
+With watchOS 6 we're alsoaddressing a common watch-onlyuse case by bringing streamingaudio to watchOS.
+watchOS 6では、streamingaudioをwatchOSに持ってくることで、一般的な監視専用のケースにも対処しています。
+
+We introduced background audioplayback in watchOS 5 for localfiles.
+ローカルファイル用にwatchOS 5でバックグラウンドのaudioplaybackを導入しました。
+
+And now in watchOS 6, we'vebrought three ways to streamaudio directly to Apple Watch bymaking Network,framework,NSURLsessionStreamTask and evenmore of AVFoundation availableto you.
+そして今やwatchOS 6では、ネットワーク、フレームワーク、NSURLsessionStreamTaskそしてさらにAVFoundationを利用できるようにすることによって、Apple Watchに直接オーディオをストリーミングする3つの方法を持ってきました。
+
+We also recognize that there areuse cases beyond audio playback,workouts and navigation whereyou need to keep your apprunning order to complete atask.
+また、音声の再生、トレーニング、ナビゲーション以外にも、タスクを完了するための適切な順序を維持する必要があるユースケースがあることも認識しています。
+
+For example, a meditationsession.
+例えば、瞑想セッションです。
+
+In watchOS 6, we're introducinga new extended runtime API thatgives more apps a way to stayrunning even after the userlowers their wrist.
+watchOS 6では、ユーザーが手首を下げた後でも、より多くのアプリに実行を継続する方法を提供する新しい拡張ランタイムAPIを導入しています。
+
+This enables new app experiencesin self-care, mindfulness,physical therapy, smart alarmsand health monitoring.
+これにより、セルフケア、マインドフルネス、理学療法、スマートアラーム、ヘルスモニタリングにおける新しいアプリ体験が可能になります。
+
+That's a lot of new APIs andcapabilities.
+それはたくさんの新しいAPIと機能です。
+
+If only you had more options forcreating a compelling userinterface, right?We know you've been asking for amore advanced UI framework onthe watch for years.
+説得力のあるユーザーインターフェイスを作成するための選択肢が他にもあるのであれば、もう何年も前から、高度なUIフレームワークを求めてきました。
+
+And in watchOS 6 we finally haveone with SwiftUI.
+そしてwatchOS 6では、ついにSwiftUIが完成しました。
+
+[ Applause ]
+【拍手】
+
+You've already seen SwiftUI oniOS.
+あなたはすでにSwiftUI oniOSを見ました。
+
+That same declarative languagefor defining beautiful userinterfaces is available forwatchOS as well, expandingwhat's possible on the platform.
+美しいユーザインタフェースを定義するための同じ宣言型言語は、watchOSでも利用可能で、プラットフォーム上で可能なことは広がっています。
+
+From lists with swipe to delete,reordering and carousel filing,to direct access, the digitalcrown, it's easier than ever tocreate a compelling watchexperience.
+スワイプしたリストから削除、並べ替え、カルーセルファイリング、直接アクセス、デジタルクラウンまで、これまで以上に魅力的なウォッチエクスペリエンスを作成するのは簡単です。
+
+Let me show you how to startmaking use of some of the newindependent app features withSwiftUI.
+SwiftUIを使用して、新しい独立したアプリ機能のいくつかを使い始める方法を説明しましょう。
+
+Okay, so I've got my travel apprunning here in the Simulatorand I've already startedupdating it using SwiftUI, soit's starting to look great.
+さて、私はここでSimulatorandで私の旅行を評価することにしました。SwiftUIを使ってそれを更新し始めたので、とてもよく見え始めました。
+
+But I still have some work to dobeyond layout because my Sign Inbutton currently just asks usersto sign in on iPhone.
+しかし、私のサインインボタンは、現在iPhoneにサインインするようにユーザーに要求しているだけなので、レイアウト以外にもまだ作業が必要です。
+
+And my users have told me thatis not what they want.
+そして私のユーザーは私に彼らが望むものではないと言った。
+
+They want to be able to doeverything right on their wrist.
+彼らは自分たちの手首の上ですべてのことを正しくできるようにしたいのです。
+
+So I'm going to quit thesimulator and go over to myproject file.
+だから私はsimulatorを終了してmyprojectファイルに行きます。
+
+And I'll move to my travel watchextension target and declareindependence from phone bychecking the Supports RunningWithout iOS App Installationbox.
+そして、私は自分の出張監視対象に移動し、iOSアプリインストールボックスなしでSupports Runningをチェックして電話からの独立を宣言する。
+
+Next I'm going to go to the SignIn view that I've alreadystarted.
+次に、既に開始したサインインビューに行きます。
+
+I'll resume my previews.
+プレビューを再開します。
+
+Great.
+すばらしいです。
+
+ And you can see I have aSign In button here and twopreviews.
+ そして、ここにサインインボタンがあり、2つのプレビューがあります。
+
+The top one is for English whichis the language that I speak andthe bottom one I'm starting toexperiment with localizing myapp into Arabic which is aright-to-left language.
+一番上のものは私が話す言語である英語のためのものであり、一番下のものは私のアプリをアラビア語にローカライズして実験を始めているところです。
+
+So the first thing I'm going todo is add a field for myUsername button.
+だから私がやるのはまずmyUsernameボタンのフィールドを追加することです。
+
+And I'm going to bind this to my-- oops.
+そしてこれを私のおっとに結びつけるつもりです。
+
+To my username state so that thefield updates as the valuechanges.
+値が変わるとフィールドが更新されるように、私のユーザー名の状態にします。
+
+Notice I've set the placeholdertext to username so I give theuser a chance to figure out whatto do with this field.
+placeholdertextをusernameに設定したので、ユーザーにこのフィールドの処理方法を理解する機会を与えます。
+
+And I've also set the contenttype to username so thatpassword and username autofillworks when using continuitykeyboard.
+また、私はcontenttypeをusernameに設定したため、continuitykeyboardを使用するときにpasswordとusernameが自動入力されます。
+
+Next I'm going to add a passwordfield, and for this I want touse a secure field so thatpeople can't spy on me when I'mtyping my password.
+次に、パスワードフィールドを追加します。このために、パスワードを入力しているときにスパイが盗み見られないように、安全なフィールドを使用します。
+
+And again, I'm going to bindthis to my password state.
+そしてまた、私はこれを私のパスワード状態に結び付けるつもりです。
+
+I've got a password placeholdertext and again I'm using thecontent type of Password forautofill purposes.
+私はパスワードのplaceholdertextを持っています、そしてまた私は自動入力目的のためにPasswordのcontent typeを使っています。
+
+So that looks great in bothEnglish and Arabic.
+だからそれは英語とアラビア語の両方で素晴らしく見えます。
+
+And for Arabic it's pulling thestrings right out of mylocalizable strings file.
+アラビア語の場合は、mylocalizable stringsファイルから文字列を取り出します。
+
+This is not placeholder content.
+これはプレースホルダーのコンテンツではありません。
+
+Okay.
+はい。
+
+ Above this, what I want todo is add a Sign In With Applebutton because I think that'show users are really going towant to sign in.
+ この上に、私がしたいのはAppleボタンでサインインを追加することです。
+
+So now I put that right at thetop and then add a separator soit's clear that users have anoption of signing in with theirApple ID or creating a customerusername and password for myapp.
+それで今私はその権利を一番上に置いて、それからユーザーが彼らのApple IDでサインインするか、myappのためのcustomerusernameとパスワードを作成することの選択を持っていることを明確にするためにセパレーターを加える。
+
+That looks great.
+それは素晴らしいですね。
+
+So the last step is to go overto my hosting controller andchange my destination for mypresentation button to the SignIn view that I just createdinstead of the Sign In on iPhoneview.
+したがって、最後のステップは、ホスティングコントローラを上書きしてmypresentationボタンの表示先を私が作成したサインインビューに変更することです（iPhoneビューでサインインする代わりに）。
+
+So I got that going and now Iwant to turn on Live Preview, soall my buttons becomeinteractive.
+それで、私はそのようになって、そして今Live Previewをオンにしたくない、それで私のボタンはすべて対話式になる。
+
+And then when I click on my SignIn button, I get my form.
+サインインボタンをクリックすると、フォームが表示されます。
+
+Sign In With Apple, or sign inwith a username and password.
+アップルでサインインするか、ユーザー名とパスワードでサインインします。
+
+That looks great.
+それは素晴らしいですね。
+
+And that is creating a sign-inform on the Apple Watch withSwiftUI.
+そしてそれはApple WatchにSwiftUIを使ったサインイン通知を作成することです。
+
+[ Applause ]
+【拍手】
+
+Okay.
+はい。
+
+ So you've got the tools tobuild a great independent AppleWatch experience.
+ それで、あなたは素晴らしい独立したAppleWatch経験を構築するためのツールを持っています。
+
+How are you going to get yourapp in front of customers withthe least friction possible?The App Store and Apple Watchwill be highlighting greatindependent apps through curatedcollections and editorialselections at the top level ofthe App Store.
+App StoreとApple Watchは、App Storeの最上位レベルで、厳選されたコレクションと編集上の選択を通じて、優れた独立したアプリケーションを強調しています。
+
+We're emphasizing independentapps here so users can get theinstant gratification of beingable to download and start usingyour awesome apps right away,whether they have the phone withthem or not.
+彼らが電話を持っていようとなかろうと、ユーザーがすぐにあなたの素晴らしいアプリをダウンロードしてすぐに使い始めることができるという嬉しい満足を得ることができるように、ここでは独立したアプリを強調しています。
+
+And when you dive intoindividual product pages, you'llsee that this isn't just a pareddown experience.
+そして、あなたが個々の製品ページに飛び込むとき、あなたはこれが単なる単なる経験ではないことに気付くでしょう。
+
+Users will see full featured appdescriptions, screenshots,reviews and more.
+ユーザーはフル機能の説明、スクリーンショット、レビューなどを見ることができます。
+
+They can search for apps withdictation or scribble.
+彼らは口述や落書きでアプリを検索できます。
+
+And they'll be able to downloadyour apps directly to theirwrists, thanks to app and assetthinning which make it possibleto deliver a small bundle withonly the architecture and assetsthat makes sense for the currentwatch.
+そして、現在の時計にとって意味のあるアーキテクチャとアセットのみで小さなバンドルを配信することを可能にするアプリとアセットシンニングのおかげで、彼らはあなたのアプリを彼らのリストに直接ダウンロードすることができるでしょう。
+
+If you have both an iOS and awatchOS app, this will make youriOS app smaller too, as we're nolonger downloading the watchbundle to the phone and thenshuttling it over.
+あなたがiOSとawatchOSの両方のアプリを持っているならば、我々はもはや電話にwatchbundleをダウンロードしてそれをそれ以上転倒させていないので、これもyouriOSアプリをより小さくするでしょう。
+
+This is truly a whole new erafor Apple Watch apps to be morefunctional, more beautiful andmore independent than ever.
+これは、Apple Watchアプリがより機能的で、美しく、かつこれまで以上に独立したものになるための全く新しい時代です。
+
+We think both you and yourcustomers are going to lovethis.
+私たちはあなたとあなたの顧客の両方がこれを愛するつもりであると思います。
+
+And now to talk about theplatform that we just declaredindependence from, I'd like towelcome Cindy to the stage.
+そして今、私たちが独立を宣言したプラットフォームについて話したいのですが、私はCindyを舞台に迎え入れたいと思います。
+
+[ Applause ]
+【拍手】
+
+>> Thank you, Lori.
+>>ありがとう、ロリ。
+
+iOS 13 is a big release.
+iOS 13は大きなリリースです。
+
+You saw this morning that wehave a ton of new features andenhancements like a redesignedshare sheet, a Quick Typekeyboard and a brand-new CarPlayexperience.
+今朝、あなたは、再設計されたシェアシート、Quick Typeキーボード、そして真新しいCarPlayexperienceのようなたくさんの新機能と強化があることを見ました。
+
+In addition to all of that, wetook a good long look at our UIand gave iOS 13 a brand newlook.
+そのすべてに加えて、私たちのUIをよく見て、iOS 13にブランドの新しい外観を与えました。
+
+This new look includes DarkMode, cards, contextual actionsand symbols.
+この新しい外観には、DarkMode、カード、コンテキストアクション、およびシンボルが含まれています。
+
+Let's dive into the incrediblycool new Dark Mode.
+信じられないほどクールな新しいダークモードに飛び込みましょう。
+
+Dark mode keeps the brightnessdown and gets Chrome out of theway so you can focus on justcontent.
+ダークモードは明るさを抑え、Chromeの機能を停止させるので、ジャストコンテンツに集中できます。
+
+The entire system has beenreally thoughtfully updated andrefined to look amazing.
+システム全体が本当に思慮深く更新され、素晴らしいように定義されました。
+
+Your users are definitely goingto want this.
+あなたのユーザーは間違いなくこれを望んでいるつもりです。
+
+And to help you bring these samerefinements to your apps, we'vecreated some new APIs designedspecifically with Dark Mode inmind.
+そして、あなたがあなたのアプリケーションにこれらの同じ改良をもたらすのを助けるために、我々はダークモードを念頭に置いて特別に設計されたいくつかの新しいAPIを作成しました。
+
+But first it's semantic colors.
+しかし、最初は意味色です。
+
+There are new colors forbackgrounds, fills and text.
+背景、塗りつぶし、テキストに新しい色があります。
+
+And in Dark Mode, they havemultiple variants to give yourapp a visual hierarchy.
+そしてダークモードでは、それらはあなたに視覚的な階層を与えるために複数の変形を持っています。
+
+Now what does that mean?Well, when your app isfull-screen, its background ispure black.
+それがどういう意味ですか？まあ、あなたのアプリがフルスクリーンであるとき、その背景は純粋な黒です。
+
+To ensure sufficient contrast,UI presented above it takes on abrighter color palette.
+十分なコントラストを確保するために、上記のUIはより明るいカラーパレットを使用しています。
+
+When multitasking on iPad, theslide-over app and side-by-sideapps also render in theselighter layer colors.
+iPadでマルチタスクを実行すると、スライドオーバーアプリケーションとサイドバイサイドアプリケーションも薄いレイヤーの色でレンダリングされます。
+
+There is a lot of nuance to thisdesign, but you'll get itautomatically with semanticcolors.
+このデザインには多くのニュアンスがありますが、semanticcolorsを使って自動的に取得することができます。
+
+And for when you need a pop,there's a bright palette ofsystem colors that all havevariants for the increasedcontrast accessibility mode aswell variants for Dark Mode.
+また、ポップが必要な場合には、コントラストの高いアクセシビリティモードの変種とダークモードの変種がある明るいシステムカラーのパレットがあります。
+
+There's also a brand-new set ofmaterials and vibrant contentfilters with varying levels oftransparency so you can createUI that looks great over anycontent.
+また、さまざまなレベルの透明度を備えたまったく新しい一連のマテリアルと活気に満ちたコンテンツフィルタもあります。そのため、どのコンテンツよりも優れたUIを作成できます。
+
+And just like semantic colors,these materials support bothlight and dark variants.
+そして、セマンティックカラーと同じように、これらの素材は明暗両方のバリエーションをサポートします。
+
+And they will automaticallyupdate based on changes to theUI Kit trait collection.
+そしてそれらは自動的にUI Kitトレイトコレクションへの変更に基づいて更新されます。
+
+Adopting semantic colors andadaptive materials will help youprovide a unified look thatautomatically adapts to yourenvironment.
+セマンティックカラーとアダプティブマテリアルを採用すると、自動的にあなたの環境に適応する統一された外観を提供するのに役立ちます。
+
+Another component of iOS 13'snew look is cards.
+iOS 13の新しい外観のもう1つの要素はカードです。
+
+Since the original SDK, thedefault presentation style oniPhone has covered the fullscreen.
+オリジナルのSDK以来、デフォルトのプレゼンテーションスタイルoniPhoneがフルスクリーンをカバーしています。
+
+We're changing that default to amuch more fluid cardpresentation.
+デフォルトを変更して、より流動的なカード表現を作成しています。
+
+Cards provide a visual stack soyou can see at a glance thatyou're in a presentation.
+カードは視覚的なスタックを提供するので、プレゼンテーションの中にいることが一目でわかります。
+
+And even better, they'redismissible with just a singledownward swipe.
+そしてさらに良いことに、彼らはただ片方向のスワイプで許容できないのです。
+
+[ Applause ]
+【拍手】
+
+Yeah.
+ええ
+
+ Swiping.
+ スワイプ
+
+We've also updated the Peek andPop experience.
+Peek andPopのエクスペリエンスも更新しました。
+
+It's now quicker and easier toaccess contextual actionsthroughout the system.
+システム全体でコンテキストアクションにすばやく簡単にアクセスできるようになりました。
+
+And they're backed by abrand-new API designed to workacross all devices.
+そしてそれらは、すべてのデバイスにまたがって機能するように設計された、まったく新しいAPIによって支えられています。
+
+So not only are they better thanever on iPhone, but they lookgreat on iPad as well.
+そのため、iPhone上では常に優れているだけでなく、iPad上でも見栄えがします。
+
+And when you bring your iPad appto macOS, they'll look greatthere to.
+そして、あなたがあなたのiPadアプリをmacOSに持っていくとき、それらは見事になるでしょう。
+
+[ Applause ]
+【拍手】
+
+Yeah.
+ええ
+
+ While we were goingthrough the system, making allthose thoughtful refinements, westarted thinking about symbols.
+ 私たちがこのシステムを駆け抜けている間に、考え抜かれた洗練されたものすべてを作って、シンボルについて考えることを始めました。
+
+Most apps use symbols.
+ほとんどのアプリはシンボルを使います。
+
+They are a really useful way toconvey information.
+それらは情報を伝達するための本当に便利な方法です。
+
+And symbols are very often usedwith text.
+また、シンボルはテキストと共に使用されることが非常に多いです。
+
+But text has some greatproperties that in iOS 12 oursymbols just didn't have.
+しかし、テキストにはいくつかの素晴らしいプロパティがあり、iOS 12では私たちのシンボルにはなかったものがあります。
+
+So as you can see here, the textis scaling nicely as the dynamictype size increases, but thesymbols stayed the same.
+ここでわかるように、動的型のサイズが大きくなるにつれてテキストはうまく拡大縮小されますが、シンボルは同じままです。
+
+Ideally, we'd want the symbolsto scale along with the text.
+理想的には、シンボルをテキストに合わせて拡大縮小したいと思います。
+
+So we created SF Symbols.
+そこで私たちはSFシンボルを作りました。
+
+SF Symbols have all theexpressiveness and behavior of afont but packaged up as a UIimage so they're really easy touse in your apps.
+SFシンボルはすべての表現力と振る舞いを持っていますが、UIイメージとしてパッケージ化されているので、アプリでは本当に使いやすいです。
+
+iOS 13 includes an absolutelymassive catalog of over 1,500 SFSymbols for you to use.
+iOS 13には、1,500を超えるSFSymbolの絶対カタログがあります。
+
+And they're easily searchableright within Xcode and usingstandalone SF Symbols app onyour Mac.
+そしてそれらはXcode内で簡単に検索でき、あなたのMac上で標準のSFシンボルアプリを使うことができます。
+
+[ Applause ]
+【拍手】
+
+Symbols.
+シンボル
+
+ 
+ 
+
+[Laughs]
+[笑い]
+
+ So now you cansee the symbols scale along withthe text for better legibilityand a more consistent layout atlarger sizes.
+ それで、今、あなたはより良い読みやすさとより大きいサイズでいっそう一貫したレイアウトのためにテキストと共にシンボルスケールを見ることができます。
+
+And because they behave justlike a font, they're availablein all of these weights as well.
+そしてそれらはフォントのように振る舞うので、それらはすべてこれらの重みで利用可能です。
+
+[ Applause ]
+【拍手】
+
+All of this just scratches thesurface of what's available iniOS 13.
+これらすべては、iniOS 13で利用可能なものの表面を傷つけているだけです。
+
+There's a new share sheet API tolet apps have recipientsuggestions.
+新しいシェアシートAPIのtoletアプリに受信者候補があります。
+
+A new compositional layout APIto make collection views easierto work with than ever.
+コレクションビューをこれまで以上に簡単に操作するための新しい構成レイアウトAPI。
+
+And a screenshot enhancement soapps can provide full page viewsof long content.
+そしてスクリーンショット機能強化soappsは長い内容の全ページビューを提供することができます。
+
+And so much more.
+そしてそんなに多く。
+
+And in addition to all of that,we really wanted to bring iOSforward this year.
+そして、これらすべてに加えて、今年はiOSをさらに進化させたいと考えました。
+
+So we gave it its own operatingsystem complete with majorenhancements to multitasking, anew PencilKit framework and awhole suite of productivitygestures.
+そこで私たちは、マルチタスク処理、新しいPencilKitフレームワーク、そして一連の生産性向上のための主要な機能拡張を備えた独自のオペレーティングシステムを提供しました。
+
+Let's start with multitasking.
+マルチタスクから始めましょう。
+
+At iPadOS, your app can be openin multiple spaces at the sametime, as well as in theslide-over stack, and displaydifferent content in each space.
+iPadOSでは、スライドオーバースタックだけでなく、同時に複数のスペースでアプリを開くことができ、各スペースに異なるコンテンツを表示できます。
+
+To enable this, we'reintroducing a new UI windowscene API.
+これを可能にするために、私たちは新しいUI windowscene APIを導入しました。
+
+Each window scene represents asingle instance of your app'sUI.
+各ウィンドウシーンは、アプリのUIの1つのインスタンスを表します。
+
+Prior to iPadOS, your appdelegate was responsible forboth its process and UIlifecycle.
+iPadOS以前は、あなたのapplelegateはそのプロセスとUIlifecycleの両方を担当していました。
+
+With window scene, we'resplitting out the UI portion ofthat into a new scene delegateobject so it can be managedindependently.
+ウィンドウシーンでは、そのUI部分を新しいシーンデリゲートオブジェクトに分割して、独立して管理できるようにします。
+
+And since they're completelyindependent, your app can nowmanage multiple at the sametime.
+また、これらは完全に独立しているため、アプリは同時に複数を管理できます。
+
+Your users can even use drag anddrop to allow individual itemsfrom your apps such as a singlewindow or message to be openedin a brand-new window scene.
+ユーザーはドラッグアンドドロップを使用して、シングルウィンドウやメッセージなど、アプリの個々のアイテムを新しいウィンドウシーンで開くこともできます。
+
+With this new capability, it'sreally important that your userscan resume whatever they weredoing in any scene at any time.
+この新しい機能を使用すると、ユーザーはいつでもあらゆるシーンで損害を被ったものを再開できることが非常に重要です。
+
+To make this easy, we've built anew state restoration systembased on NSUserActivity.
+これを簡単にするために、NSUserActivityに基づいて新しい状態復元システムを構築しました。
+
+You're probably already familiarwith this versatile API.
+あなたはおそらくすでにこの多用途のAPIに精通しているでしょう。
+
+It's used for handoff, search,indexing, Siri, and now forwindow scene state restoration.
+これは、ハンドオフ、検索、インデックス作成、Siri、そして今ではウィンドウシーンの状態の復元に使用されます。
+
+One of the things that reallysets -- you can clap, it's fine.
+本当に不思議に思うことの1つ - あなたは拍手することができます、それは結構です。
+
+[ Applause ]
+【拍手】
+
+One of the things that reallysets iPads apart is ApplePencil.
+iPadを際立たせるものの1つがApplePencilです。
+
+We're introducing PencilKitwhich allows you to easily addsmooth low-latency drawing toyour apps.
+PencilKitをご紹介します。ペンシルキットを使用すると、滑らかで低遅延の描画トイツールを簡単に追加できます。
+
+This is the same engine used inApple apps like Notes, Markupand Screenshots.
+これは、Notes、Markupand ScreenshotsなどのAppで使用されているものと同じエンジンです。
+
+So you get all of those samefeatures and tools right in yourapps.
+それで、あなたはそれらの同じ特徴とツールのすべてをあなたのまさにあなたの中に持って行きます。
+
+You can even use the canvas andpalette functionality separatelyand just pick and choose whichpieces make sense for your usecase.
+キャンバスとパレットの機能を別々に使用して、ユースケースに適したピースを選択して選択することもできます。
+
+Finally, let's talk aboutproductivity gestures.
+最後に、生産性のジェスチャについて説明しましょう。
+
+We've made text selection mucheasier.
+テキスト選択をもっと簡単にしました。
+
+You can now just drag yourfinger along text to select it.
+テキストを指でドラッグして選択できます。
+
+Text views and web views areautomatically updated with thisnew selection gesture.
+テキストビューとWebビューは、この新しい選択ジェスチャで自動的に更新されます。
+
+And there are new three-fingergestures for undo and redo.
+また、元に戻すとやり直すための新しい3つの指先があります。
+
+Swipe three fingers left forundo and right for redo.
+3本の指を左右にスワイプしてやり直します。
+
+These new gestures use theexisting NSUndoManager so youdon't have to do anything at allto adopt.
+これらの新しいジェスチャーは既存のNSUndoManagerを使用するので、採用するために何もする必要はありません。
+
+If you'd like easy textselection outside of text or webviews, or if your app alreadyuses three-finger gestures andyou have a conflict, you can usethe UITexInteraction API to fixup those issues.
+テキストやWebビューの外で簡単にテキストを選択したい場合、またはアプリで既に3本指ジェスチャを使用していて競合がある場合は、UITexInteraction APIを使用してこれらの問題を解決できます。
+
+And for scroll views, you cannow drag the scroll indicator tojump directly to a location inthe scroll view.
+スクロールビューの場合は、スクロールインジケーターをドラッグしてスクロールビュー内の場所に直接ジャンプすることもできます。
+
+To enable this behavior, justturn on Show Scroll Indicators.
+この振る舞いを可能にするためには、Show Scroll Indicatorsをクリックしてください。
+
+For this one it's reallyimportant that your scrolling isperformant as we might have toload all of the cells in a frameat the same time.
+これには、フレーム内のすべてのセルを同時にロードする可能性があるため、スクロールが適切であることが非常に重要です。
+
+We think our users are going tolove the powerful new thingsiPadOS gives them, and we cannotwait to see what you do with it.
+私たちのユーザーは、iPadOSが強力な新機能を提供してくれることを憂慮しています。あなたがそれを使って何をしているのか見るのを待つことはできません。
+
+So I'd like to welcome Sebastienback to the stage.
+それで、私はSebastienbackをステージに歓迎したいです。
+
+[ Applause ]
+【拍手】
+
+>> Thank you, Cindy.
+>>ありがとう、シンディ。
+
+Now as you've seen, each of ourplatforms has incredible newfeatures that refine theexperience that each offers andgives them great newcapabilities.
+これまで見てきたように、各プラットフォームには、それぞれが提供する経験を洗練させて優れた新機能を提供する信じられないほどの新機能があります。
+
+And across all of our platformswe build a range of technologiesthat are designed to give yourapps a huge head start so thatyou can build the latesttechnologies right into yourapp.
+そして、私たちのすべてのプラットフォームで、yourappsに大きなスタートを切ることができるように設計された一連のtechnologyologiestを構築します。そうすれば、yourappに最新のテクノロジを構築できます。
+
+There are a few of these thatwe'd like to focus on thisafternoon and they cover apretty wide range ofcapabilities from how we openour platforms and apps to allusers to how we combine thevirtual and real-world withaugmented reality.
+今日の午後に焦点を当てたいと思うこれらのいくつかがあります、そしてそれらは私たちがプラットフォームとアプリを開く方法から私たちが仮想と現実世界で強化された現実を組み合わせる方法までかなりの範囲の機能をカバーします。
+
+And so we start withaccessibility, and to do thatI'd like to welcome Eric Seymouron stage.
+それで私たちは到達可能性から始め、それをするためにEric Seymouronステージを歓迎したいと思います。
+
+Eric?
+エリック？
+
+[ Applause ]
+【拍手】
+
+>> Thank you, Sebastien.
+>>ありがとう、Sebastien。
+
+So we all know that technologyplays a powerful role inpeople's lives.
+だから私たちは皆、テクノロジーが人々の生活の中で強力な役割を果たすことを知っています。
+
+But this is especially true forpeople with disabilities.
+しかし、これは障害のある人には特に当てはまります。
+
+Technology can be instrumentalin fostering independence,employment and empowerment.
+技術は、自立、雇用、そしてエンパワーメントを促進するのに役立ちます。
+
+At Apple, we're guided by a fewkey principles for accessibilityand it begins with accessibilitybeing built in.
+アップルでは、​​私たちはアクセシビリティのためのいくつかの重要な原則に導かれています。それは、アクセシビリティの構築から始まります。
+
+People should be able to use ourproducts out of the box, andthat includes people of allabilities.
+人々は箱から出してすぐに私達の製品を使用できるべきであり、そしてそれは慈善の人々を含みます。
+
+Accessibility should becomprehensive.
+アクセシビリティは包括的になるべきです。
+
+People should have access to thewhole platform, every corner ofthe OS, every corner of yourapps.
+人々は、プラットフォーム全体、OSの隅々、ユーザの隅々までアクセスできるはずです。
+
+And perhaps most important, wewant to surprise and delight allusers regardless of ability.
+そしておそらく最も重要なのは、能力に関係なく、alluserを驚かせて喜ばせることでした。
+
+And so this is more than justabout fixing accessibility bugs.
+したがって、これはアクセシビリティのバグを修正することだけではありません。
+
+This is about using yourfeatures with accessibility andstriving for an experiencethat's great, that's just asinspired as your originaldesign.
+これは、自分の特徴をユーザ補助機能とともに使用して、素晴らしい経験を追求することです。
+
+When we think aboutaccessibility, we're reallytalking about a broad continuumof abilities.
+私たちがアクセシビリティについて考えるとき、私たちは本当に幅広い連続性について話しています。
+
+Hearing, vision, physical,learning.
+聴覚、視覚、身体、学習
+
+And within each of these areas,we're focused on differentconditions.
+そして、これらの分野のそれぞれにおいて、私たちはさまざまな条件に焦点を当てています。
+
+So for example, for vision, weof course have Voiceover, ourscreen reader for people whocan't see the screen.
+そのため、たとえば、ビジョンに関しては、画面が表示されない人のためのスクリーンリーダーであるVoiceoverももちろん使用できます。
+
+But we also have over a dozenvision-related features fromzoom to large text.
+しかし、ズームから大きなテキストまで、12種類以上のビジョン関連機能もあります。
+
+And when we take this approachand we apply it to that broadcontinuum of abilities, we'retalking about dozens ofaccessibility features.
+そして私達がこのアプローチを取るとき、私達はそれを能力のその広い連続体に適用します、私達は何十ものアクセシビリティ機能について語っています。
+
+And it really underscores thenotion that accessibility is foreveryone.
+そしてそれは、アクセシビリティが永遠に続くという気持ちを本当に強調しています。
+
+Probably most of you use atleast one accessibility feature.
+おそらくあなたのほとんどは少なくとも1つのユーザー補助機能を使用します。
+
+And if you don't already,there's a good chance you willeventually.
+そして、あなたがまだしていないのであれば、あなたはついに偶然に成功する可能性があります。
+
+This year we're introducingseveral new accessibilityfeatures and enhancements, andtoday I'm going to talk abouttwo, starting withdiscoverability.
+今年は、いくつかの新しいアクセシビリティ機能と機能強化を紹介します。そして今日は、発見可能性から始めて、2つについて話します。
+
+In the spirit of accessibilitybeing for everyone, we wanted tomake it easier to find.
+すべての人にとってアクセシビリティの精神で、私たちは見つけやすくすることを望んでいました。
+
+And so to that end we've addedaccessibility to iOS QuickStart, making the out-of-boxexperience even more accessible.
+そのため、iOS QuickStartにアクセシビリティを追加して、すぐに使えるエクスペリエンスをさらに使いやすくしました。
+
+Also we've moved accessibilityto the top level of settings.
+また、アクセシビリティを最上位の設定に移動しました。
+
+[ Applause ]
+【拍手】
+
+And we've reorganized it to makethings easier to find.
+そして我々はそれを見つけやすいmakethingsに再編成しました。
+
+We think it's going to go a longway to help people discover anduse these great features.
+人々がこれらの優れた機能を見つけて利用するのを助けるために、私達はそれが遠くへ行くだろうと思います。
+
+Now let's talk about voicecontrol, right?We saw this this morning duringthe keynote.
+それでは、ボイスコントロールについて話しましょう？基調講演の間に今朝見ました。
+
+Voice control is this full voiceexperience from macOS, iOS andiPadOS and we think it's goingto be really helpful for peoplewith physical challenges.
+音声制御は、macOS、iOS、およびiPadOSからのこの完全な音声体験であり、身体的な問題を抱えている人々にとっては本当に役立つと考えています。
+
+Voice control providescomprehensive platform access.
+音声制御は包括的なプラットフォームアクセスを提供します。
+
+You can speak to items by name.
+あなたは名前でアイテムに話すことができます。
+
+You can refer to items bynumber.
+番号でアイテムを参照できます。
+
+You can even speak to regions ofthe screen using a grid.
+あなたはグリッドを使ってスクリーンの領域と話すことさえできます。
+
+Voice control has got great textediting.
+音声制御は素晴らしいテキスト編集を持っています。
+
+So of course I can dictate textbut I can also make selectionsand corrections using only myvoice.
+だからもちろん私はテキストを口述することができますが私はまた私の声だけを使って選択と修正をすることができます。
+
+And it also has awareness.
+そしてそれはまた意識を持っています。
+
+So effectively even when I'mdictating text, it hearscommands and it doesn't make memanage that distinction.
+だから私がテキストを口述している時でさえも事実上それはコマンドを聞き、それはその区別を暗記することはしない。
+
+I can just talk to it.
+私はそれについて話すことができます。
+
+And using the true depth camera,if I look away, it knows that itcan ignore me.
+そして本当の深さのカメラを使用して、私が目をそらすならば、それはそれが私を無視できることを知っています。
+
+Voice control's got great spokengestures so of course I can dosimple things like taps andswipes.
+音声制御は素晴らしい音声合成を持っているので、もちろん私はタップアンドスワイプのようなものを単純化することができます。
+
+But I can also pre-record morecomplex gestures that I mightwant to use in an app or a game,like this rotate gesture.
+ただし、この回転ジェスチャのように、アプリやゲームで使用したいと思うより複雑なジェスチャを事前に記録することもできます。
+
+And of course voice controlspeech recognition runs fully ondevice.
+そしてもちろん、音声制御による音声認識は完全にデバイス上で実行されます。
+
+And so now I'd like to show youvoice control in action.
+そして今、私はyouvoiceのコントロールを実際に見せたいのです。
+
+[ Applause ]
+【拍手】
+
+And for this demo I'm going tobe talking to my iPhone.
+そしてこのデモのために、私は私のiPhoneと話をするつもりです。
+
+Open messages.
+メッセージを開く
+
+Hey Chris, let's grab dinnertonight.
+こんにちはクリス、夕方の夜をつかみましょう。
+
+I'm thinking pizza.
+私はピザを考えています。
+
+Pizza emoji.
+ピザ絵文字。
+
+Change tonight to this weekend.
+今週末に今週を変える。
+
+Tap send.
+送信をタップします。
+
+Undo that.
+元に戻します。
+
+Tap send.
+送信をタップします。
+
+[ Laughter ]
+[ 笑い ]
+
+Undo that.
+元に戻します。
+
+Tap send.
+送信をタップします。
+
+[ Applause ]
+【拍手】
+
+Open Maps.
+マップを開きます。
+
+Tap search field.
+検索欄をタップします。
+
+San Pedro Square.
+サンペドロ広場。
+
+Show numbers.
+数字を表示
+
+Five.
+五。
+
+ Show grid continuously.
+ 継続的にグリッドを表示します。
+
+15.
+ 15。
+
+ Zoom at one.
+ 一つにズームしてください。
+
+Repeat four times.
+4回繰り返します。
+
+[ Applause ]
+【拍手】
+
+Swipe up at 27.
+27で上にスワイプします。
+
+Hide grid.
+グリッドを隠す
+
+Tap share.
+共有をタップします。
+
+Tap Chris Adams.
+Chris Adamsをタップします。
+
+Lots of options around here,period.
+この辺りにはたくさんのオプションがあります。
+
+See you later.
+じゃあまたね。
+
+Peace emoji.
+平和絵文字。
+
+Ah, look at that.
+ああ、それを見てください。
+
+Undo that.
+元に戻します。
+
+Peace emoji.
+平和絵文字。
+
+Tap send.
+送信をタップします。
+
+[ Laughter ]
+[ 笑い ]
+
+Undo that.
+元に戻します。
+
+Tap send.
+送信をタップします。
+
+[ Applause ]
+【拍手】
+
+Go home.
+家に帰りなさい。
+
+ Go to sleep.
+ 寝る。
+
+Okay.
+はい。
+
+ So that's voice control.
+ これが音声制御です。
+
+Now --
+今 - 
+
+[ Applause ]
+【拍手】
+
+Now we can also use voicecontrol as developers to testthe accessibility of our apps.
+開発者としてvoicecontrolを使用して、アプリのアクセシビリティをテストすることもできます。
+
+And so let's do that now withthe travel app that you sawearlier.
+それでは、今度は旅行用アプリを使って、それを試してみましょう。
+
+Wake up.
+目を覚ます。
+
+ Open Travel.
+ オープントラベル
+
+Tap San Francisco.
+サンフランシスコをタップします。
+
+Tap San Francisco.
+サンフランシスコをタップします。
+
+Show names.
+名前を表示する
+
+All right, here's the problem.
+大丈夫、これが問題です。
+
+So I'm trying to tap on SanFrancisco, this element, but itdoesn't have a goodaccessibility label yet and it'sa really common problem.
+だから私はSanFrancisco、この要素を利用しようとしています、しかしそれはまだ良いアクセシビリティラベルを持っていません、そしてそれはそれが本当に一般的な問題です。
+
+It means I can't speak to thiselement with voice control, andeven worse, if I couldn't seethe screen and Voiceover werereading this to me, I'd becompletely out of luck, stoppedin my tracks.
+それは私が音声制御でこの要素に話すことができないことを意味します、スクリーンとVoiceoverが私にこれを読んでいるのを見ることができなかったなら、私は完全に運が悪くなってしまいました。
+
+I would not be able to use thisapp.
+私はthisappを使うことができないでしょう。
+
+So fortunately these things arepretty easy to fix.
+とても幸いなことに、これらのことは修正するのがとても簡単です。
+
+And so let's talk about what youcan do to make your apps moreaccessible.
+それでは、アプリにアクセスしやすくするためにできることについて説明しましょう。
+
+The good news is, mostaccessibility features justwork.
+幸いなことに、最もアクセスしやすい機能はjustworkです。
+
+But some of them, indeed themost transformative featureslike Voice Control and SwitchControl and Voiceover, they needyour support.
+しかし、そのうちのいくつかは、確かにVoice ControlやSwitchControl、Voiceoverのような最も変革的な機能であり、あなたのサポートが必要です。
+
+And so here's what you can do.
+そして、これがあなたができることです。
+
+First, do what we just did.
+まず、今行ったことを行います。
+
+Just try it.
+やってみなよ。
+
+Use your apps with accessibilityfeatures.
+ユーザー補助機能付きのアプリを使用してください。
+
+You might actually be surprisedat what already works.
+あなたは実際にすでにうまくいっていることに驚くかもしれません。
+
+But more importantly, you'regoing to gain valuable insightinto how some users actuallyexperience your app.
+しかし、もっと重要なのは、何人かのユーザーが実際にあなたのアプリをどのように経験しているかについて貴重な洞察を得ることです。
+
+And you're probably going towant to make some changes.
+そして、あなたはおそらくいくつかの変更を加えることに牽引しているでしょう。
+
+Next, use the tools.
+次に、ツールを使ってください。
+
+Xcode's got great built-inaccessibility support fordevelopers.
+Xcodeは開発者向けに優れた組み込みアクセス不可能なサポートを得ました。
+
+You can edit accessibilityproperties right in the Xcodeinspector.
+アクセシビリティプロパティはXcodeinspectorで直接編集できます。
+
+And with new EnvironmentOverrides, you can previewvisual accessibilityaccommodations during yourdevelopment lifecycle right inyour app.
+また、新しいEnvironmentOverridesを使用すると、開発ライフサイクル中に視覚的なアクセシビリティの変更をプレビューすることができます。
+
+It's really cool.
+本当にかっこいいです。
+
+Finally, implement theAccessibility API.
+最後に、Accessibility APIを実装します。
+
+It's the best way to ensure anaccessible experience.
+アクセス可能な経験を確実にするための最善の方法です。
+
+It's the essential way.
+それは本質的な方法です。
+
+Doing this well is like puttingout a welcome mat to your appfor users of all abilities.
+これをうまくやることは、あらゆる能力を持つユーザーにとって、歓迎の挨拶をあなたのappforに出すことのようなものです。
+
+It's how Voiceover and SwitchControl and the rest talk toyour app to offer an adaptedexperience.
+それがVoiceoverとSwitchControlそして他の人がトヨタのアプリと話すことでadaptedexperienceを提供する方法です。
+
+The Accessibility APIs work onall platform, and while they'reeasy to implement, they're superpowerful.
+アクセシビリティAPIはすべてのプラットフォームで機能します。実装するのは簡単ですが、非常に強力です。
+
+So even the most sophisticatedapps and experiences can be madefully accessible.
+そのため、最も洗練されたアプリケーションやエクスペリエンスでも、アクセスしやすくすることができます。
+
+And of course, SwiftUI has greataccessibility support builtright in.
+そしてもちろん、SwiftUIには、アクセス可能性のサポートが組み込まれています。
+
+And so that's our accessibilityupdate today.
+そしてそれが今日の私たちのアクセシビリティの更新です。
+
+Now another thing we care deeplyabout at Apple is privacy.
+今私達がアップルで深く気にしているもう一つのことはプライバシーです。
+
+And so to tell you more aboutthat, I'd like to hand thingsover to Katie.
+それであなたにそれについてもっと言うために、私は物事をケイティに手渡したいです。
+
+Thanks very much.
+どうもありがとう。
+
+[ Applause ]
+【拍手】
+
+>> Thanks, Eric.
+>>ありがとう、エリック。
+
+Privacy is a topic that isn'tgoing away.
+プライバシーは消えないトピックです。
+
+And it's something that everyoneneeds to pay attention to.
+そしてそれはみんなが注意を払うべきものです。
+
+It's something you have todesign in from the beginning andit shapes how your productworks.
+それはあなたが最初からデザインしなければならない何かであり、そしてそれはあなたの製品がどのように働くかを形作る。
+
+When you're designing a newfeature, here are a few stepsthat you can take to design forprivacy.
+あなたが新機能をデザインするとき、あなたがプライバシーのためにデザインするためにあなたがとることができるいくつかのステップがここにあります。
+
+Process on the user's device.
+ユーザーのデバイス上で処理します。
+
+Wherever you can keep user dataon-device, do it.
+ユーザーdata-on-deviceをどこに置いても構いません。
+
+And this helps you to collect aslittle data as you can.
+そしてこれはあなたができる限り少ないデータを集めるのを助けます。
+
+If you don't have the data, itcan't be abused or stolen.
+あなたがデータを持っていない場合、それは悪用されたり盗まれたりすることはできません。
+
+Ask first.
+最初に聞いてください。
+
+Ask permission from your userfor the data and how you plan touse it.
+データと、それをどのように使用するかについては、ユーザーに許可を求めてください。
+
+And if you do collect data, userandom identifiers.
+また、データを収集する場合は、ランダムな識別子を使用してください。
+
+And scope them down from anaccount to a device, to asession where possible.
+そして可能な限りセッションからデバイスまで、そしてセッションまでの範囲を指定します。
+
+And encrypt to keep your users'data secure.
+ユーザーのデータを安全に保つために暗号化します。
+
+Applying these principles inyour design process will helpyou build great features andgreat privacy.
+これらの原則をあなたの設計プロセスに適用することで、優れた機能を構築し、プライバシーを保護することができます。
+
+I want to talk about two areaswhere we've made it easier foryou to take these steps.
+これらのステップを実行することがより簡単になった2つの分野についてお話したいと思います。
+
+First, location.
+まず、場所です。
+
+Where you go can reveal a lotabout your life.
+あなたが行くところはあなたの人生について多くのことを明らかにすることができます。
+
+Where you live, where you work,what doctor's office you mightgo to, or how often you'rehitting the gym versus maybe thebar.
+あなたが住んでいる場所、あなたが仕事をしている場所、あなたが行くかもしれない医者の診療所、またはあなたが多分thebarに対してジムを打っている頻度。
+
+Because of this, some users arehesitant to share location withyou and your apps.
+このため、一部のユーザーはあなたやあなたのアプリと場所を共有することを躊躇しています。
+
+So they might miss out on someof your key features.
+だから彼らはあなたの重要な機能のいくつかを見逃してしまうかもしれません。
+
+So this year, we're adding a newoption: Allow Once.
+それで、今年、newオプションを追加します：Allow Once。
+
+This provides location accessfor just that session and willask the user again next time.
+これにより、そのセッションだけで場所へのアクセスが提供され、次回ユーザーに再度アクセスされます。
+
+But let's say your app is evenbetter with Always AllowLocation permission.
+しかし、アプリがAlways AllowLocationパーミッションを使用した方がより優れているとしましょう。
+
+Here's how this will now work.
+これが今どのように動作するかです。
+
+First the user needs to selectWhile In Use.
+最初に、ユーザーは「使用中」を選択する必要があります。
+
+Then you request location whileyour app is in the background.
+その後、あなたはあなたのアプリがバックグラウンドにある間に位置を要求します。
+
+Then the user will be presentedwith an alert, letting them knowthat you're requesting locationin the background.
+その後、ユーザーにアラートが表示され、バックグラウンドで位置情報を要求していることをユーザーに知らせます。
+
+If they change to Always Allow,you'll have background locationaccess moving forward.
+[常時許可]に変更された場合は、背景の場所にアクセスする必要があります。
+
+Finally, we're giving users moretransparency into how theirlocation is being accessed.
+最後に、我々は彼らの位置がどのようにアクセスされているかについてより透明性をユーザに与えています。
+
+For all apps with backgroundlocation permission, from timeto time we'll show them whereyour app accessed theirlocation.
+backgroundlocation権限を持つすべてのアプリについては、時々アプリがそのlocationにアクセスした場所を表示します。
+
+[ Applause ]
+【拍手】
+
+With these changes topermissions, users will feelmore comfortable in how they'resharing location with you.
+これらの権限の変更により、ユーザーは自分と場所を共有している方法について、より快適に感じることができます。
+
+Now, let's talk about login.
+それでは、ログインについて話しましょう。
+
+We've all seen or maybeimplemented buttons like these.
+私たちはみんなこれらのようなボタンを見たか、あるいは実装したかもしれません。
+
+And they can be reallyconvenient, but they can come atthe cost of your user's privacy.
+そしてそれらは本当に便利になることができます、しかしそれらはあなたのユーザーのプライバシーの代償を払って来ることができます。
+
+They also might share moreinformation about your company'sbusiness than you really want tobe disclosing.
+彼らはまたあなたが本当に開示したいと思うよりもあなたの会社の事業についてのより多くの情報を共有するかもしれません。
+
+So we want to offer a betteroption.
+だから私たちはより良い選択肢を提供したいのです。
+
+And it's called Sign In WithApple.
+そしてそれはSign In WithAppleと呼ばれます。
+
+[ Applause ]
+【拍手】
+
+It offers fast, easy sign-inwithout all the tracking.
+それはすべての追跡なしで速くて簡単なサインインを提供します。
+
+This isn't just about privacyfor our users, but also for yourcompany.
+これは私達のユーザーのためだけでなくあなたの会社のためのプライバシーについてだけではありません。
+
+It's not our business to knowhow users engage with your app,so Apple simply won't trackthat.
+ユーザーがあなたのアプリに関わる方法を知るのは私たちの事業ではないので、Appleは単にそれを追跡しません。
+
+[ Applause ]
+【拍手】
+
+It's easy to add a Sign In WithApple button to your app with asimple API.
+シンプルなAPIを使用して、Appにサインインボタンをアプリに追加するのは簡単です。
+
+Users can set up an account andsign into your app with a tapand a quick Face ID.
+ユーザーはアカウントを設定して、簡単なフェイスIDを使ってアプリにサインインできます。
+
+So why is this great for all ofyou?First off, more trust and lessfriction equals more engagedusers.
+それでは、なぜこれがすべての人にとってすばらしいのでしょうか？まず、信頼と摩擦の減少がエンゲージターの増加につながります。
+
+Sign In With Apple can shortenthe distance between a userconsidering your application andreally embracing it.
+Appleでは、アプリケーションを考慮するユーザと実際にそれを受け入れるユーザとの間の距離を縮めることができます。
+
+Second, verify email addresses.
+次に、メールアドレスを確認します。
+
+Apple has already done the workof verifying email addresses foryou.
+AppleはすでにあなたのためにEメールアドレスを確かめる作業をしました。
+
+[ Applause ]
+【拍手】
+
+And we're removing the incentivefor users to share made-up emailaddresses by offering a privateemail relay service.
+そして、プライベートメールリレーサービスを提供することで、ユーザーがメイドの電子メールアドレスを共有するインセンティブを取り除きます。
+
+So even if a user chooses tohide their email address whensetting up an account, youremail will arrive in theirverified account, their verifiedinbox.
+そのため、ユーザーがアカウントを設定するときに自分の電子メールアドレスを非表示にすることを選択した場合でも、youremailは自分の検証済みアカウント（検証済みボックス）に届きます。
+
+And then there's security.
+そしてセキュリティがあります。
+
+With Sign Into Apple, you don'tneed to deal with storingpasswords or password resetissues.
+Appleにサインインすると、パスワードやパスワードの再発行を保存する必要がなくなります。
+
+And every single account isprotected with two-factorauthentication.
+そして、すべての単一アカウントは、2つの事実に基づく認証で保護されています。
+
+[ Applause ]
+【拍手】
+
+This can really improve yoursecurity.
+これは本当にあなたのセキュリティを向上させることができます。
+
+We've also integrated someinteresting innovations aroundanti-fraud.
+私たちはまた、不正防止に関する興味深い技術革新を統合しました。
+
+We all know that along with somereal users, sometimes you getsome not so real users.
+私たちは皆、一部の現実的なユーザーと一緒に、時にはあなたがそれほど本物のユーザーではなくなっていることを知っています。
+
+Nobody wants bots or farmedaccounts.
+誰もボットや農場のアカウントを望んでいません。
+
+And we work hard to filter themout of our systems.
+そして私達は私達のシステムからそれらを除外するために一生懸命働きます。
+
+And we want to help you do thesame.
+そして私達はあなたが同じことをするのを助けたいです。
+
+So we built what we call a realuser indicator.
+そこで、私たちはリアルユーザーインディケータと呼ぶものを作りました。
+
+It can tell you if an incomingaccount is a real user or if youmight want to do some additionalverification.
+入ってきたアカウントが実際のユーザーなのか、それとも追加の検証をしたいのかを教えてくれます。
+
+So how does this work?First off, the whole system isbuilt from the ground up tomaintain user privacy.
+それでは、これはどのように機能するのでしょうか？最初に、システム全体がゼロから構築され、ユーザーのプライバシーが保護されます。
+
+It uses on-device intelligenceto determine if the originatingdevice is behaving in a normalway.
+デバイス上のインテリジェンスを使用して、発信元デバイスが通常の方法で動作しているかどうかを判断します。
+
+The device generates a valuewithout sharing any specificswith Apple.
+このデバイスは、Appleと詳細を共有することなく値を生成します。
+
+This is combined with selectaccount information and thenboiled down into a single valuethat's shared with your app ataccount setup time.
+これはアカウントの選択情報と組み合わされ、アカウント設定時にアプリと共有される単一の値にまとめられます。
+
+Then depending on the value thatyou receive, you can beconfident that your new user isa real user or get a signal thatyou might want to take a secondlook.
+それから、あなたが受け取る価値に応じて、あなたはあなたの新しいユーザーが本当のユーザーであることを確信することができますまたはあなたがセカンドルックをしたいかもしれないというシグナルを得ることができます。
+
+And all of this comes with greatcross-platform support.
+そして、これらすべては素晴らしいクロスプラットフォームのサポートが付属しています。
+
+It's available on iOS, iPadOS,macOS, watchOS, tvOS and it evenworks on the web.
+それはiOS、iPadOS、macOS、watchOS、tvOSで利用可能であり、そしてそれはウェブ上でも機能します。
+
+So it can work on Android andWindows devices.
+だからそれはAndroidとWindowsデバイス上で動作することができます。
+
+[ Applause ]
+【拍手】
+
+So there you go.
+だからそこに行きます。
+
+A super-fast and easy way toengage new users, two-factorauthentication and anti-fraudbuilt in.
+新しいユーザー、2つの事実による認証、および不正防止のための超高速で簡単な方法。
+
+You can implement it virtuallyanywhere, and most importantly,it respects everyone's privacy.
+あなたは事実上どこでもそれを実装することができます、そして最も重要なことに、それは皆のプライバシーを尊重します。
+
+So this is a solution both youand your users can trust.
+だからこれはあなたとあなたのユーザーの両方が信頼できる解決策です。
+
+We've already had a number ofdevelopers working with us andwe're excited to see many moreof you adopt.
+私たちはすでに多くの開発者と協力していますし、さらに多くの開発者が採用するのを楽しみにしています。
+
+So that's Sign In With Apple.
+これがAppleのサインインです。
+
+[ Applause ]
+【拍手】
+
+As I mentioned earlier, a greatway to preserve user privacy isto work with the users' dataon-device.
+先に述べたように、ユーザーのプライバシーを保護するための素晴らしい方法は、ユーザーのデータオンデバイスと連携することです。
+
+And we've built some greattechnologies for doing justthat.
+そして、それを実現するための優れたテクノロジをいくつか構築しました。
+
+To tell you more about machinelearning, I'd like to hand itover to Bill.
+機械学習についてさらに詳しく説明するために、Billに引き渡します。
+
+[ Applause ]
+【拍手】
+
+>> Thank you, Katie.
+>>ありがとう、ケイティ。
+
+[ Applause ]
+【拍手】
+
+Machine learning is a keytechnology for so many of theexperiences in your apps.
+機械学習は、アプリの多くの経験にとって重要なテクノロジです。
+
+And at Apple, we use on-devicemachine learning to powerfeatures from stunning cameraand photos capabilities to ARKit and more.
+そしてアップルでは、​​素晴らしいカメラや写真の機能からARKitなどの機能を強化するために、デバイス上のマシン学習を使用しています。
+
+And we can do this because ofour cutting-edge silicon.
+そして最先端のシリコンのおかげでこれが可能になります。
+
+With powerful CPUs, GPUs anddedicated ML processors like theNeural Engine, we can deliverincredible real-timeexperiences.
+強力なCPU、GPU、およびNeural Engineのような専用MLプロセッサを使用すると、信じられないほどのリアルタイムの経験を提供できます。
+
+The Neural Engine is optimizedto accelerate convolutionalneural networks withmulti-precision support and aSmart Compute system.
+Neural Engineは、多精度サポートとSmart Computeシステムを使用して、畳み込みニューラルネットワークを高速化するように最適化されています。
+
+What does that mean?It means it's an absolute beast.
+それはどういう意味ですか？それは絶対的な獣だということです。
+
+In fact, the Neural Engine iscapable of up to 5 trillionoperations per second.
+実際、ニューラルエンジンは1秒間に最大5兆回の演算が可能です。
+
+Best of all, we've built ourmachine learning APIs on top ofthis so that your apps can takefull advantage of this blazingperformance.
+何よりもまず、私たちはあなたのアプリがこの素晴らしい性能を最大限に引き出すことができるように私たちの機械学習APIをこの上に構築しました。
+
+And we have some great updates,starting with our out-of-the-boxAPIs like Vision, NaturalLanguage, and Speech.
+また、Vision、NaturalLanguage、Speechなどのすぐに使えるAPIから始めて、素晴らしい更新がいくつかあります。
+
+Today these APIs deliver richfeatures such as face detection,object tracking and named entityrecognition.
+今日、これらのAPIは、顔検出、オブジェクト追跡、名前付きエンティティ認識などの豊富な機能を提供します。
+
+And this year, we're adding evenmore.
+そして今年、私たちはさらに追加しています。
+
+Let's have a look at a few ofthese, starting with imagesaliency which gives you aheatmap for an image,highlighting important objectsand where users are likely tofocus their attention.
+画像のヒートマップを提供するimagesaliencyから始めて、重要なオブジェクトを強調表示し、ユーザーが注目を集める可能性が高い場合に、これらのいくつかを見てみましょう。
+
+We use this today in photos tohelp intelligently crop imagesas part of the curationexperience.
+私たちは今日これを写真の中で使って、キュレーションエクスペリエンスの一部として画像を知的にトリミングするのを助けます。
+
+We're also releasing textrecognition where you can searchtext from images like posters,signs and documents.
+ポスター、サイン、文書などの画像からテキストを検索できるテキスト認識機能もリリースしています。
+
+[ Applause ]
+【拍手】
+
+And take advantage of thedocument camera capability weuse in Notes.
+また、Notesで使用するドキュメントカメラ機能を利用してください。
+
+For Natural Language, you canmake use of word embeddingswhich help to identify words orsentences with similar meanings.
+自然言語の場合は、同じ意味を持つ単語の文を識別するのに役立つ単語の埋め込みを使用できます。
+
+We use this today for search inphotos so that if you search foran unknown term like musician,we can suggest alternatives likeentertainer or singer.
+あなたがミュージシャンのような未知の用語で検索した場合には、エンターテイナーや歌手のような代替案を提案することができるように、我々は今日検索のinphotosにこれを使用します。
+
+And this year, our Speech API isnow on-device and works oniPhone, iPad and Mac withsupport for 10 languages.
+そして今年、私たちのSpeech APIはデバイス上で知られており、10の言語をサポートしてiPhone、iPadそしてMacで動作します。
+
+[ Applause ]
+【拍手】
+
+And with features like SpeechSaliency, you can understand thepronunciation, pitch and thecadence of speech.
+そしてSpeechSaliencyのような機能で、あなたはスピーチの発音、音程、そして調子を理解することができます。
+
+Now for those of you who want togo deeper with machine learning,you can make use of Core ML, ouron-device technology designed torun machine learning models withhigh performance and privacy.
+機械学習をより深く学びたい方のために、高性能とプライバシーを備えた私たちのオンデバイス技術で設計されたトルン機械学習モデルを使用することができます。
+
+Today Core ML has great supportfor many machine learningmodels, from neural networks toboosted trees and more.
+今日のCore MLは、ニューラルネットワークからブーストされたツリーなど、多くの機械学習モデルをサポートしています。
+
+But as you know, the field ofmachine learning is constantlyevolving.
+しかし、ご存知のとおり、機械学習の分野は絶えず進化しています。
+
+And so this year we set out tosupport the most advanced neuralnetworks by adding more layertypes than ever before.
+そして今年は、これまでよりも多くのレイヤタイプを追加することで、最先端のニューラルネットワークをサポートすることにしました。
+
+In fact, Core ML now supportsover 100 model layer types.
+実際、Core MLは現在100種類のモデルレイヤタイプをサポートしています。
+
+This enables you to run some ofthe most cutting-edge machinelearning models on Appledevices.
+これにより、アップルデバイスで最先端の機械学習モデルを実行することができます。
+
+Models like ELMO or WaveNet orsome very recently publishedones like BERT, bringingbreakthrough natural languageprocessing to your apps.
+ELMOやWaveNetのようなモデルはごく最近になってBERTのようなものを発行し、あなたのアプリに画期的な自然言語処理をもたらします。
+
+Now running models like these inyour apps is only part of thestory.
+現在これらのinyourアプリのようなモデルを実行することは、物語の一部に過ぎません。
+
+There are times when you maywant to update the models inyour apps on-device based onuser data.
+ユーザーデータに基づいて、デバイス上のアプリのモデルを更新したい場合があります。
+
+We do this today for featureslike Face ID where a user'sappearance may be evolving overtime.
+私たちは今日、Face IDのような、ユーザーの姿が時間の経過とともに進化する可能性がある機能のためにこれを行います。
+
+They change their hair, wear ahat.
+彼らは髪の毛を変えます
+
+Or for features like our SiriWatch Face where the set ofrecommendations is constantlyevolving to deliver apersonalized experience for eachuser.
+または、SiriWatch Faceのように、各ユーザーに個人向けのエクスペリエンスを提供するための一連の推奨事項が常に含まれている機能のために。
+
+To achieve these experiences, weuse on-device personalization.
+これらの経験を達成するために、デバイス上のパーソナライズを使用します。
+
+And this year we're bringingthat capability to Core ML.
+そして今年、私たちはその能力をコアMLにもたらしています。
+
+This means you can update theCore ML models in your app withdata from individual users.
+これは、個々のユーザーのデータを使用してアプリのtheCore MLモデルを更新できることを意味します。
+
+This creates --
+これは作成します - 
+
+[ Applause ]
+【拍手】
+
+This creates an updated andpersonalized model for the user.
+これにより、ユーザー用に更新されたパーソナライズモデルが作成されます。
+
+With model personalization, yourapps can now update models inthe background withoutcompromising user privacy.
+モデルのパーソナライズにより、yourappsはユーザーのプライバシーを犠牲にすることなくバックグラウンドでモデルを更新できるようになりました。
+
+Core ML delivers the mostadvanced platform for machinelearning models, and buildingCore ML models has never beeneasier with Create ML, ourframework designed to help allof you build models with just afew lines of code.
+Core MLは、マシンラーニングモデルに最先端のプラットフォームを提供します。そして、buildingCore MLモデルは、ほんの数行のコードでモデルを構築できるように設計されているCreate MLを使用しても、決して遜色のないものです。
+
+And this year we're takingCreate ML even further.
+そして今年は、さらにCreate MLを採用しています。
+
+It's now a macOS app that letsyou build models with zero coderight from your Mac.
+それは今あなたがあなたのMacからゼロコードライトでモデルを構築することを可能にするmacOSアプリです。
+
+[ Applause ]
+【拍手】
+
+You can choose from manydifferent model templates to fityour data.
+あなたは多様なモデルテンプレートからfityourデータまで選ぶことができます。
+
+You can build multiple modelswith different datasets anddefine the parameters for eachof them.
+異なるデータセットを使用して複数のモデルを構築し、それらのモデルごとにパラメータを定義できます。
+
+You get real-time feedback onmodel training.
+モデルトレーニングのリアルタイムのフィードバックを得ます。
+
+And Create ML supports transferlearning for tasks like imageclassification or text analysis.
+また、Create MLは、画像分類やテキスト分析などのタスクの転送学習をサポートしています。
+
+This speeds up training sinceyou need very little data andcan leverage Apple's optimizedand heavily pre-trained models.
+ほんの少しのデータしか必要とせず、そしてAppleの最適化されたそして高度に事前訓練されたモデルを利用することができるので、これは訓練をスピードアップします。
+
+And you get to experiment andpreview the models.
+そして、あなたはモデルを実験しプレビューするようになります。
+
+So for example, you can getpredictions for images by usingyour iPhone's camera withcontinuity on your Mac.
+たとえば、あなたのMac上でiPhoneのカメラを継続して使うことで、画像の予測を得ることができます。
+
+Or you can use the microphone onyour Mac to test your soundclassification model.
+また、Mac上のマイクを使ってサウンド分類モデルをテストすることもできます。
+
+So that's a ton of new stuff andwe're super excited to see whatyou can do with all theseawesome new machine learningcapabilities.
+それで、それは新しいもののトンです、そして、私たちはあなたがすべてのこれらの素晴らしい新しい機械学習能力で何ができるかを見ることに非常に興奮しています。
+
+In fact, we invited a fewdevelopers to try out all thenew stuff and we've seen someamazing results.
+実際、私たちは何人かの開発者を招待して新しいものをすべて試してみました。
+
+One in particular was so cool wedecided we had to share it withyou.
+特に私たちがあなたとそれを共有しなければならなかったのでとてもクールでした。
+
+So please welcome Ben Harrowayfrom Lumen Digital to give you apreview of his new appNoisyBook.
+Lumen DigitalのBen Harrowayが、彼の新しいappNoisyBookの概要を紹介します。
+
+[ Applause ]
+【拍手】
+
+>> Thanks, Bill.
+>>ありがとう、ビル。
+
+Hi, everyone, I'm Ben from LumenDigital and I've been working ona brand-new app, NoisyBook.
+こんにちは、みんな、私はLumenDigitalのBenです。私は真新しいアプリNoisyBookに取り組んでいます。
+
+Let me tell you a story.
+話をさせてください。
+
+Once upon a time, on a beautifulmeadow lived a boy called Jackand his cow Daisy.
+むかしむかし、美しい牧草地にJackandという彼の牛デイジーという男の子が住んでいました。
+
+Daisy.
+デイジー
+
+[ Cow mooing ]
+[牛の係留]
+
+A mysterious man gave them somemagic beans which grew into agiant beanstalk, high into theclouds.
+神秘的な男が彼らに魔法のような豆を与えた。
+
+[ Mystical music ]
+[神秘的な音楽]
+
+Okay, I think everybody knowsthis story.
+さて、私は誰もがこの話を知っていると思います。
+
+Let's try something reallydifferent.
+本当に違うものを試してみましょう。
+
+Suddenly an exploding chickenand his friend the golden tiger
+突然爆発したチキンと彼の友人の黄金の虎
+
+[growling]
+[うなる]
+
+ jumped into theirhelicopter 
+ 彼らのヘリコプターに飛び込んだ 
+
+[whirring]
+[うねる]
+
+ and flewinto the forest.
+ そして森に飛んだ。
+
+[ Crickets and bird sounds ]
+[クリケットと鳥の音]
+
+And of course, guess what?They all lived happily everafter.
+そして、もちろん、何を推測しますか？彼らは皆、幸福に暮らしていました。
+
+[ Music ]
+[音楽]
+
+>> Yay.
+>>はい。
+
+>> Can you make animal noisesyou heard in the story?>> Okay, we've had some fun.
+>>あなたは物語で聞いた動物の音を立てることができますか？>>さて、私たちはいくつかの楽しみを持っています。
+
+Now NoisyBook wants us to repeatsome of the animal noises thatwe heard during the story.
+今、NoisyBookは、私たちが物語の間に聞いた動物のノイズの繰り返しを私たちに望んでいます。
+
+I think we heard a cow in thisstory, so let's try this.
+私たちはこの話で牛を聞いたと思うので、これを試してみましょう。
+
+Moo.
+武。
+
+ There he is.
+ 彼がいます。
+
+I really cannot believe I'mstanding here making animalnoises in front of all of thesepeople.
+私はここに立っていることを信じていることはできませんここで私はこれらのすべての人の前でアニマルノイズを作っています。
+
+Mad.
+マッド。
+
+ But how amazing, the apphas used a sound classificationmodel to actually recognize thatnoise and acknowledge it.
+ しかし、なんと驚くべきことに、このアプリは実際にそのノイズを認識し、それを認識するために健全な分類モデルを使用しました。
+
+You likely also noticedNoisyBook was able to work withboth traditional stories andstories straight from our ownimaginations.
+また、NoisyBookが私たちの想像力から直接伝わる伝統的なストーリーとストーリーの両方を扱うことができたことにも気付いたでしょう。
+
+It's super powerful.
+超強力です。
+
+And thanks to the new featuresof speech, sound and Core ML iniOS 13 and Create ML, this isall happening entirelyon-device.
+そして、スピーチ、サウンド、およびCore ML iniOS 13とCreate MLの新しい機能のおかげで、このすべては完全にデバイス上で行われています。
+
+It's all happening in real timeand it's running through anatural language model that I'vetrained on over 90,000 lines oftext.
+それはすべてリアルタイムで起こっており、それは私が9万行以上のテキストで訓練した自然言語モデルを通っています。
+
+And thanks to these features,I've been able to take an ideathat I've struggled with foraround two years and reallyimplement some of these magicalnew features in just a couple ofdays.
+そして、これらの機能のおかげで、私はおよそ2年間苦労したという考えを持ち、ほんの2、3日でこれらの魔法のような新機能のいくつかを本当に実現することができました。
+
+I'm super proud of it and I dohope that you'll remember tocheck out NoisyBook when itlands on the App Store laterthis year.
+私はそれを非常に誇りに思っています、そして今年の晩年にApp StoreでNoisyBookがリリースされたときには、NoisyBookをチェックアウトすることを忘れないでください。
+
+Thank you.
+ありがとうございました。
+
+[ Applause ]
+【拍手】
+
+>> Thanks, Ben.
+>>ありがとう、ベン。
+
+That was really cool.
+それは本当にクールでした。
+
+I know my kids are going to loveit.
+私は私の子供が愛するつもりであることを知っています。
+
+Now one of the biggest uses ofmachine learning at Apple isSiri.
+今アップルで機械学習の最大の用途の一つはシリです。
+
+Siri is by far the world's mostpopular intelligent assistantwith over 500 million monthlyactive devices, making over 15billion requests.
+Siriは、世界で最もポピュラーなインテリジェントアシスタントであり、毎月5億以上のアクティブデバイスを持ち、150億を超える要求を出しています。
+
+These are staggering numbers.
+これらは驚くべき数字です。
+
+And Siri works across all ofApple's devices.
+そしてSiriはAppleのすべてのデバイスにまたがって機能します。
+
+With Siri, your users caninteract with your apps in newways.
+Siriを使用すると、ユーザーは新しい方法でアプリと対話できます。
+
+On the go, with Air Pods,hands-free from across the room,or even while in the car.
+外出先では、Air Podsを使用すれば、部屋のどこからでも、車の中からでもハンズフリーで使用できます。
+
+And thousands of apps are nowintegrated with Siri throughSiri Shortcuts.
+そして何千ものアプリがSiriを通じてSiriと統合されました。
+
+We built Siri Shortcuts to allowyou to expose the capabilitiesyou already have in your appswith very little work and in adiscoverable way for your users.
+Siriのショートカットを作成して、あなたのアプリにすでにある機能をほんの少しの作業で、そしてユーザーのために発見可能な方法で公開できるようにしました。
+
+You can make your shortcutsdiscoverable using the Add toSiri button, educating yourusers on how they can use yourapp with voice.
+あなたは自分のショートカットをAdd toSiriボタンを使って発見可能にすることができます。
+
+That matters because voicefunctionality can otherwise bereally hard to discover.
+音声機能は他の方法では発見が難しいため、これは重要です。
+
+And we've simplified setup sothat the user no longer needs torecord a phrase.
+また、ユーザーがフレーズを録音する必要がなくなるように設定を簡略化しました。
+
+You suggest a phrase and theyadd it with a tap.
+あなたはフレーズを提案し、彼らはタップでそれを追加します。
+
+[ Applause ]
+【拍手】
+
+And the biggest request we hadthis year was to supportparameters in Shortcuts.
+そして今年の最大の要望は、ショートカットのパラメータをサポートすることでした。
+
+So we've made Shortcutsconversational which allowsusers to interact with your appthrough questions in Siri.
+だから我々はSiriであなたのappthrough質問と対話することを許すShortcuts会話をしました。
+
+So for example, if I'm choosingwhat to cook, I could run aShortcut with Pana, my recipesapp, and see a list of all myfavorites.
+それで、例えば、もし私が料理をすることを選んだならば、私はPana、私のrecipesappでaShortcutを実行することができて、そしてすべての私のお気に入りのリストを見ることができます。
+
+When I choose from the list, ittakes me to the recipe andstarts playing.
+リストから選択すると、レシピに移動して再生が開始されます。
+
+And this year the Shortcuts appis built into iOS and iPadOS,which means that every user willhave an opportunity to try itout.
+そして今年、ショートカットアプリはiOSとiPadOSに組み込まれました。つまり、すべてのユーザーが試してみる機会があります。
+
+And the app is now the home forshortcuts from your apps too.
+そして、そのアプリはあなたのアプリからのホームショートカットになりました。
+
+And by popular request, we'readding support for automation.
+そして、一般的な要求により、自動化のサポートを検討しています。
+
+[ Applause ]
+【拍手】
+
+Which allows users to setspecific triggers for when torun any shortcut.
+これにより、ユーザーはショートカットを起動したときに特定のトリガーを設定できます。
+
+And there's plenty of options tochoose from.
+そしてたくさんの選択肢があります。
+
+You can trigger a shortcut basedon time of day, when you start aworkout on your Apple Watch,when you connect to CarPlay andmany more.
+Apple Watchでワークアウトを開始したとき、CarPlayに接続したときなど、時刻に基づいてショートカットを起動できます。
+
+And the editor now enables fullconfiguration of your app'sactions, including the abilityto pass information in or out ofyour action through parameters.
+また、エディタを使用すると、パラメータを介してアクションの内外に情報を渡すことができるなど、アプリのアクションを完全に設定できます。
+
+With this, your app's actionscan be combined with actionsfrom other apps in multi-stepshortcuts.
+これにより、あなたのアプリのアクションは、マルチステップのショートカットで他のアプリのアクションと組み合わせることができます。
+
+Let's say you need to get dinnerfor the family.
+家族のために夕食をとる必要があるとしましょう。
+
+The kids are hungry, you need itfast.
+子供たちは空腹です、あなたはそれが必要です。
+
+You could have a shortcut thatuses the Caviar app that letsyou choose a restaurant, choosea meal, place the order and thentext the whole family withwhat's for dinner and when itwill arrive.
+あなたはあなたがレストランを選択し、食事を選択し、注文をし、そして夕食のためにそしてそれが到着するときに家族全員と一緒にテキストを書くことを可能にするCaviarアプリを使用するショートカットを持つことができます。
+
+That's combining the power ofyour apps with Siri Shortcuts tomake everyday tasks really easy.
+それはあなたのアプリのパワーをSiri Shortcutsと組み合わせることで毎日のタスクを本当に簡単にすることです。
+
+And of course --
+そしてもちろん  - 
+
+[ Applause ]
+【拍手】
+
+And of course Shortcuts workacross iPhone, iPad, Apple Watchand HomePod too.
+そしてもちろん、ショートカットはiPhone、iPad、Apple Watchand HomePodでも使えます。
+
+And that's our update for Siri.
+それがSiriの更新です。
+
+[ Applause ]
+【拍手】
+
+Now I'd like to invite Jeff totell you about the latestadvances in augmented reality.
+それでは、拡張現実における最新の進歩について、Jeffにお話を伺いたいと思います。
+
+Thank you.
+ありがとうございました。
+
+[ Applause ]
+【拍手】
+
+>> Thanks, Bill.
+>>ありがとう、ビル。
+
+I am thrilled to be here todayto talk about augmented reality.
+拡張現実について話すために私は今日ここにいることに興奮しています。
+
+AR helps you visualize thingsthat are difficult, expensive orimpossible to do otherwise.
+ARを使用すると、困難、高価、または不可能であることを視覚化できます。
+
+And since introducing AR Kit,we've seen amazing growth inapplications.
+そしてAR Kitを導入して以来、私たちは驚くべき成長への適用を見てきました。
+
+One may think of AR as only forentertainment, but we've seengreat applications in education,enterprise, commerce and more.
+ARは単なる娯楽として考えられているかもしれませんが、私たちは教育、企業、商業などの分野ですばらしいアプリケーションを見てきました。
+
+Commerce is a particularlyimpressive use case with HomeDepot, Target and Wayfair allhaving tens of thousands ofproducts available to preview inAR.
+コマースは、HomeDepot、Target、Wayfairで特に印象的なユースケースであり、inARのプレビューに使用できる製品は何万もあります。
+
+AR Kit hosts the USDZ fileformat and Quick Look together,make the world's first massmarket augmented realitycommerce solution.
+AR KitはUSDZファイルフォーマットとQuick Lookを一緒にホストし、世界初のマスマーケット拡張リアリティコマースソリューションを作ります。
+
+In fact, Wayfair is seeing morethan a threefold increase inpurchasing when folks view theirproducts in augmented reality.
+実際、Wayfairは、人々が自分たちの製品を拡張現実感で見ると、購入が3倍以上に増えていることを見ています。
+
+And we love that this is a realbusiness use case.
+そしてこれが現実的なユースケースであることを私たちは気に入っています。
+
+This is a great real businessuse case for augmented realityin commerce.
+これは拡張現実感のある商取引のための偉大な現実的なbusinessuseのケースです。
+
+We'd like to continue thismomentum by announcing thatApple Pay will be integrateddirectly with AR Quick Look thisfall.
+Apple PayがAR Quick Look thisfallと直接統合されることを発表して、この勢いを継続したいと思います。
+
+This makes it easier forconsumers to try on and buyitems like these glasses,directly from augmented reality.
+これにより、拡張現実から直接、これらの眼鏡のような商品を試着したり購入したりすることが容易になります。
+
+AR Kit for iOS and iPadOS arethe world's largest augmentedreality platform with hundredsof millions of enabled devices.
+iOSおよびiPadOS用のAR Kitは、世界で最大の拡張現実プラットフォームで、何億もの有効なデバイスがあります。
+
+And we've heard from manydevelopers, they love to takeadvantage of this greatopportunity but may not be surewhere to start.
+そして私達は多くの開発者から聞いた、彼らはこの素晴らしい機会を利用するのが大好きだが、始めるのが難しいかもしれない。
+
+Or 3D can be a little bitintimidating if you've neverused it before.
+あるいは、3Dを使ったことがないのであれば、3Dは少し威圧的です。
+
+Well, we've been listening andwe're really excited to announcethree technologies that make itmuch easier to develop augmentedreality applications.
+さて、私たちはこれまで耳を傾けてきましたが、拡張現実アプリケーションの開発を非常に簡単にする3つのテクノロジを発表できることを非常に楽しみにしています。
+
+AR Kit, RealityKit and RealityComposer together provide theframeworks and tools you need toquickly and easily developaugmented reality applicationsand experiences.
+AR Kit、RealityKit、RealityComposerを組み合わせることで、拡張現実アプリケーションやエクスペリエンスをすばやく簡単に開発するために必要なフレームワークやツールが提供されます。
+
+Starting with Reality Composer,you can create compelling ARexperiences even if you've neverworked with 3D before.
+Reality Composerから始めて、これまで3Dで作業したことがなくても、魅力的なARエクスペリエンスを作成できます。
+
+It provides an intuitive, whatyou see is what you getinterface that integratesseamlessly with Xcode.
+それは直感的なものを提供します、あなたが見るものはあなたがXcodeとすぐに統合するものあなたのgetinterfaceであるということです。
+
+And to show you RealityComposer, I'd like to invite oneof my colleagues, Shrudi, up tothe stage.
+そしてRealityComposerを紹介するために、同僚の一人であるShrudiをステージに招待したいと思います。
+
+[ Applause ]
+【拍手】
+
+>> Thank you, Jeff.
+>>ありがとう、ジェフ。
+
+Happy to be here.
+ここにいられてうれしい。
+
+I have this great travel appwhich shows some activitiesoffered on the main island ofHawaii.
+私はハワイの本島で行われたいくつかの活動を示すこの素晴らしい旅行アプリを持っています。
+
+If the user opts for helicoptertours, the app shows the path ofthe helicopter.
+ユーザーがヘリコプターツアーを選択した場合、アプリはヘリコプターのパスを表示します。
+
+How about we use AR to provideusers a better sense of theactual tour?I can do that by adding a buttonto the existing app to launch myAR experience.
+実際のツアーの感覚をユーザーに提供するためにARをどのように使用しますか？既存のアプリにボタンを追加して自分のARエクスペリエンスを起動することで、それを実現できます。
+
+Let's see how to do that.
+その方法を見てみましょう。
+
+First, we create a button usingSwiftUI.
+まず、SwiftUIを使ってボタンを作成します。
+
+Followed by adding that buttonto my existing view.
+私の既存のビューにそのボタンを追加することによって続きました。
+
+Then I open an empty projectfile in Reality Composer andintegrate it to my Xcode projectby simply dragging and droppingit in Xcode.
+次に、Reality Composerで空のプロジェクトファイルを開き、XcodeにドラッグアンドドロップするだけでXcodeプロジェクトに統合します。
+
+To load my AR scene from thisReality Composer project file, Iimport RealityKit and thencreate a new view for AR.
+thisReality Composerプロジェクトファイル、Iimport RealityKitから自分のARシーンを読み込むには、ARの新しいビューを作成します。
+
+Oops.
+おっとっと。
+
+ Sorry.
+ ごめんなさい。
+
+Create a new view for AR usingSwiftUI.
+SwiftUIを使用してARの新しいビューを作成します。
+
+And that's all the code you needto add an AR experience to yourexisting app.
+そしてこれが、既存のアプリにARエクスペリエンスを追加するために必要なすべてのコードです。
+
+Moving on to the fun part ofcreating my AR scene withReality Composer.
+Real Composerを使って自分のARシーンを作成する楽しい部分に進みます。
+
+I open my empty Reality projectand start by loading a customUSTZ of the Hawaii model.
+私は自分の空のRealityプロジェクトを開き、ハワイモデルのcustomUSTZをロードすることから始めます。
+
+Sweet.
+甘い。
+
+ Next I'd like to mark thebeginning of my helicopter tour.
+ 次はヘリコプターツアーの始まりです。
+
+For that I can use RealityComposer's built-in contentlibrary which offers hundreds ofprofessional-grade 3D content todevelopers.
+そのために、私はRealityComposerの組み込みのcontentlibraryを使うことができます。これは何百ものプロ級の3Dコンテンツを開発者に提供します。
+
+I'll use a simple sphere.
+単純な球を使います。
+
+I can change the content's look,by applying a different materialto it.
+別の素材を適用することで、コンテンツの外観を変えることができます。
+
+As you can see, placing contentin 3D is pretty simple andintuitive with Reality Composer.
+ご覧のとおり、Reality Composerでは、コンテンツを3Dに配置するのは非常に簡単で直感的です。
+
+Let's see what else we can dohere.
+他にできることを見てみましょう。
+
+How about adding a cool fadingeffect to the scene when thescene starts.
+シーンが開始したときにシーンにクールなfadingeffectを追加するのはどうですか。
+
+I can do that by opening theBehaviors panel and creating acustom behavior which getstriggered when the scene starts.
+これは、ビヘイビアーパネルを開き、シーンの開始時にトリガーされるカスタムビヘイビアーを作成することで実現できます。
+
+I first add an action to hideall the content in the scene.
+最初にシーン内のコンテンツを非表示にするアクションを追加します。
+
+Then the scene starts, and thenadd another action to make allthe content appear after acertain duration.
+その後、シーンが開始し、その後、特定の期間の経過後にすべてのコンテンツが表示されるようにする別のアクションを追加します。
+
+How about we preview it righthere?Awesome.
+それをどこかでプレビューしてみてはいかがでしょうか。
+
+ Developing AR on Mac isconvenient, but it poses thechallenge of guessing thecontent scale and look whenplaced in real world.
+ Mac上でARを開発するのは便利ですが、コンテンツの規模を推測して現実の世界に置かれたときの外観を確認するという課題があります。
+
+That's why we created RealityComposer for macOS as well asiPadOS and iOS to remove theguesswork out of development.
+そのため、推測から開発作業を省くために、MacOS、iPadOS、およびiOS用のRealityComposerを作成しました。
+
+So I'll hand this off to Jeff tosee what we have so far on aniPad.
+だから私はこれまでに私達がaniPadに持っているものを見るためにJeffにこれを引き渡すつもりです。
+
+>> Thanks very much, Shrudi.
+>>どうもありがとう、Shrudi。
+
+So this is Reality Composer forthe iPad.
+だからこれは、iPad用のReality Composerです。
+
+It has the same great featuresthat you see in the RealityComposer for the Mac.
+それはあなたがMac用のRealityComposerで見るのと同じ素晴らしい機能を持っています。
+
+And we can take the seen thatShrudi handed off and finish itout with our final artwork.
+そして、私たちはシュルディが手渡した最後の作品でそれを完成させることができます。
+
+So we've had someone create withAdobe Arrow our final file orour final artwork, and we'll putit into the scene.
+そこで、Adobe Arrowを使って最終的なファイルを作成したり、最終的なアートワークを作成したりして、シーンに入れます。
+
+So I'm going to take the proxyart that Shrudi had.
+だから私はShrudiが持っていたproxyartを取るつもりです。
+
+I'm going to replace that withour new artwork.
+私はそれを新しいアートワークと取り替えるつもりです。
+
+Let me check to see if that'sthe right thing.
+それが正しいことかどうかを確認しましょう。
+
+Fantastic.
+素晴らしいです。
+
+That is our final helicopter.
+それが私たちの最後のヘリコプターです。
+
+And I also want to bring in theanimation that goes with that.
+そしてそれに伴う学びを持ち込みたいです。
+
+That's super easy.
+とても簡単です。
+
+If you remember, she createdthat behavior, so we're going tolook at that behavior and allwe're going to do is add anadditional action.
+あなたが覚えているならば、彼女はその振る舞いを作りました、それで我々はその振る舞いを見守っているそして我々がやろうとしているのはすべて追加の行動を加えることです。
+
+So we look for USDZ animationwhich is bringing in theanimation that went with thefile.
+それで、私たちはファイルと一緒に行ったアニメーションを持ち込んでいるUSDZアニメーションを探します。
+
+Fantastic.
+素晴らしいです。
+
+Looks good.
+いいね。
+
+Let's preview that.
+それをプレビューしましょう。
+
+Great.
+すばらしいです。
+
+ So hide our Behaviorstab.
+ だから私たちの行動タブを隠します。
+
+That looks like what we want.
+それは私たちが欲しいもののように見えます。
+
+Perfect.
+完璧です。
+
+ Let's preview this inAR, but you can do it with theiPad.
+ これをinARでプレビューしましょうが、iPadでそれを行うことができます。
+
+Wow.
+ワオ。
+
+ Let's try that again.
+ もう一度試してみましょう。
+
+Fantastic.
+素晴らしいです。
+
+That's exactly what I wanted itto look like.
+それこそまさに私が望んでいたものです。
+
+And we can also play that.
+そしてそれをプレイすることもできます。
+
+Perfect.
+完璧です。
+
+ We have the animationof the helicopter touring theisland.
+ 私たちはヘリコプターツーリングtheislandのアニメーションを持っています。
+
+That will look great in ourtravel application.
+それはアウトトラベルアプリケーションではとてもよく似合うでしょう。
+
+So that's Reality Composer forthe iPad.
+それがiPad用のReality Composerです。
+
+And you're going to love how youcan have the same great ease ofuse and seamless experiencebetween macOS, iPadOS and iOSwith Reality Composer.
+そして、あなたはどのようにあなたがMacOS、iPadOSとiOSwith Reality Composerの間で同じ偉大な使いやすさとシームレスな経験を持つことができるかを好きになるでしょう。
+
+[ Applause ]
+【拍手】
+
+Now RealityKit.
+今RealityKit。
+
+RealityKit is a modernhigh-performance 3D enginedesigned from the ground up foraugmented reality rendering andsimulation.
+RealityKitは拡張現実感のレンダリングとシミュレーションのためにゼロから設計された最新の高性能3Dエンジンです。
+
+And because it's delivered as aframework, it's very easy forall of you to take your 2D appsand extend them into 3D.
+フレームワークとして配信されるため、2Dアプリを3Dに拡張して拡張するのは非常に簡単です。
+
+RealityKit uses modernvisibly-based rendering andmaterials.
+RealityKitは現代的に見えるベースのレンダリングとマテリアルを使います。
+
+It is a data-driven renderingsystem and a fullymulti-threaded renderer that'shighly optimized for Apple'sGPUs.
+これは、データ駆動型レンダリングシステムであり、完全にマルチスレッドのレンダラであり、アップルのGPUに最適化されています。
+
+And also, really importantly,we've integrated AR Kit sceneunderstanding into RealityKit.
+また、非常に重要なこととして、AR Kitのシーンの理解をRealityKitに統合しました。
+
+Which means as AR Kit leans moreabout the environment, itsynchronizes this to yourvirtual scene automatically.
+これは、AR Kitが環境にさらに傾いているため、これを仮想シーンに自動的に同期させることを意味します。
+
+We saw RealityKit in action thismorning.
+今回のRealityKitの動作を見ました。
+
+Let's take a closer look.
+詳しく見てみましょう。
+
+Let's see what's really goingon.
+実際に起こっていることを見てみましょう。
+
+The reality you see is based onthings like image-basedlighting, motion blur and cameraeffects like depth of field andcamera noise that really blurthe line between what is realityand what is virtual.
+あなたが見る現実は、イメージベースのライティング、モーションブラー、被写界深度やカメラノイズのようなカメラ効果のようなものに基づいています。
+
+And you get these features withRealityKit automatically.
+そして、あなたは自動的にRealKitでこれらの機能を手に入れます。
+
+You access RealityKit through anew framework which is a nativeSwift API.
+あなたはnativeSwift APIである新しいフレームワークを通してRealityKitにアクセスします。
+
+It takes many advantages of thekey features of Swift to allowyou to write clear, compactcode.
+それはあなたが明確な、コンパクトコードを書くことを可能にするためにSwiftの主要な機能の多くの利点を取ります。
+
+Concepts Log and Rally aredirectly integrated.
+コンセプトLogとRallyは直接統合されています。
+
+For example, it's easy to loadyour AR assets and directlyattach them to anchors.
+たとえば、AR資産を簡単にロードして、アンカーに直接接続することができます。
+
+Protocol extensions provide easyaccess to entity property whichallow you to quickly accesscomponents such as lights orshadows in this case and reducethe need for runtime checks.
+プロトコル拡張はエンティティプロパティへの簡単なアクセスを提供します。この場合、ライトや影などのコンポーネントにすばやくアクセスし、ランタイムチェックの必要性を減らすことができます。
+
+This also means that you're ableto work with entities in astrongly-typed manner.
+これはまた、あなたが実体を強く型付けされた方法で扱うことができるということを意味します。
+
+Here we're applying an angularforce to an entity thatparticipates in physics.
+ここでは、物理学に参加するエンティティに角度の力を適用します。
+
+And that's all the code you needfor this scene.
+そしてこれが、このシーンに必要なすべてのコードです。
+
+Last but definitely not leasttoday is a new version of ouraugmented reality framework ARKit 3.
+最後になりましたが、間違いなく少なくとも今日は、拡張現実フレームワークARKit 3の新しいバージョンです。
+
+We've taken the most capable ARplatform in the world and madeit even more powerful with newin-depth reverse features.
+私達は世界で最も有能なARplatformを採用し、そして新しい深さのリバース機能でさらに強力にしました。
+
+Since introducing AR Kit, we'vehad many developers ask to beable to use the front and backcameras simultaneously.
+AR Kitを導入して以来、多くの開発者がフロントカメラとバックカメラを同時に使えるようにしてほしいと頼んできました。
+
+Well, in AR Kit 3 you can.
+AR Kit 3では可能です。
+
+So you can -- that's right, bothcameras at the same time.
+それであなたはできる - それは正しい、同時に両方のカメラ。
+
+[ Applause ]
+【拍手】
+
+This allows you to use facetracking to drive your augmentedreality experiences directly.
+これにより、フェイストラッキングを使用して拡張現実感を直接体験することができます。
+
+And as Craig talked about thismorning, properly occludingpeople in an AR scene is anextremely tough problem.
+そして、Craigがこの朝について語ったように、ARシーンで適切に隠蔽する人々は極めて困難な問題です。
+
+You see it every time someonewalks in front of a virtualobject.
+誰かが仮想オブジェクトの前を歩くたびにそれが見えます。
+
+To solve this, we've built anadvanced machine-learningalgorithm that figures out whichpixels are a person, the depthof that person in the scene anduses its information to allow usto properly render the scene inthe virtual objects.
+これを解決するために、我々は、どのピクセルが人物であるか、シーン内のその人物の奥行きを把握し、その情報を使用して仮想オブジェクト内にシーンを適切にレンダリングすることを可能にする高度な機械学習アルゴリズムを構築した。
+
+With people occlusion, entirelynew experiences like MinecraftEarth Demo you saw this morningare possible.
+今朝目にしたMinecraftEarth Demoのようなまったく新しい体験が、人の咬合によって可能になります。
+
+[ Applause ]
+【拍手】
+
+Absolutely amazing.
+本当にすごい。
+
+And finally, we built a systemthat allows humans to interactwith virtual content.
+そして最後に、人間が仮想コンテンツと対話できるようにするシステムを構築しました。
+
+AR Kit 3 is able to capture aperson's motion in real timewith just the single RGB camerain an iPad or iPhone.
+AR Kit 3は、iPadまたはiPhoneの1台のRGBカメラだけで、リアルタイムで人物の動きを捉えることができます。
+
+We again use a machine learnedalgorithm to track the person,building a 2D stick figure andtake that figure and then infera 3D motion from them or lift itinto 3D.
+私達はまた、人を追跡するために機械学習アルゴリズムを使用し、２Ｄスティックフィギュアを構築し、そしてそのフィギュアを取り、それからそれらから３Ｄ運動をインブラするか、またはそれを３Ｄに持ち上げる。
+
+Both the 2D skeleton and the 3Dskeleton are available todevelopers.
+開発者は、2Dスケルトンと3Dスケルトンの両方を使用できます。
+
+The 3D has over 90 articulatedjoints and provides the sameease of use as Face Kit.
+3Dは90以上の関節ジョイントを持ち、Face Kitと同じ使いやすさを提供します。
+
+So those are our newtechnologies.
+それで、それらは私たちの新しい技術です。
+
+AR Kit 3, RealityKit, andReality Composer are tools andframeworks that make it easy foranyone, anyone, to build amazingAR experiences.
+AR Kit 3、RealityKit、Reality Composerは、誰でも誰でも簡単にすばらしいARエクスペリエンスを構築するためのツールおよびフレームワークです。
+
+And we'd like to do somethingfun today, so we have a fun newapplication at the conference.
+そして今日は何か楽しいことをしたいと思いますので、カンファレンスでは新しいアプリケーションをお楽しみいただけます。
+
+You may have seen it,SwiftStrike.
+あなたはそれを見たことがあるでしょう、SwiftStrike。
+
+We're making a tabletop versionof this as a developer sampleavailable today.
+私達は今日利用可能な開発者サンプルとしてこれの卓上版を作っています。
+
+It uses RealityKit, AR Kit 3 andReality Composer and provides agreat starting point for yourapplications.
+それはRealityKit、ARキット3とReality Composerを使用してyourapplicationsのためのすばらしい出発点を提供します。
+
+[ Music ]
+[音楽]
+
+Lots of fun.
+たくさんの楽しみ。
+
+[ Applause ]
+【拍手】
+
+Thank you.
+ありがとうございました。
+
+[ Applause ]
+【拍手】
+
+And of course Metal powers a lotof what we do in AR on ourdevices.
+そしてもちろんMetalはARで私たちのデバイスにやることの多くに力を与えます。
+
+And to tell you more aboutwhat's new in Metal, I'd like towelcome Jeremy to the stage.
+それでは、Metalの新機能についてもう少し詳しく説明すると、Jeremyを迎えに来てください。
+
+[ Applause ]
+【拍手】
+
+>> Thank you, Jeff.
+>>ありがとう、ジェフ。
+
+So Metal is Apple's modernhigh-performance GPU programmingAPI for graphics and compute.
+だからMetalはグラフィックとコンピューティングのためのアップルの最新の高性能GPUプログラミングAPIです。
+
+It's also incredibly easy touse, both for beginners andexperts alike.
+初心者にとっても初心者にとっても、とても簡単な使い方です。
+
+And it brings stunningperformance increases,supporting up to 100 times moredraw calls than OpenGL andenabling a whole new generationof advanced graphicsperformance.
+そしてそれは驚くべきパフォーマンスの向上をもたらし、OpenGLよりも最大100倍多くのドローコールをサポートし、全く新しい世代の高度なグラフィックパフォーマンスを可能にします。
+
+This is because Metal gives yourapp direct control over the GPUsthat are at the core of Apple'sproducts.
+これは、MetalがAppleの製品の中核を成すGPUを直接コントロールするためです。
+
+And those GPUs now power over1.
+そして、それらのGPUは現在1を超えています。
+
+4 billion Metal-capable systemfrom iPhones to iPads to theall-new Mac Pro.
+iPhoneからiPad、そしてまったく新しいMac Proまで、40億のメタル対応システム。
+
+In fact, all of Apple'splatforms now run on Metal.
+事実、AppleのプラットフォームはすべてMetal上で動作しています。
+
+From our smooth user interfaceto the latest 3D rendering inRealityKit, to our advancedcamera processing pipeline,we're using Metal everywhere.
+私たちのスムーズなユーザーインターフェースから最新の3DレンダリングinRealityKit、そして私たちの高度なカメラ処理パイプラインまで、私たちは至る所でMetalを使用しています。
+
+And you can too.
+そしてあなたもできます。
+
+To help you do just that, thisyear we focused on three keyareas.
+あなたがまさにそうすることを手助けするために、今年は3つのキーエリアに焦点を合わせました。
+
+We've made Metal even easier touse.
+私たちはMetalをさらに使いやすくしました。
+
+We've enabled all-new levels ofhigh-performance GPU compute.
+私たちはまったく新しいレベルの高性能GPUコンピューティングを可能にしました。
+
+And we've enhanced Metal for ourmost demanding pro appdevelopers and customers.
+そして私達は最も要求の厳しいプロのアプリケーション開発者と顧客のためにMetalを強化しました。
+
+First, with Metal's incrediblyapproachable API and GPU shadinglanguage, you can get startedwith our powerful suite ofdeveloper tools for GPUdebugging, profiling andperformance optimizing.
+まず、Metalの信じられないほど使いやすいAPIとGPUシェーディング言語を使えば、GPUデバッグ、プロファイリング、パフォーマンス最適化のための強力な開発ツール一式を始めることができます。
+
+And we've made those tools evenbetter.
+そして私達はそれらの道具をいっそうより良くしました。
+
+We have added full Metal supportto the iOS Simulator in Xcode.
+XcodeのiOSシミュレータに完全なMetalサポートを追加しました。
+
+[ Applause ]
+【拍手】
+
+We're glad you're excited aboutit.
+私たちはあなたがそれについて興奮してうれしいです。
+
+We're really excited about ittoo.
+私たちはittooに本当に興奮しています。
+
+You can now use Metal directlyin the simulator and youautomatically get majorperformance improvements whenusing UI Kits, Maps and all ofthose system frameworks built onMetal.
+シミュレータでMetalを直接使用できるようになり、UIキット、マップ、およびすべてのonMetal上に構築されたシステムフレームワークを使用するときに、自動的に大幅なパフォーマンスの向上が得られます。
+
+And this is because the iOSSimulator is now using thenative Metal support built rightinto your Mac.
+そして、これはiOSSimulatorがあなたのMacに正しく組み込まれたその時々のMetalサポートを使っているからです。
+
+We've also added an all-newMetal memory debugger.
+まったく新しいMetalメモリデバッガも追加しました。
+
+You can now identify exactly howmuch memory your app is usingfor Metal textures, buffers andheats and you can optimize yourgames and apps to use every lastbyte for even more advancedgraphics.
+これで、アプリケーションがメタルテクスチャ、バッファ、熱にどの程度のメモリを使用しているかを正確に識別でき、ゲームやアプリケーションを最適化して、さらに高度なグラフィック用にすべての最後のバイトを使用できるようになります。
+
+Now over the past few years,Metal has grown to support theadvanced features of dozens ofGPUs, each with their ownhardware from every major GPUvendor and across all of ourplatforms and OS releases.
+ここ数年で、Metalは、主要なGPUベンダー各社のすべてのプラットフォームおよびOSリリースにわたって、それぞれが独自のハードウェアを備えた数十のGPUの高度な機能をサポートするようになりました。
+
+And as a developer youpreviously had to manage all ofthis complexity of thesedifferent hardware feature setsyourself.
+そして開発者として、あなたは以前からこれらの複雑なハードウェア機能セットのすべてを自分自身で管理しなければなりませんでした。
+
+Well this year we've made itmuch simpler with just threeMetal GPU families.
+今年は、3つのメタルGPUファミリを使用することで、はるかにシンプルになりました。
+
+A Metal common GPU family,identifying the vast majority ofMetal features that you can useacross all of our platforms.
+Metal共通GPUファミリー。あなたが私たちのすべてのプラットフォームで使用できるMeta機能の大部分を識別します。
+
+A second family for the advancedunique features of our AppleDesign GPUs and our iOS, iPadOSand tvOS products.
+私たちのAppleDesign GPUと私たちのiOS、iPadOSそしてtvOS製品の高度なユニークな機能のための第二のファミリー。
+
+And a third family for thepowerful GPUs on our Macsystems.
+そして私達のMacシステム上の強力なGPUのための3番目のファミリー。
+
+And it makes it that much easierto bring your apps from iOS tomacOS or the other way around.
+そしてそれはあなたのアプリをiOS tomacOSあるいは他の方法で持ってくることをとても簡単にします。
+
+Now, in addition to enablingimmersive games and advancedgraphics, Metal also gives yourapp the ability to harness theGPU for compute.
+これで、没入型ゲームと高度なグラフィックスを可能にすることに加えて、Metalはあなたに計算のためにGPUを利用する能力も与えます。
+
+So what is GPU compute?Well, GPUs were originallydesigned to process largenumbers of pixels requiring theexecution of complexmathematical computations in amassively parallel fashion.
+GPUの計算とは何ですか？GPUは元々、大量のピクセルを処理するように設計されていたため、複雑な数学的計算を大量の並列処理で実行する必要がありました。
+
+And it turns out we can applythat computational horsepower toa wide variety of tasks besidestraditional graphics.
+そして、私たちはその計算能力を伝統的なグラフィックスのほかに多種多様なタスクに適用できることがわかりました。
+
+So Metal provides all of thebuilding blocks that you needfor general purpose computationon the GPU.
+そのため、MetalはGPUでの汎用計算に必要なすべての構築ブロックを提供します。
+
+A familiar C++ based GPUprogramming language, computecommand encoding, API andruntime, a full-feature compilerand debugger and a rich libraryof shaders and kernels calledthe Metal performance shaders.
+おなじみのC ++ベースのGPUプログラミング言語、computecommandエンコーディング、APIとランタイム、フル機能のコンパイラとデバッガ、そして豊富なシェーダとカーネルのライブラリが、Metalパフォーマンスシェーダと呼ばれています。
+
+This MPS library provides youvaluable compute functions allpre-optimized for all of thoseGPUs and all of those Applesystems and it's all fullyintegrated right into your Metalcode.
+このMPSライブラリは、これらすべてのGPUおよびすべてのApplesystems用に事前に最適化された貴重な計算機能を提供し、すべてが完全にMetalcodeに統合されています。
+
+And on our Apple Design GPUs,Metal also provides advancedcompute features like tileshading, enabling you to combineyour compute shaders and yourfragment processing into onesimple, highly-efficient renderpass.
+また、当社のApple Design GPUでは、タイルシェーディングなどの高度な計算機能も提供されているため、計算シェーダとフラグメント処理を単一の非常に効率的なレンダーパスに組み合わせることができます。
+
+And this year we're alsointroducing Metal indirectcompute command encoding.
+そして今年、私たちはMetalのindirectcomputeコマンドのエンコーディングも紹介します。
+
+It allows you to build your GPUcompute commands right on theGPU itself, unlocking all-newalgorithms for computeefficiency and freeing the CPUfor other activities in yourapp.
+それはあなたがGPU自体の上であなたのGPUcomputeコマンドを正しく構築することを可能にし、計算効率のための全く新しいアルゴリズムのロックを解除しそしてyourappの他の活動のためにCPUを解放する。
+
+And with the Radeon Pro Vega II,the new Mac Pro is a GPU computemonster, capable of up to 56teraflops of GPU compute allmade available to you via Metal.
+そしてRadeon Pro Vega IIを搭載した新しいMac Proは、Metal経由で利用可能な最大56テラフロップのGPUコンピュートを可能にするGPUコンピュテーションモンスターです。
+
+Now that's a heck of a lot offlops.
+これでたくさんのループができました。
+
+I mean, look at them all.
+つまり、それらすべてを見てください。
+
+They barely fit on the screen.
+彼らはほとんど画面に収まりません。
+
+[ Applause ]
+【拍手】
+
+That's a lot.
+それは沢山。
+
+[ Applause ]
+【拍手】
+
+So what can you do with all ofthose flops of GPU compute?Well, with Metal you can usethem for advanced computeprocessing.
+それでは、GPUコンピューティングのこれらすべてのフロップで何ができるでしょうか？まあ、Metalを使えば、高度なコンピューティング処理にそれらを使用できます。
+
+For your videos, you can improvethe quality of your photos.
+あなたのビデオのために、あなたはあなたの写真の品質を向上させることができます。
+
+You can train your ML models andyou can use them to accelerateinteractive ray tracing.
+あなたはあなたのMLモデルを訓練することができ、あなたは対話型レイトレーシングを加速するためにそれらを使うことができます。
+
+So we have further improvedMetal support for ray tracingthis year, now enabling dynamicscenes by moving the boundingvolume hierarchy constructionfrom the CPU to the GPU, andadded all-new optimized MPSde-noising filters to furtherimprove image quality.
+そこで今年はさらにレイトレーシングのサポートを改良し、バウンディングボリューム階層構造をCPUからGPUに移動することでダイナミクスシーンを可能にし、さらに画質をさらに向上させるためにまったく新しい最適化MPSdeノイズフィルタを追加しました。
+
+Now ray tracing, it uses the GPUto computationally model thephysical properties of lightsand surfaces and reflections andit can be so complex, peopleactually earn PhD's in thistopic.
+今光線追跡、それはライトとサーフェスと反射の物理的性質を計算的にモデル化するためにGPUを使います、そしてそれはとても複雑になることができます、人々は実際にこのトピックで博士号を得ます。
+
+So to show you how you can useMetal and GPU Compute for raytracing, we decided to puttogether a pretty simpleexample.
+そこで、レイトレーシングにMetalとGPU Computeをどのように使用できるかを説明するために、非常に単純な例をまとめることにしました。
+
+And I'd now like to invite Ravto the stage to give you a quickdemonstration.
+そして、私は今ラヴトをステージに招待してあなたに素早いデモンストレーションをしたいと思います。
+
+Rav?
+ラヴ？
+
+[ Applause ]
+【拍手】
+
+>> Thank you, Jeremy.
+>>ありがとう、ジェレミー。
+
+So we built a prototype hybridray tracing engine to see whatwe could do with Metal Computeon the powerful new Mac Pro.
+そこで、強力な新しいMac ProであるMetal Computeonを使ってできることを確認するために、プロトタイプのHybridrayトレースエンジンを構築しました。
+
+Now this toy city that we builtlooks simple, but we're usingMetal to process over 1 billionrays per second at 4Kresolution.
+今、私たちが構築したこのおもちゃの街はシンプルに見えますが、4K解像度で毎秒10億線以上処理するためにMetalを使っています。
+
+Let me walk you through whatwe're doing here.
+ここで何をしているのかを説明しましょう。
+
+So we start by using Metal drawcommands to render the geometryand material information thatwe're going to use later, andthen switch to using MetalCompute and the MPS ray triangleintersection APIs to do all theheavy lifting.
+そこで、後で使用するジオメトリとマテリアル情報をレンダリングするためにMetalのdrawコマンドを使用して開始し、その後MetalComputeとMPSレイトライアングルインターセクションAPIの使用に切り替えて、すべての重い作業を行います。
+
+This includes calculatingambient light at every surfacepoint, as you can see in thisimage.
+この画像からわかるように、これにはすべてのサーフェスポイントでの周囲光の計算が含まれます。
+
+But also to simulate lightbouncing between objects in ourscene at increasing ray depth togenerate shadows, reflectionsand even reflections withinthose reflections.
+しかしまた、光線の深さを増しながら我々のシーン内のオブジェクト間の光の跳ね返りをシミュレートして、影、反射、さらにはこの反射内の反射さえも生成する。
+
+And then we end by using theoptimized MPS or optimizecompute kernels in the new MPSde-noiser to produce this reallyhigh-quality image.
+そして、この最高品質の画像を作成するために、新しいMPSde-noiserで最適化されたMPSまたはoptimizecomputeカーネルを使用することで終わります。
+
+So traditional CPU rendererswould take over a minute togenerate a frame like this.
+そのため、従来のCPUレンダラーでは、このようなフレームを生成するのに1分以上かかります。
+
+With Metal, we've been able toreduce this to under 30milliseconds, which is astaggering 1,000 times faster.
+Metalを使用すると、これを30ミリ秒未満に減らすことができました。これは1,000倍も高速です。
+
+So pro app developers -- thankyou.
+だからプロアプリ開発者 - ありがとう。
+
+We think it's pretty great too.
+私達はそれもかなり素晴らしいと思います。
+
+[ Applause ]
+【拍手】
+
+So pro app developers can nowuse Metal Compute to build newinteractive tools to visualizethese physically accuratelighting effects like thesedramatic shadows that are castby the buildings and also bythat fire escape.
+そのため、プロアプリの開発者は、Metal Computeを使用して、建物から出てくる火のような影や消火のための物理的に正確な照明効果を視覚化するための新しい対話型ツールを構築できます。
+
+Or if we pan over here to thisroof, the realistic way thatgreen light bounces onto thisneighboring building.
+または、この屋根にここをパンすると、緑色の光が現実的な方法で周囲の建物に反射します。
+
+That just looks great.
+それはちょうどいいですね。
+
+Thank you.
+ありがとうございました。
+
+[ Applause ]
+【拍手】
+
+Another great effect that we cansimulate or model is accuratereflections, as you can see inthe windshields of this bus.
+このバスの風防ガラスで見ることができるように私達が模倣するか、または模倣できるもう一つの大きい効果は正確な反射である。
+
+In fact, you can see the shadowsmoving in that windshield or inthose reflections as I changethe position of the sun.
+実際、私は太陽の位置を変えると、そのフロントガラスに影が動いているのか、あるいは反射が入っているのかがわかります。
+
+So that looks great, butanimating objects in a ray tracescene can be verycomputationally expensivebecause we have to update thebounding volume hierarchy that'sassociated with the geometry.
+そのため、見栄えがよくなりますが、光線追跡シーンでオブジェクトをアニメーション化することは、ジオメトリに関連する境界ボリューム階層を更新する必要があるため、非常に計算コストが高くなります。
+
+Fortunately, with Metal Computeand the MPS APIs, we're able tomove all of this work onto theGPUs and achieve this greatanimation.
+幸い、Metal ComputeとMPS APIを使用すると、これらすべての作業をGPUに移行して、この素晴らしいアニメーションを実現できます。
+
+And there go our trains.
+そして私たちの電車があります。
+
+So that was just an example ofwhat's possible when you useMetal Compute for acceleratedray tracing on the new Mac Pro.
+だから、それはあなたが新しいMac Pro上での加速された線の追跡のためにMetal Computeを使うときに可能なことのほんの一例であった。
+
+It's a beast.
+それは獣です。
+
+Thank you.
+ありがとうございました。
+
+Back to you, Jeremy.
+あなたに戻って、ジェレミー。
+
+[ Applause ]
+【拍手】
+
+>> Thank you, Rav.
+>>ありがとう、ラヴ。
+
+So that's what we did in just ashort bit of time.
+それで、ほんの少しの時間で私たちがしたことです。
+
+But high-performance ray tracingcan be even more powerful in thehands of our most expertthird-party developers.
+しかし高性能のレイトレーシングは私たちの最も専門的なサードパーティの開発者の手に渡ってさらに強力になることができます。
+
+Which is why we are so excitedthat OTOY has announced they'reusing Metal Compute to buildOctaneX, an all-new version ofOctane Renderer, theirinteractive path tracing engineoptimized for Metal and theApple platforms.
+だからこそ、OTOYがMetal Computeを使って、まったく新しいバージョンのOctane RendererであるMetalおよびtheAppleプラットフォーム向けに最適化された対話型パストレースエンジンであるbuildOctaneXを使っていることを発表しました。
+
+And we are incredibly thrilledto be working with Maxon who'sbringing their powerfulGPU-accelerated rendererRedshift to the Mac with anall-new version optimized forMetal and the new Mac Pro.
+そして、私たちはMaxMonと協力して、彼らの強力なGPUアクセラレーテッドレンダラRedshiftをMacにもたらし、Metalと新しいMac Proに最適化されたまったく新しいバージョンを手に入れることに非常に興奮しています。
+
+So with advanced Metal ComputeAPIs and incredibly powerfulhardware, we've built Metal topower the most advancedprofessional content creationtools.
+そのため、高度なMetal Compute APIと非常に強力なハードウェアを使用して、Metal topowerで最も高度なプロフェッショナル向けコンテンツ作成ツールを構築しました。
+
+And we've been working reallyclosely with the leading appdevelopers who have allannounced that the upcomingversions of these professionalcontent creation tools and appswill be fully optimized forMetal and the Apple platforms.
+そして、私たちは、これらのプロフェッショナル向けコンテンツ作成ツールやアプリケーションの今後のバージョンが、MetalおよびAppleプラットフォーム向けに完全に最適化されると予告している大手のアプリケーション開発者たちと本当に密接に協力してきました。
+
+For instance, Serif has justannounced an all-new version ofAffinity Photo for Mac usingMetal's graphics and ComputeAPIs to hypercharge theiradvanced photo processing enginein achieving stunningperformance increases.
+例えば、SerifはMetaのグラフィックとComputeAPIを使って驚くほどのパフォーマンス向上を達成するために、最新のMac用Affinity Photo for Macを発表しました。
+
+More than 10 times betterperformance and jaw-droppingincreases of 50 times betterperformance using Metal withmultiple GPUs on the new MacPro.
+新しいMacProでは、複数のGPUを搭載したMetalを使用すると、10倍以上のパフォーマンスとジョードロップが50倍も向上します。
+
+So to enable these kinds of proapps and this kind ofperformance, we work reallyclosely with our GPU hardwareand software partner teams toadd all-new features to Metal.
+そのため、この種のproappとこの種のパフォーマンスを実現するために、私たちはGPUハードウェアチームとソフトウェアパートナーチームと本当に密接に連携して、まったく新しい機能をMetalに追加します。
+
+To support the new AMD InfinityFabric link in the new Mac Pro,we added the Metal Peer GroupAPI.
+新しいMac Proで新しいAMD InfinityFabricリンクをサポートするために、Metal Peer GroupAPIを追加しました。
+
+So what does this do?Well, previously sharingworkloads across multiple GPUswould require moving largeamounts of data in a round tripacross the PCI bus.
+それで、これは何をするのでしょうか？まあ、以前は複数のGPUでワークロードを共有していたため、大量のデータをPCIバスを1往復して移動する必要がありました。
+
+But with the Metal Peer GroupAPI, apps can use multiple GPUsmuch more efficiently, directlysharing data across the InfinityFabric link and without takingthat long and scenic routethrough system memory.
+しかし、Metal Peer GroupAPIを使用すると、アプリケーションは複数のGPUをより効率的に使用して、InfinityFabricリンク全体でデータを直接共有することができます。
+
+Now finally, you've seen how youcan use Metal Compute and thenew Mac Pro to process a wholelot more pixels.
+最後に、Metal Computeと新しいMac Proを使用して、さらに多くのピクセルを処理する方法を説明しました。
+
+But we also want you to produceeven more beautiful pixels.
+しかし私達はまたあなたに7つのより美しいピクセルを作り出すことを望みます。
+
+So we've introduced the gorgeousnew Pro Display XDR with all-newHDR software support in macOS.
+そこで私たちは、macOSでまったく新しいHDRソフトウェアをサポートする、素晴らしいPro Display XDRを紹介しました。
+
+You can now use the AVFoundation APIs to decode HDRvideos or you can render nativeHDR content directly with Metal.
+AVFoundation APIを使用してHDRビデオをデコードすることも、nativeHDRコンテンツをMetalで直接レンダリングすることもできます。
+
+You can manage the HDR displaytone mapping yourself or you canlet the window system and ouradvanced display system softwarehandle it all for you.
+あなたはあなた自身でHDRディスプレイトーンマッピングを管理することができますか、あるいはあなたはウィンドウシステムと最新のディスプレイシステムソフトウェアをあなたに代わって取り扱うことができます。
+
+And with these same APIs, youcan also access a far greaterrange of brightness levels onmany of our existing Macdisplays as well.
+また、これらの同じAPIを使用すれば、既存のMacdisplaysからもはるかに広範囲の明るさレベルにアクセスできます。
+
+So that's our Metal update fortoday.
+それで今日のMetalのアップデートです。
+
+It's even easier to use Metalacross all of our platforms withMetal in the iOS Simulator andsimplified GPU families.
+iOSシミュレータおよび単純化されたGPUファミリでは、すべてのプラットフォームでMetalcrossをMetalcrossと併用するのがさらに簡単です。
+
+We have all-new features andpowerful hardware to unleashall-new levels of GPU computeperformance.
+私たちは、GPUコンピューティングの性能を最大限に引き出すためのまったく新しい機能と強力なハードウェアを備えています。
+
+And we built Metal to be thebest GPU programming API todrive modern professionalcontent creation tools and apps.
+そして私たちは、最先端のGPUプログラミングAPIとして、現代のプロフェッショナル向けコンテンツ作成ツールやアプリケーションを開発するためにMetalを構築しました。
+
+So thank you very much.
+どうもありがとうございました。
+
+I'll hand it back to Sebastiennow.
+私はそれをSebastiennowに渡します。
+
+Thank you.
+ありがとうございました。
+
+[ Applause ]
+【拍手】
+
+>> Thank you, Jeremy.
+>>ありがとう、ジェレミー。
+
+Don't you love Metal?Don't you love the power ofMetal?Really, really amazing.
+あなたはメタルを愛していませんか？あなたはメタルの力を愛していませんか？本当に、本当に素晴らしいです。
+
+Now what you've seen thisafternoon is a huge amount ofnew technology that's new forall of you as developers.
+今、あなたが今日の午後に見たのは、開発者としてのあなたにとって新しい話題である、膨大な量の新しい技術です。
+
+And what we've shown coveringdeveloper tools, the Appleplatforms and core technologiesis just some of the highlights.
+開発者向けツール、Appleplatforms、およびコアテクノロジをカバーするために示したものは、ほんの一部のハイライトです。
+
+We actually have so much more toshow you this week.
+私たちは実際に今週あなたにもっとたくさんの見せつけをしています。
+
+And so ahead of us are 109different sessions.
+そして私たちの前には109の異なるセッションがあります。
+
+And it turns out that thatwasn't enough to covereverything.
+そして、それはすべてをカバーするのに十分ではなかったことがわかります。
+
+So this year we added anadditional 27 video-onlysessions.
+そこで今年はさらに27のビデオのみのセッションを追加しました。
+
+And when you want to dive evendeeper, you could sit down withsome of the over 1,000 Appleengineers that are here at WWDCin 229 different lab sessionsthroughout the week.
+そして、もっと深く潜水したいときは、週に229の異なるラボセッションでここにいる1000人以上のアップルエンジニアと一緒に座ることができます。
+
+So get out there and prepare tohave your minds blown.
+だからそこに出て、あなたの心が吹き飛ばされるように準備してください。
+
+It's going to be a great week.
+それは素晴らしい週になるだろう。
+
+Thank you.
+ありがとうございました。
+
+[ Applause ]
+【拍手】
+
